@@ -7,11 +7,16 @@ import tornadofx.*
 
 class MainView : BaseView("Deeplink Automation test") {
 
-    private val mainViewModel = MainViewModel(viewScope)
+    private val mainViewModel = MainViewModel(viewScope, appDispatchers)
 
     private lateinit var cbTakeScreenshot: javafx.scene.control.CheckBox
     private lateinit var cbRecordScreen: javafx.scene.control.CheckBox
     private lateinit var txtInput: javafx.scene.control.TextArea
+
+    override fun onDock() {
+        super.onDock()
+        mainViewModel.requestInit()
+    }
 
     override val root = vbox {
         paddingAll = 4.0
@@ -36,7 +41,7 @@ class MainView : BaseView("Deeplink Automation test") {
                 text = "Device"
             }
 
-            combobox<String>(mainViewModel.selectedCity, mainViewModel.texasCities) {
+            combobox<String>(mainViewModel.selectedDeviceText, mainViewModel.devicesText) {
                 minWidth = 150.0
             }
         }
