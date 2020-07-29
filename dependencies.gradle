@@ -1,0 +1,17 @@
+ext {
+    versions = [
+            // Kotlin
+            kotlin          : '1.2.31',
+            anko            : '0.10.4',
+            coroutines      : '0.22.2',
+
+            // JavaFX
+            publish         : '0.9.10',
+            tornado         : '1.7.16',
+
+            // Testing
+            junit           : "4.12",
+            espresso        : "2.2.2"
+
+    ]
+}
