@@ -4,7 +4,7 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 
 class CmdExecutor {
-    fun executeCommand(command: String?): String? {
+    fun executeCommand(command: String): String {
         val output = StringBuilder()
         try {
             val p = Runtime.getRuntime().exec(command)

@@ -15,7 +15,7 @@ class MainView : BaseView("Deeplink Automation test") {
 
     override fun onDock() {
         super.onDock()
-        mainViewModel.requestInit()
+        mainViewModel.requestDevices()
     }
 
     override val root = vbox {
