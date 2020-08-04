@@ -5,8 +5,10 @@ import com.simplesoft.duongdt3.tornadofx.data.CmdExecutor
 import com.simplesoft.duongdt3.tornadofx.data.ConfigParser
 import com.simplesoft.duongdt3.tornadofx.data.Either
 import com.simplesoft.duongdt3.tornadofx.data.Failure
+import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
+import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
@@ -30,6 +32,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private var devices = mutableListOf<JadbDevice>()
 
     val devicesText: ObservableList<String> = FXCollections.observableArrayList<String>()
+    val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
     val selectedDeviceText = SimpleStringProperty()
 
     private var runTestJob: Job? = null
@@ -44,6 +47,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 runTestJob?.cancel()
 
                 runTestJob = viewModelScope.launch(appDispatchers.main) {
+                    processingSteps.clear()
                     val resultDeeplinkTestCase = withContext(appDispatchers.io) {
                         runTestCaseFromInputDeeplinks(
                                 textInput = textInput,
@@ -86,10 +90,14 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 }
 
                 val deeplinks = deeplinkTestConfig.deeplinks
+
+                initDeeplinkTestCaseSteps(deeplinks)
+
                 deeplinks.forEachIndexed { index, deeplink ->
                     val filePrefix = "${index + 1}".padStart(3, '0')
                     runDeeplinkTestCase(
-                            deeplinkTestConfig.waitStartActivityDisappear,
+                            id = index + 1,
+                            waitStartActivityDisappear = deeplinkTestConfig.waitStartActivityDisappear,
                             device = device,
                             deeplink = deeplink.deeplink,
                             deeplinkWaitActivity = deeplink.activityName,
@@ -110,6 +118,19 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
+    private fun initDeeplinkTestCaseSteps(deeplinks: List<DeeplinkTestConfig.Deeplink>) {
+        viewModelScope.launch(appDispatchers.main) {
+            processingSteps.clear()
+            processingSteps.addAll(mapDeepLinkSteps(deeplinks))
+        }
+    }
+
+    private fun mapDeepLinkSteps(deeplinks: List<DeeplinkTestConfig.Deeplink>): List<TestCaseStep> {
+        return deeplinks.mapIndexed { index, deeplink ->
+            TestCaseStep(id = index + 1, deepLinkText = deeplink.deeplink, status = TestCaseStep.Status.TODO)
+        }
+    }
+
     private suspend fun runDeeplinkTestCase(
             waitStartActivityDisappear: String?,
             device: JadbDevice,
@@ -119,8 +140,10 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             takeScreenshot: Boolean,
             recordSreen: Boolean,
             dir: File,
-            fileRoot: File
+            fileRoot: File,
+            id: Int
     ) {
+        fireEventTestCaseRunning(id)
         val startTimeMilis = System.currentTimeMillis()
         goToDeviceHome(device)
         delay(500)
@@ -138,7 +161,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             delay(500)
         }
 
-        startDeeplink(
+        val startDeeplinkSuccess = startDeeplink(
+                id = id,
                 jadbDevice = device,
                 deeplink = deeplink,
                 deeplinkWaitActivity = deeplinkWaitActivity,
@@ -164,17 +188,55 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     imagePathInDevice = videoPathInDevice,
                     dir = dir
             )
-
         }
 
         val endTimeMilis = System.currentTimeMillis()
-        logger.log("runDeeplinkTestCase $deeplink done after ${endTimeMilis - startTimeMilis}ms")
+        val workingTime = endTimeMilis - startTimeMilis
+        if (startDeeplinkSuccess) {
+            fireEventTestCaseDone(id, workingTime)
+        }
+        logger.log("runDeeplinkTestCase $deeplink done after ${workingTime}ms")
+
     }
 
-    private fun startRecordSreenByCmd(jadbDevice: JadbDevice, videoPathInDevice: String, fileRoot: File): Process {
-        val fileAdbPath = getAdbFilePath(fileRoot)
-        logger.log("startRecordSreenByCmd $fileAdbPath")
-        return Runtime.getRuntime().exec("\"$fileAdbPath\" -s ${jadbDevice.serial} shell screenrecord $videoPathInDevice")
+    private fun fireEventTestCaseDone(id: Int, milis: Long) {
+        viewModelScope.launch(appDispatchers.main) {
+            val indexTestCaseStep = processingSteps.indexOfFirst {
+                it.id == id
+            }
+
+            val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
+            if (testCaseStep != null) {
+                val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.DONE(milis))
+                processingSteps[indexTestCaseStep] = testCaseStepCopy
+            }
+        }
+    }
+
+    private fun fireEventTestCaseRunning(id: Int) {
+        viewModelScope.launch(appDispatchers.main) {
+            val indexTestCaseStep = processingSteps.indexOfFirst {
+                it.id == id
+            }
+
+            val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
+            if (testCaseStep != null) {
+                val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.RUNNING)
+                processingSteps[indexTestCaseStep] = testCaseStepCopy
+            }
+        }
+    }
+
+    private fun startRecordSreenByCmd(jadbDevice: JadbDevice, videoPathInDevice: String, fileRoot: File): Process? {
+        try {
+            logger.log("startRecordSreenByCmd $fileRoot")
+            val fileAdbPath = getAdbFilePath(fileRoot)
+            logger.log("startRecordSreenByCmd $fileAdbPath")
+            return Runtime.getRuntime().exec("\"$fileAdbPath\" -s ${jadbDevice.serial} shell screenrecord $videoPathInDevice")
+        } catch (e: Exception) {
+            logger.log(e)
+            return null
+        }
     }
 
     private fun getAdbFilePath(fileRoot: File): String {
@@ -272,26 +334,64 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         return !isFoundActivity
     }
 
-    private suspend fun startDeeplink(jadbDevice: JadbDevice, deeplink: String, deeplinkWaitActivity: String?, waitStartActivityDisappear: String?) {
-        logger.log("startDeeplink start $deeplink")
-        val deeplinkOut = ByteArrayOutputStream()
-        jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
-        val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
+    private suspend fun startDeeplink(id: Int, jadbDevice: JadbDevice, deeplink: String, deeplinkWaitActivity: String?, waitStartActivityDisappear: String?): Boolean {
+        try {
+            logger.log("startDeeplink start $deeplink")
+            val deeplinkOut = ByteArrayOutputStream()
+            jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
+            val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
 
-        if (!deeplinkWaitActivity.isNullOrBlank()) {
-            waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
-        } else {
+            var waitActivityDisplay = true
             if (!waitStartActivityDisappear.isNullOrBlank()) {
-                waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
+                waitActivityDisplay = waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
+                if (waitActivityDisplay) {
+                    if (!deeplinkWaitActivity.isNullOrBlank()) {
+                        waitActivityDisplay = waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
+                    }
+                }
             } else {
                 //wait for start app
                 delay(5000)
             }
+
+            //time for loading
+            delay(3000)
+            logger.log("startDeeplink $deeplink $deeplinkOutMsg")
+            if (!waitActivityDisplay) {
+                fireEventTestCaseTimeout(id)
+            }
+            return waitActivityDisplay
+        } catch (e: Exception) {
+            fireEventTestCaseError(id, "Error")
+            logger.log(e)
+            return false
+        }
+    }
+
+    private fun fireEventTestCaseError(id: Int, msg: String) {
+        viewModelScope.launch(appDispatchers.main) {
+            val indexTestCaseStep = processingSteps.indexOfFirst {
+                it.id == id
+            }
+
+            val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
+            if (testCaseStep != null) {
+                val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.ERROR(msg))
+                processingSteps[indexTestCaseStep] = testCaseStepCopy
+            }
+        }
+    }
+
+    private fun fireEventTestCaseTimeout(id: Int) {
+        val indexTestCaseStep = processingSteps.indexOfFirst {
+            it.id == id
         }
 
-        //time for loading
-        delay(3000)
-        logger.log("startDeeplink $deeplink $deeplinkOutMsg")
+        val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
+        if (testCaseStep != null) {
+            val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.TIMEOUT)
+            processingSteps[indexTestCaseStep] = testCaseStepCopy
+        }
     }
 
     fun requestDevices() {
