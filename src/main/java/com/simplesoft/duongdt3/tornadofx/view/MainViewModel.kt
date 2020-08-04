@@ -2,6 +2,7 @@ package com.simplesoft.duongdt3.tornadofx.view
 
 import com.simplesoft.duongdt3.tornadofx.base.BaseViewModel
 import com.simplesoft.duongdt3.tornadofx.data.CmdExecutor
+import com.simplesoft.duongdt3.tornadofx.data.ConfigParser
 import com.simplesoft.duongdt3.tornadofx.data.Either
 import com.simplesoft.duongdt3.tornadofx.data.Failure
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
@@ -16,11 +17,14 @@ import se.vidstige.jadb.JadbDevice
 import se.vidstige.jadb.RemoteFile
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 
 class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatchers) : BaseViewModel(coroutineScope, appDispatchers) {
     private val fileRoot = File(System.getProperty("user.dir"))
     private val logger by inject<AppLogger>()
+    private val configParser by inject<ConfigParser>()
 
     private var selectedDevice: JadbDevice? = null
     private var devices = mutableListOf<JadbDevice>()
@@ -74,23 +78,49 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
     private suspend fun runTestCaseFromInputDeeplinks(textInput: String, device: JadbDevice, takeScreenshot: Boolean, recordSreen: Boolean): Either<Failure.UnCatchError, Boolean> {
         return try {
-            val dirName = "deeplink_test_${System.currentTimeMillis()}"
-            val dirTestCaseResult = File(fileRoot, dirName).apply {
-                mkdirs()
-            }
+            val deeplinkTestConfig = configParser.parse(textInput)
+            if (deeplinkTestConfig != null) {
+                val dirName = "deeplink_test_${System.currentTimeMillis()}"
+                val dirTestCaseResult = File(fileRoot, dirName).apply {
+                    mkdirs()
+                }
 
-            val deeplinks = textInput.trim().lines()
-            deeplinks.forEachIndexed { index, deeplink ->
-                val filePrefix = "${index + 1}".padStart(3, '0')
-                runDeeplinkTestCase(device, deeplink, filePrefix, takeScreenshot, recordSreen, dirTestCaseResult, fileRoot)
+                val deeplinks = deeplinkTestConfig.deeplinks
+                deeplinks.forEachIndexed { index, deeplink ->
+                    val filePrefix = "${index + 1}".padStart(3, '0')
+                    runDeeplinkTestCase(
+                            deeplinkTestConfig.waitStartActivityDisappear,
+                            device = device,
+                            deeplink = deeplink.deeplink,
+                            deeplinkWaitActivity = deeplink.activityName,
+                            filePrefix = filePrefix,
+                            takeScreenshot = takeScreenshot,
+                            recordSreen = recordSreen,
+                            dir = dirTestCaseResult,
+                            fileRoot = fileRoot
+                    )
+                }
+                Either.Success(true)
+            } else {
+                //TODO show error
+                Either.Fail(Failure.UnCatchError(Exception()))
             }
-            Either.Success(true)
         } catch (ex: Exception) {
             Either.Fail(Failure.UnCatchError(ex))
         }
     }
 
-    private suspend fun runDeeplinkTestCase(device: JadbDevice, deeplink: String, filePrefix: String, takeScreenshot: Boolean, recordSreen: Boolean, dir: File, fileRoot: File) {
+    private suspend fun runDeeplinkTestCase(
+            waitStartActivityDisappear: String?,
+            device: JadbDevice,
+            deeplink: String,
+            deeplinkWaitActivity: String?,
+            filePrefix: String,
+            takeScreenshot: Boolean,
+            recordSreen: Boolean,
+            dir: File,
+            fileRoot: File
+    ) {
         val startTimeMilis = System.currentTimeMillis()
         goToDeviceHome(device)
         delay(500)
@@ -99,17 +129,29 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         val videoPathInDevice = "$externalStoragePath/screencap.mp4"
         if (recordSreen) {
             viewModelScope.launch(appDispatchers.io) {
-                recordProccess = startRecordSreenByCmd(jadbDevice = device, videoPathInDevice = videoPathInDevice, fileRoot = fileRoot)
+                recordProccess = startRecordSreenByCmd(
+                        jadbDevice = device,
+                        videoPathInDevice = videoPathInDevice,
+                        fileRoot = fileRoot
+                )
             }
             delay(500)
         }
 
-        startDeeplink(jadbDevice = device, deeplink = deeplink)
-        waitActivityDisplay(jadbDevice = device, activityName = "MainActivity")
-        delay(4500)
+        startDeeplink(
+                jadbDevice = device,
+                deeplink = deeplink,
+                deeplinkWaitActivity = deeplinkWaitActivity,
+                waitStartActivityDisappear = waitStartActivityDisappear
+        )
 
         if (takeScreenshot) {
-            takeScreenshot(jadbDevice = device, imgFileName = "${filePrefix}_screenshot.png", externalStoragePath = externalStoragePath, dir = dir)
+            takeScreenshot(
+                    jadbDevice = device,
+                    imgFileName = "${filePrefix}_screenshot.png",
+                    externalStoragePath = externalStoragePath,
+                    dir = dir
+            )
         }
 
         if (recordSreen && recordProccess != null) {
@@ -169,31 +211,86 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         delay(300)
     }
 
-    private suspend fun waitActivityDisplay(jadbDevice: JadbDevice, activityName: String) {
+    private suspend fun waitActivityDisplay(jadbDevice: JadbDevice, activityName: String): Boolean {
         val startTimeMilis = System.currentTimeMillis()
         logger.log("waitActivityDisplay $activityName")
 
         var currentStep = 1
         val maxStep = 20
-
+        var isFoundActivity = false
+        var isTimeout = false
         var activitiesOutMsg = ""
         do {
             delay(1000)
             val activitiesOut = ByteArrayOutputStream()
             jadbDevice.executeShell(activitiesOut, "dumpsys activity activities")
             activitiesOutMsg = String(activitiesOut.toByteArray()).trim()
+
+            logger.log("dumpsys activity activities")
+            logger.log(activitiesOutMsg)
             currentStep++
-        } while (!activitiesOutMsg.contains(activityName) && currentStep < maxStep)
+            isFoundActivity = findActivityInStacktrace(activityName = activityName, activitiesStacktrace = activitiesOutMsg)
+            isTimeout = currentStep >= maxStep
+        } while (!isFoundActivity && !isTimeout)
         val endTimeMilis = System.currentTimeMillis()
         logger.log("waitActivityDisplay found $activityName after ${endTimeMilis - startTimeMilis}ms")
-
+        return isFoundActivity
     }
 
-    private fun startDeeplink(jadbDevice: JadbDevice, deeplink: String) {
+    private fun findActivityInStacktrace(activityName: String, activitiesStacktrace: String): Boolean {
+        val p: Pattern = Pattern.compile("(Run).*#\\d+.*(ActivityRecord).*(\\.$activityName)")
+        val m: Matcher = p.matcher(activitiesStacktrace)
+        val find = m.find()
+        logger.log("findActivityInStacktrace $activityName found = $find")
+        return find
+    }
+
+    private suspend fun waitActivityDisappear(jadbDevice: JadbDevice, activityName: String): Boolean {
+        val startTimeMilis = System.currentTimeMillis()
+        logger.log("waitActivityDisappear $activityName")
+
+        var currentStep = 1
+        val maxStep = 20
+        var isFoundActivity = false
+        var isTimeout = false
+        var activitiesOutMsg = ""
+        do {
+            delay(1000)
+            val activitiesOut = ByteArrayOutputStream()
+            jadbDevice.executeShell(activitiesOut, "dumpsys activity activities")
+            activitiesOutMsg = String(activitiesOut.toByteArray()).trim()
+
+            logger.log("dumpsys activity activities")
+            logger.log(activitiesOutMsg)
+            currentStep++
+
+            isFoundActivity = findActivityInStacktrace(activityName = activityName, activitiesStacktrace = activitiesOutMsg)
+            isTimeout = currentStep >= maxStep
+        } while (isFoundActivity && !isTimeout)
+        val endTimeMilis = System.currentTimeMillis()
+        logger.log("waitActivityDisappear $activityName found = $isFoundActivity after ${endTimeMilis - startTimeMilis}ms")
+        return !isFoundActivity
+    }
+
+    private suspend fun startDeeplink(jadbDevice: JadbDevice, deeplink: String, deeplinkWaitActivity: String?, waitStartActivityDisappear: String?) {
         logger.log("startDeeplink start $deeplink")
         val deeplinkOut = ByteArrayOutputStream()
-        jadbDevice.executeShell(deeplinkOut, "am start -a android.intent.action.VIEW -d '$deeplink'")
+        jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
         val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
+
+        if (!deeplinkWaitActivity.isNullOrBlank()) {
+            waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
+        } else {
+            if (!waitStartActivityDisappear.isNullOrBlank()) {
+                waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
+            } else {
+                //wait for start app
+                delay(5000)
+            }
+        }
+
+        //time for loading
+        delay(3000)
         logger.log("startDeeplink $deeplink $deeplinkOutMsg")
     }
 

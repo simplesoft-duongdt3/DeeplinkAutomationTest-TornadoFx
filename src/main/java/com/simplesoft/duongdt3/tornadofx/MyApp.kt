@@ -1,6 +1,7 @@
 package com.simplesoft.duongdt3.tornadofx
 
 
+import com.simplesoft.duongdt3.tornadofx.data.di.dataModule
 import com.simplesoft.duongdt3.tornadofx.helper.di.helperModule
 import com.simplesoft.duongdt3.tornadofx.view.MainView
 import com.simplesoft.duongdt3.tornadofx.view.di.viewModule
@@ -13,6 +14,7 @@ class MyApp: App(MainView::class, Styles::class) {
 
         startKoin {
             modules(
+                    dataModule,
                     helperModule,
                     viewModule
             )
