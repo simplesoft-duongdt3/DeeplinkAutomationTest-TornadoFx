@@ -224,7 +224,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
             val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
             if (testCaseStep != null) {
-                val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.DONE(milis))
+                val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.SUCCESS(milis))
                 processingSteps[indexTestCaseStep] = testCaseStepCopy
             }
         }
