@@ -1,6 +1,7 @@
 package com.simplesoft.duongdt3.tornadofx.data.di
 
 import com.simplesoft.duongdt3.tornadofx.data.ConfigParser
+import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.data.FileReader
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
@@ -16,5 +17,9 @@ val dataModule = module {
 
     single {
         FileReader()
+    }
+
+    single {
+        FileOpener()
     }
 }

@@ -9,11 +9,11 @@ import java.io.File
 class FileOpener: KoinComponent {
     private val logger: AppLogger by inject()
 
-    fun openFile(filePath: String) {
+    fun openFile(file: File) {
         try {
-            Desktop.getDesktop().open(File(filePath))
+            Desktop.getDesktop().open(file)
         } catch (e: Exception) {
-            logger.log("openFile $filePath")
+            logger.log("openFile $file")
             logger.log(e)
         }
     }

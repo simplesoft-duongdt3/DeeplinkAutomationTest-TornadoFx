@@ -1,5 +1,6 @@
 package com.simplesoft.duongdt3.tornadofx.base
 
+import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob

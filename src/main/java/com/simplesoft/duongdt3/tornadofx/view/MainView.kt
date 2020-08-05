@@ -1,6 +1,7 @@
 package com.simplesoft.duongdt3.tornadofx.view
 
 import com.simplesoft.duongdt3.tornadofx.base.BaseView
+import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.helper.defaultFalse
 import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
 import javafx.beans.value.ChangeListener
@@ -14,9 +15,12 @@ import javafx.scene.paint.Color
 import javafx.scene.shape.Circle
 import javafx.scene.text.Text
 import javafx.scene.text.TextAlignment
+import org.koin.core.inject
 import tornadofx.*
 
 class MainView : BaseView("Deeplink Automation test") {
+
+    protected val fileOpener: FileOpener by inject(qualifier = null)
 
     private var progressIndicator: ProgressIndicator? = null
     private var resultTextView: Text? = null
@@ -58,15 +62,10 @@ class MainView : BaseView("Deeplink Automation test") {
             testCaseTableView?.selectWhere { testCase ->
                 testCase == newValue
             }
-
-            val indexOfTestCase = mainViewModel.processingSteps.indexOf(newValue)
-            if (indexOfTestCase >= 0) {
-                testCaseTableView?.scrollTo(indexOfTestCase)
-            }
         }
     }
 
-    private val listenerTestCaseStatus = ChangeListener<TestStatus> { valueOb, _, newValue ->
+    private val listenerTestCaseStatus = ChangeListener<TestStatus> { _, _, newValue ->
         if (newValue != null) {
             when (newValue) {
                 TestStatus.ERROR_WITHOUT_CONFIG -> alert(type = Alert.AlertType.WARNING, header = "Warning", content = "Configs not found!")
@@ -92,6 +91,7 @@ class MainView : BaseView("Deeplink Automation test") {
     }
 
     override val root = vbox {
+        minWidth = 680.0
         paddingAll = 4.0
         hbox {
             alignment = Pos.CENTER_LEFT
@@ -171,6 +171,49 @@ class MainView : BaseView("Deeplink Automation test") {
                                     }
 
                                     graphic = circle
+                                } else {
+                                    graphic = null
+                                    tooltip = null
+                                    text = null
+                                }
+                            }
+                        }
+
+                        column("Screenshot", TestCaseStep::fileScreenshotProperty) {
+                            contentWidth(padding = 10.0)
+                            cellFormat { file ->
+                                if (file != null && file.exists()) {
+                                    graphic = text("   View") {
+                                        fitToParentWidth()
+                                        textAlignment = TextAlignment.CENTER
+                                        style {
+                                            textFill = Color.RED
+                                            backgroundColor += Color.RED
+                                        }
+                                        setOnMouseClicked {
+                                            fileOpener.openFile(file)
+                                        }
+                                    }
+                                } else {
+                                    graphic = null
+                                    tooltip = null
+                                    text = null
+                                }
+                            }
+                        }
+
+                        column("Video", TestCaseStep::fileVideoProperty) {
+                            contentWidth(padding = 10.0)
+                            cellFormat { file ->
+                                if (file != null && file.exists()) {
+                                    graphic = text("   View") {
+                                        style {
+                                            baseColor = Color.ALICEBLUE
+                                        }
+                                        setOnMouseClicked {
+                                            fileOpener.openFile(file)
+                                        }
+                                    }
                                 } else {
                                     graphic = null
                                     tooltip = null

@@ -122,7 +122,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                             filePrefix = filePrefix,
                             takeScreenshot = takeScreenshot,
                             recordSreen = recordSreen,
-                            dir = dirTestCaseResult,
+                            dirTestCase = dirTestCaseResult,
                             fileRoot = fileRoot
                     )
                 }
@@ -144,7 +144,13 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
     private fun mapDeepLinkSteps(deeplinks: List<DeeplinkTestConfig.Deeplink>): List<TestCaseStep> {
         return deeplinks.mapIndexed { index, deeplink ->
-            TestCaseStep(id = index + 1, deepLinkText = deeplink.deeplink, status = TestCaseStep.Status.TODO)
+            TestCaseStep(
+                    id = index + 1,
+                    deepLinkText = deeplink.deeplink,
+                    status = TestCaseStep.Status.TODO,
+                    fileScreenshot = null,
+                    fileVideo = null
+            )
         }
     }
 
@@ -156,7 +162,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             filePrefix: String,
             takeScreenshot: Boolean,
             recordSreen: Boolean,
-            dir: File,
+            dirTestCase: File,
             fileRoot: File,
             id: Int
     ) {
@@ -178,6 +184,12 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             delay(500)
         }
 
+        val imgFileName = "${filePrefix}_screenshot.png"
+        val videoFileName = "${filePrefix}_video.mp4"
+
+        val fileScreenshot = File(dirTestCase, imgFileName)
+        val fileVideo = File(dirTestCase, videoFileName)
+
         val startDeeplinkSuccess = startDeeplink(
                 id = id,
                 jadbDevice = device,
@@ -189,9 +201,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         if (takeScreenshot) {
             takeScreenshot(
                     jadbDevice = device,
-                    imgFileName = "${filePrefix}_screenshot.png",
-                    externalStoragePath = externalStoragePath,
-                    dir = dir
+                    fileScreenshot = fileScreenshot,
+                    externalStoragePath = externalStoragePath
             )
         }
 
@@ -201,19 +212,34 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             delay(1000)
             stopRecordSreen(
                     jadbDevice = device,
-                    imgFileName = "${filePrefix}_video.mp4",
-                    imagePathInDevice = videoPathInDevice,
-                    dir = dir
+                    fileVideo = fileVideo,
+                    imagePathInDevice = videoPathInDevice
             )
         }
 
         val endTimeMilis = System.currentTimeMillis()
         val workingTime = endTimeMilis - startTimeMilis
         if (startDeeplinkSuccess) {
-            fireEventTestCaseDone(id, workingTime)
+            fireEventTestCaseDone(id = id, milis = workingTime)
         }
+
+        fireEventTestCaseUpdateFileResult(id = id, fileScreenshot = fileScreenshot, fileVideo = fileVideo)
         logger.log("runDeeplinkTestCase $deeplink done after ${workingTime}ms")
 
+    }
+
+    private fun fireEventTestCaseUpdateFileResult(id: Int, fileScreenshot: File, fileVideo: File) {
+        viewModelScope.launch(appDispatchers.main) {
+            val indexTestCaseStep = processingSteps.indexOfFirst {
+                it.id == id
+            }
+
+            val testCaseStep = processingSteps.getOrNull(indexTestCaseStep)
+            if (testCaseStep != null) {
+                val testCaseStepCopy = testCaseStep.copy(fileScreenshot = fileScreenshot, fileVideo = fileVideo)
+                processingSteps[indexTestCaseStep] = testCaseStepCopy
+            }
+        }
     }
 
     private fun fireEventTestCaseDone(id: Int, milis: Long) {
@@ -274,11 +300,10 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         return System.getProperty("os.name").startsWith("Windows")
     }
 
-    private fun stopRecordSreen(jadbDevice: JadbDevice, imgFileName: String, imagePathInDevice: String, dir: File) {
+    private fun stopRecordSreen(jadbDevice: JadbDevice, imagePathInDevice: String, fileVideo: File) {
         val startTimeMilis = System.currentTimeMillis()
-        val saveFile = File(dir, imgFileName)
-        jadbDevice.pull(RemoteFile(imagePathInDevice), saveFile)
-        logger.log("stopRecordSreen save file $saveFile")
+        jadbDevice.pull(RemoteFile(imagePathInDevice), fileVideo)
+        logger.log("stopRecordSreen save file $fileVideo")
 
         val endTimeMilis = System.currentTimeMillis()
         logger.log("stopRecordSreen done after ${endTimeMilis - startTimeMilis}ms")
@@ -490,7 +515,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     }
 
     @Throws(Exception::class)
-    private fun takeScreenshot(jadbDevice: JadbDevice, imgFileName: String, externalStoragePath: String, dir: File) {
+    private fun takeScreenshot(jadbDevice: JadbDevice, externalStoragePath: String, fileScreenshot: File) {
         val startTimeMilis = System.currentTimeMillis()
         if (externalStoragePath.isNotBlank()) {
             val bout = ByteArrayOutputStream()
@@ -499,9 +524,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             val resultScreenshot = String(bout.toByteArray())
             logger.log("resultScreenshot $resultScreenshot")
 
-            val saveFile = File(dir, imgFileName)
-            jadbDevice.pull(RemoteFile(imagePathInDevice), saveFile)
-            logger.log("resultScreenshot save file $saveFile")
+            jadbDevice.pull(RemoteFile(imagePathInDevice), fileScreenshot)
+            logger.log("resultScreenshot save file $fileScreenshot")
         }
         val endTimeMilis = System.currentTimeMillis()
         logger.log("takeScreenshot done after ${endTimeMilis - startTimeMilis}ms")
