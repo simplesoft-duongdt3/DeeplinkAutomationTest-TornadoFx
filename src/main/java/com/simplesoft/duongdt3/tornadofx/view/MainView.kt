@@ -1,9 +1,13 @@
 package com.simplesoft.duongdt3.tornadofx.view
 
 import com.simplesoft.duongdt3.tornadofx.base.BaseView
-import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
+import com.simplesoft.duongdt3.tornadofx.helper.defaultFalse
 import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
+import javafx.beans.value.ChangeListener
+import javafx.beans.value.ObservableValue
 import javafx.geometry.Pos
+import javafx.scene.control.Alert
+import javafx.scene.control.TableView
 import javafx.scene.control.TableView.CONSTRAINED_RESIZE_POLICY
 import javafx.scene.control.Tooltip
 import javafx.scene.paint.Color
@@ -14,13 +18,46 @@ class MainView : BaseView("Deeplink Automation test") {
 
     private val mainViewModel = MainViewModel(viewScope, appDispatchers)
 
-    private lateinit var cbTakeScreenshot: javafx.scene.control.CheckBox
-    private lateinit var cbRecordScreen: javafx.scene.control.CheckBox
-    private lateinit var txtInput: javafx.scene.control.TextArea
+    private var testCaseTableView: TableView<TestCaseStep>? = null
+    private var cbTakeScreenshot: javafx.scene.control.CheckBox? = null
+    private var cbRecordScreen: javafx.scene.control.CheckBox? = null
+
+    private val listenerTestCaseSelected = ChangeListener<TestCaseStep> { _, _, newValue ->
+        if (newValue != null) {
+            testCaseTableView?.requestFocus()
+            testCaseTableView?.selectWhere { testCase ->
+                testCase == newValue
+            }
+
+            val indexOfTestCase = mainViewModel.processingSteps.indexOf(newValue)
+            if (indexOfTestCase >= 0) {
+                testCaseTableView?.scrollTo(indexOfTestCase)
+            }
+        }
+    }
+
+    private val listenerTestCaseStatus = ChangeListener<TestStatus> { valueOb, _, newValue ->
+        if (newValue != null) {
+            when (newValue) {
+                TestStatus.ERROR_WITHOUT_CONFIG -> alert(type = Alert.AlertType.WARNING, header = "Warning", content = "Configs not found!")
+                TestStatus.ERROR_WITHOUT_DEVICE -> alert(type = Alert.AlertType.WARNING, header = "Warning", content = "Android device not found!")
+                TestStatus.ERROR -> alert(type = Alert.AlertType.ERROR, header = "Error", content = "Something wrong, check logs for more information.")
+                TestStatus.DONE -> alert(type = Alert.AlertType.INFORMATION, header = "Finish", content = "Done test.")
+            }
+        }
+    }
 
     override fun onDock() {
         super.onDock()
-        mainViewModel.requestDevices()
+        mainViewModel.selectedTestCaseStep.addListener(listenerTestCaseSelected)
+        mainViewModel.statusTest.addListener(listenerTestCaseStatus)
+        mainViewModel.requestInit()
+    }
+
+    override fun onUndock() {
+        super.onUndock()
+        mainViewModel.statusTest.removeListener(listenerTestCaseStatus)
+        mainViewModel.selectedTestCaseStep.removeListener(listenerTestCaseSelected)
     }
 
     override val root = vbox {
@@ -53,43 +90,12 @@ class MainView : BaseView("Deeplink Automation test") {
 
         vbox {
             paddingAll = 4.0
-            hbox {
-                txtInput = textarea {
-                    prefHeight = 200.0
-                }
-
-                spacer {
-                    spacing = 4.0
-                }
-                vbox {
-
-                    button {
-                        text = "Run"
-                        prefWidth = 75.0
-                        prefHeight = 75.0
-                        action {
-                            mainViewModel.runTest(
-                                    textInput = txtInput.text.defaultEmpty(),
-                                    isTakeScreenshot = cbTakeScreenshot.isSelected,
-                                    isRecordScreen = cbRecordScreen.isSelected
-                            )
-                        }
-                    }
-
-                    vbox {
-                        prefHeight = 8.0
-                    }
-
-                    button {
-                        text = "Cancel"
-                        prefWidth = 75.0
-                    }
-                }
-            }
-            hbox {
-                tableview(mainViewModel.processingSteps) {
+            vbox {
+                testCaseTableView = tableview(mainViewModel.processingSteps) {
+                    isEditable = false
+                    prefHeight = 300.0
                     fitToParentWidth()
-                    column("Deeplink", TestCaseStep::deepLinkTextProperty)
+                    column("Deeplink", TestCaseStep::deepLinkTextProperty).remainingWidth()
 
                     column("Status", TestCaseStep::statusProperty) {
                         contentWidth(padding = 10.0)
@@ -133,7 +139,34 @@ class MainView : BaseView("Deeplink Automation test") {
                         }
                     }
 
-                    columnResizePolicy = CONSTRAINED_RESIZE_POLICY
+                    smartResize()
+                }
+
+                vbox {
+                    prefHeight = 8.0
+                }
+
+                hbox {
+                    alignment = Pos.BASELINE_CENTER
+
+                    combobox<String>(mainViewModel.selectedFileConfigText, mainViewModel.fileConfigsText) {
+                        minWidth = 150.0
+                    }
+
+                    vbox {
+                        prefWidth = 16.0
+                    }
+
+                    button {
+                        text = "Run"
+                        prefWidth = 100.0
+                        action {
+                            mainViewModel.runTest(
+                                    isTakeScreenshot = cbTakeScreenshot?.isSelected.defaultFalse(),
+                                    isRecordScreen = cbRecordScreen?.isSelected.defaultFalse()
+                            )
+                        }
+                    }
                 }
             }
         }

@@ -1,14 +1,13 @@
 package com.simplesoft.duongdt3.tornadofx.view
 
 import com.simplesoft.duongdt3.tornadofx.base.BaseViewModel
-import com.simplesoft.duongdt3.tornadofx.data.CmdExecutor
-import com.simplesoft.duongdt3.tornadofx.data.ConfigParser
-import com.simplesoft.duongdt3.tornadofx.data.Either
-import com.simplesoft.duongdt3.tornadofx.data.Failure
+import com.simplesoft.duongdt3.tornadofx.data.*
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
+import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
 import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
+import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
@@ -26,63 +25,82 @@ import java.util.regex.Pattern
 class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatchers) : BaseViewModel(coroutineScope, appDispatchers) {
     private val fileRoot = File(System.getProperty("user.dir"))
     private val logger by inject<AppLogger>()
+    private val fileReader by inject<FileReader>()
     private val configParser by inject<ConfigParser>()
 
     private var selectedDevice: JadbDevice? = null
     private var devices = mutableListOf<JadbDevice>()
 
+    val statusTest = SimpleObjectProperty<TestStatus>()
+
     val devicesText: ObservableList<String> = FXCollections.observableArrayList<String>()
-    val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
     val selectedDeviceText = SimpleStringProperty()
+    val selectedTestCaseStep = SimpleObjectProperty<TestCaseStep>()
+
+    val fileConfigsText: ObservableList<String> = FXCollections.observableArrayList<String>()
+    private var selectedFileConfig: File? = null
+    val selectedFileConfigText = SimpleStringProperty()
+
+    val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
 
     private var runTestJob: Job? = null
     private var getDevicesJob: Job? = null
+    private var getFileConfigJob: Job? = null
 
     init {
         logger.log("Root dir: $fileRoot")
     }
-    fun runTest(textInput: String, isTakeScreenshot: Boolean, isRecordScreen: Boolean) {
-        selectedDevice?.let { device ->
-            if (device.state == JadbDevice.State.Device) {
-                runTestJob?.cancel()
 
-                runTestJob = viewModelScope.launch(appDispatchers.main) {
-                    processingSteps.clear()
-                    val resultDeeplinkTestCase = withContext(appDispatchers.io) {
-                        runTestCaseFromInputDeeplinks(
-                                textInput = textInput,
-                                device = device,
-                                takeScreenshot = isTakeScreenshot,
-                                recordSreen = isRecordScreen
-                        )
-                    }
-
-                    resultDeeplinkTestCase.either(
-                            failAction = {
-                                //TODO show error view
-                                logger.log("resultTakeScreenshot fail $it")
-                            },
-                            successAction = {
-                                //TODO success
-                                logger.log("resultTakeScreenshot $it")
-                            }
-                    )
-
-
-                }
-            } else {
-                //TODO show error when click device status != ONLINE
-                logger.log("runTest error device state ${device.state}")
-            }
-        } ?: run {
-            //TODO show error when click without device
+    fun runTest(isTakeScreenshot: Boolean, isRecordScreen: Boolean) {
+        if (selectedDevice == null) {
+            statusTest.value = null
+            statusTest.value = TestStatus.ERROR_WITHOUT_DEVICE
             logger.log("runTest error without selected device")
+            return
+        }
+
+        if (selectedFileConfig == null) {
+            statusTest.value = null
+            statusTest.value = TestStatus.ERROR_WITHOUT_CONFIG
+            logger.log("runTest error without selected config file")
+            return
+        }
+
+        selectedDevice?.let { device ->
+            runTestJob?.cancel()
+            runTestJob = viewModelScope.launch(appDispatchers.main) {
+                processingSteps.clear()
+                val resultDeeplinkTestCase = withContext(appDispatchers.io) {
+                    val configText = fileReader.readFile(selectedFileConfig)
+                    runTestCaseFromInputDeeplinks(
+                            configText = configText,
+                            device = device,
+                            takeScreenshot = isTakeScreenshot,
+                            recordSreen = isRecordScreen
+                    )
+                }
+
+                resultDeeplinkTestCase.either(
+                        failAction = {
+                            statusTest.value = null
+                            statusTest.value = TestStatus.ERROR
+                            logger.log("resultTakeScreenshot fail $it")
+                        },
+                        successAction = {
+                            statusTest.value = null
+                            statusTest.value = TestStatus.DONE
+                            logger.log("resultTakeScreenshot $it")
+                        }
+                )
+
+
+            }
         }
     }
 
-    private suspend fun runTestCaseFromInputDeeplinks(textInput: String, device: JadbDevice, takeScreenshot: Boolean, recordSreen: Boolean): Either<Failure.UnCatchError, Boolean> {
+    private suspend fun runTestCaseFromInputDeeplinks(configText: String, device: JadbDevice, takeScreenshot: Boolean, recordSreen: Boolean): Either<Failure.UnCatchError, Boolean> {
         return try {
-            val deeplinkTestConfig = configParser.parse(textInput)
+            val deeplinkTestConfig = configParser.parse(configText)
             if (deeplinkTestConfig != null) {
                 val dirName = "deeplink_test_${System.currentTimeMillis()}"
                 val dirTestCaseResult = File(fileRoot, dirName).apply {
@@ -110,7 +128,6 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 }
                 Either.Success(true)
             } else {
-                //TODO show error
                 Either.Fail(Failure.UnCatchError(Exception()))
             }
         } catch (ex: Exception) {
@@ -223,6 +240,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             if (testCaseStep != null) {
                 val testCaseStepCopy = testCaseStep.copy(status = TestCaseStep.Status.RUNNING)
                 processingSteps[indexTestCaseStep] = testCaseStepCopy
+
+                selectedTestCaseStep.value = testCaseStepCopy
             }
         }
     }
@@ -279,9 +298,9 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
         var currentStep = 1
         val maxStep = 20
-        var isFoundActivity = false
-        var isTimeout = false
-        var activitiesOutMsg = ""
+        var isFoundActivity: Boolean
+        var isTimeout: Boolean
+        var activitiesOutMsg: String
         do {
             delay(1000)
             val activitiesOut = ByteArrayOutputStream()
@@ -313,9 +332,9 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
         var currentStep = 1
         val maxStep = 20
-        var isFoundActivity = false
-        var isTimeout = false
-        var activitiesOutMsg = ""
+        var isFoundActivity: Boolean
+        var isTimeout: Boolean
+        var activitiesOutMsg: String
         do {
             delay(1000)
             val activitiesOut = ByteArrayOutputStream()
@@ -394,7 +413,36 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
-    fun requestDevices() {
+    fun requestInit() {
+        requestFileConfigs()
+        requestDevices()
+    }
+
+    private fun requestFileConfigs() {
+        getFileConfigJob?.cancel()
+
+        getFileConfigJob = viewModelScope.launch(appDispatchers.main) {
+            val result: List<File> = withContext(appDispatchers.io) {
+                getFileConfigs()
+            }
+
+            fileConfigsText.clear()
+            fileConfigsText.addAll(result.map { file ->
+                file.nameWithoutExtension
+            })
+
+            selectedFileConfig = result.firstOrNull()
+            selectedFileConfigText.value = selectedFileConfig?.nameWithoutExtension
+        }
+    }
+
+    private fun getFileConfigs(): List<File> {
+        val folderConfigs = File(fileRoot, "configs")
+        return folderConfigs.listFiles()?.toList().defaultEmpty()
+
+    }
+
+    private fun requestDevices() {
         getDevicesJob?.cancel()
 
         getDevicesJob = viewModelScope.launch(appDispatchers.main) {
