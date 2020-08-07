@@ -1,0 +1,163 @@
+{
+  "package_name": "com.toast.comico.th",
+  "wait_start_activity_disappear": "SplashActivity",
+  "deeplinks": [
+    {
+      "deeplink": "https://www.google.com/",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://home",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://giftbox",
+      "activity_name": "GiftBoxActivity"
+    },
+	{
+      "deeplink": "comicoth://purchase",
+      "activity_name": "CoinActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/mon",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/tue",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/wed",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/thu",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/fri",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/sat",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/sun",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://titles/weekly/completed",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://ranking",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://articlelist/titleno/2089",
+      "activity_name": "ChapterActivity"
+    },
+	{
+      "deeplink": "comicoth://titleno/2089/chapterno/1",
+      "activity_name": "DetailActivity"
+    },
+	{
+      "deeplink": "comicoth://ecomic",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://ecomic/ranking",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://ecomic/articlelist/titleno/1564",
+      "activity_name": "ChapterActivity"
+    },
+	{
+      "deeplink": "comicoth://ecomic/titleno/1564/chapterno/1",
+      "activity_name": "DetailActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/mon",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/tue",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/wed",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/thu",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/fri",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/sat",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/sun",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/weekly/completed",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/ranking",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/articlelist/titleno/6",
+      "activity_name": "ChapterActivity"
+    },
+	{
+      "deeplink": "comicoth://webnovel/titleno/6/chapterno/1",
+      "activity_name": "DetailActivity"
+    },
+	{
+      "deeplink": "comicoth://enovel",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://enovel/ranking",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://enovel/articlelist/titleno/1662",
+      "activity_name": "ChapterActivity"
+    },
+	{
+      "deeplink": "comicoth://enovel/titleno/1662/chapterno/1",
+      "activity_name": "DetailActivity"
+    },
+	{
+      "deeplink": "comicoth://contentslist/105",
+      "activity_name": "RecommendContentActivity"
+    },
+	{
+      "deeplink": "comicoth://user/profile",
+      "activity_name": "MainActivity"
+    },
+	{
+      "deeplink": "comicoth://favorite",
+      "activity_name": "MainActivity"
+    }
+  ]
+}	
+

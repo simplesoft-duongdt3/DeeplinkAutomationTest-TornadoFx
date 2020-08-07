@@ -2,6 +2,10 @@
   "package_name": "com.toast.comico.vn",
   "wait_start_activity_disappear": "SplashActivity",
   "deeplinks": [
+	{
+      "deeplink": "https://www.google.com/",
+      "activity_name": "MainActivity"
+    },
     {
       "deeplink": "comicovn://home",
       "activity_name": "MainActivity"
@@ -57,10 +61,6 @@
     {
       "deeplink": "comicovn://purchase",
       "activity_name": "TopUpCoinActivity"
-    },
-    {
-      "deeplink": "comicovn://giftbox",
-      "activity_name": "MainActivity"
     },
     {
       "deeplink": "comicovn://giftbox",

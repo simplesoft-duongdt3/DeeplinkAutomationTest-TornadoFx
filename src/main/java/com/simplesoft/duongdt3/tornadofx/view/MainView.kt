@@ -3,6 +3,8 @@ package com.simplesoft.duongdt3.tornadofx.view
 import com.simplesoft.duongdt3.tornadofx.base.BaseView
 import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.helper.defaultFalse
+import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseConfigFile
+import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseDevice
 import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
 import javafx.beans.value.ChangeListener
 import javafx.collections.ListChangeListener
@@ -114,7 +116,7 @@ class MainView : BaseView("Deeplink Automation test") {
                 text = "Device"
             }
 
-            combobox<String>(mainViewModel.selectedDeviceText, mainViewModel.devicesText) {
+            combobox<TestCaseDevice>(mainViewModel.selectedDevice, mainViewModel.devices) {
                 minWidth = 150.0
             }
         }
@@ -261,7 +263,7 @@ class MainView : BaseView("Deeplink Automation test") {
                 hbox {
                     alignment = Pos.BASELINE_CENTER
 
-                    combobox<String>(mainViewModel.selectedFileConfigText, mainViewModel.fileConfigsText) {
+                    combobox<TestCaseConfigFile>(mainViewModel.selectedConfigFile, mainViewModel.configFiles) {
                         minWidth = 150.0
                     }
 

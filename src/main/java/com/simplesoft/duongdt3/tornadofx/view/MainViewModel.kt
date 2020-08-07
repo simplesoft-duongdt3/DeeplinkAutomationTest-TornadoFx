@@ -6,9 +6,10 @@ import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
 import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
+import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseConfigFile
+import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseDevice
 import com.simplesoft.duongdt3.tornadofx.view.models.TestCaseStep
 import javafx.beans.property.SimpleObjectProperty
-import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
 import kotlinx.coroutines.*
@@ -18,6 +19,7 @@ import se.vidstige.jadb.JadbDevice
 import se.vidstige.jadb.RemoteFile
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.lang.StringBuilder
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -28,18 +30,14 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private val fileReader by inject<FileReader>()
     private val configParser by inject<ConfigParser>()
 
-    private var selectedDevice: JadbDevice? = null
-    private var devices = mutableListOf<JadbDevice>()
-
     val statusTest = SimpleObjectProperty<TestStatus>()
 
-    val devicesText: ObservableList<String> = FXCollections.observableArrayList<String>()
-    val selectedDeviceText = SimpleStringProperty()
+    val devices = FXCollections.observableArrayList<TestCaseDevice>()
+    val selectedDevice = SimpleObjectProperty<TestCaseDevice>()
     val selectedTestCaseStep = SimpleObjectProperty<TestCaseStep>()
 
-    val fileConfigsText: ObservableList<String> = FXCollections.observableArrayList<String>()
-    private var selectedFileConfig: File? = null
-    val selectedFileConfigText = SimpleStringProperty()
+    val configFiles: ObservableList<TestCaseConfigFile> = FXCollections.observableArrayList<TestCaseConfigFile>()
+    val selectedConfigFile = SimpleObjectProperty<TestCaseConfigFile>()
 
     val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
 
@@ -52,53 +50,57 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     }
 
     fun runTest(isTakeScreenshot: Boolean, isRecordScreen: Boolean) {
-        if (selectedDevice == null) {
+        val device = selectedDevice.value
+        if (device == null) {
             statusTest.value = null
             statusTest.value = TestStatus.ERROR_WITHOUT_DEVICE
             logger.log("runTest error without selected device")
             return
         }
 
-        if (selectedFileConfig == null) {
+        val file = selectedConfigFile.value
+        if (file == null) {
             statusTest.value = null
             statusTest.value = TestStatus.ERROR_WITHOUT_CONFIG
             logger.log("runTest error without selected config file")
             return
         }
 
-        selectedDevice?.let { device ->
-            runTestJob?.cancel()
-            runTestJob = viewModelScope.launch(appDispatchers.main) {
-                processingSteps.clear()
-                val resultDeeplinkTestCase = withContext(appDispatchers.io) {
-                    val configText = fileReader.readFile(selectedFileConfig)
-                    runTestCaseFromInputDeeplinks(
-                            configText = configText,
-                            device = device,
-                            takeScreenshot = isTakeScreenshot,
-                            recordSreen = isRecordScreen
-                    )
-                }
-
-                resultDeeplinkTestCase.either(
-                        failAction = {
-                            statusTest.value = null
-                            statusTest.value = TestStatus.ERROR
-                            logger.log("resultTakeScreenshot fail $it")
-                        },
-                        successAction = {
-                            statusTest.value = null
-                            statusTest.value = TestStatus.DONE
-                            logger.log("resultTakeScreenshot $it")
-                        }
+        runTestJob?.cancel()
+        runTestJob = viewModelScope.launch(appDispatchers.main) {
+            processingSteps.clear()
+            val resultDeeplinkTestCase = withContext(appDispatchers.io) {
+                val configText = fileReader.readFile(file.file)
+                runTestCaseFromInputDeeplinks(
+                        configText = configText,
+                        device = device.device,
+                        takeScreenshot = isTakeScreenshot,
+                        recordSreen = isRecordScreen
                 )
-
-
             }
+
+            resultDeeplinkTestCase.either(
+                    failAction = {
+                        statusTest.value = null
+                        statusTest.value = TestStatus.ERROR
+                        logger.log("resultTakeScreenshot fail $it")
+                    },
+                    successAction = {
+                        statusTest.value = null
+                        statusTest.value = TestStatus.DONE
+                        logger.log("resultTakeScreenshot $it")
+                    }
+            )
+
         }
     }
 
-    private suspend fun runTestCaseFromInputDeeplinks(configText: String, device: JadbDevice, takeScreenshot: Boolean, recordSreen: Boolean): Either<Failure.UnCatchError, Boolean> {
+    private suspend fun runTestCaseFromInputDeeplinks(
+            configText: String,
+            device: JadbDevice,
+            takeScreenshot: Boolean,
+            recordSreen: Boolean
+    ): Either<Failure.UnCatchError, Boolean> {
         return try {
             val deeplinkTestConfig = configParser.parse(configText)
             if (deeplinkTestConfig != null) {
@@ -123,7 +125,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                             takeScreenshot = takeScreenshot,
                             recordSreen = recordSreen,
                             dirTestCase = dirTestCaseResult,
-                            fileRoot = fileRoot
+                            fileRoot = fileRoot,
+                            deeplinkStartActivity = deeplinkTestConfig.deeplinkStartActivity,
+                            extraDeeplinkKey = deeplinkTestConfig.extraDeeplinkKey,
+                            packageName = deeplinkTestConfig.packageName,
+                            timeoutLoadingMilis = deeplinkTestConfig.timeoutLoadingMilis
                     )
                 }
                 Either.Success(true)
@@ -164,7 +170,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             recordSreen: Boolean,
             dirTestCase: File,
             fileRoot: File,
-            id: Int
+            id: Int,
+            packageName: String?,
+            deeplinkStartActivity: String?,
+            extraDeeplinkKey: String?,
+            timeoutLoadingMilis: Long
     ) {
         fireEventTestCaseRunning(id)
         val startTimeMilis = System.currentTimeMillis()
@@ -195,7 +205,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 jadbDevice = device,
                 deeplink = deeplink,
                 deeplinkWaitActivity = deeplinkWaitActivity,
-                waitStartActivityDisappear = waitStartActivityDisappear
+                waitStartActivityDisappear = waitStartActivityDisappear,
+                packageName = packageName,
+                extraDeeplinkKey = extraDeeplinkKey,
+                deeplinkStartActivity = deeplinkStartActivity,
+                timeoutLoadingMilis = timeoutLoadingMilis
         )
 
         if (takeScreenshot) {
@@ -378,38 +392,118 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         return !isFoundActivity
     }
 
-    private suspend fun startDeeplink(id: Int, jadbDevice: JadbDevice, deeplink: String, deeplinkWaitActivity: String?, waitStartActivityDisappear: String?): Boolean {
+    private suspend fun startDeeplink(
+            id: Int,
+            jadbDevice: JadbDevice,
+            deeplink: String,
+            deeplinkWaitActivity: String?,
+            waitStartActivityDisappear: String?,
+            packageName: String?,
+            deeplinkStartActivity: String?,
+            extraDeeplinkKey: String?,
+            timeoutLoadingMilis: Long
+    ): Boolean {
         try {
             logger.log("startDeeplink start $deeplink")
-            val deeplinkOut = ByteArrayOutputStream()
-            jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
-            val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
 
-            var waitActivityDisplay = true
-            if (!waitStartActivityDisappear.isNullOrBlank()) {
-                waitActivityDisplay = waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
-                if (waitActivityDisplay) {
-                    if (!deeplinkWaitActivity.isNullOrBlank()) {
-                        waitActivityDisplay = waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
-                    }
-                }
+            val waitActivityDisplay = if (deeplinkStartActivity != null && extraDeeplinkKey != null && packageName != null) {
+                startDeeplinkWithActivity(
+                        jadbDevice = jadbDevice,
+                        deeplink = deeplink,
+                        deeplinkStartActivity = deeplinkStartActivity,
+                        extraDeeplinkKey = extraDeeplinkKey,
+                        packageName = packageName,
+                        deeplinkWaitActivity = deeplinkWaitActivity,
+                        waitStartActivityDisappear = waitStartActivityDisappear
+                )
             } else {
-                //wait for start app
-                delay(5000)
+                startDeeplinkWithWebAction(
+                        jadbDevice = jadbDevice,
+                        deeplink = deeplink,
+                        deeplinkWaitActivity = deeplinkWaitActivity,
+                        waitStartActivityDisappear = waitStartActivityDisappear
+                )
             }
 
             //time for loading
-            delay(3000)
-            logger.log("startDeeplink $deeplink $deeplinkOutMsg")
+            delay(timeoutLoadingMilis)
             if (!waitActivityDisplay) {
                 fireEventTestCaseTimeout(id)
             }
+            logger.log("startDeeplink done")
             return waitActivityDisplay
         } catch (e: Exception) {
+            logger.log("startDeeplink error")
             fireEventTestCaseError(id, "Error")
             logger.log(e)
             return false
         }
+    }
+
+    private suspend fun startDeeplinkWithWebAction(jadbDevice: JadbDevice, deeplink: String, waitStartActivityDisappear: String?, deeplinkWaitActivity: String?): Boolean {
+        val deeplinkOut = ByteArrayOutputStream()
+        jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
+        val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
+
+        logger.log("startDeeplink $deeplink $deeplinkOutMsg")
+        var waitActivityDisplay = true
+        if (!waitStartActivityDisappear.isNullOrBlank()) {
+            waitActivityDisplay = waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
+            if (waitActivityDisplay) {
+                if (!deeplinkWaitActivity.isNullOrBlank()) {
+                    waitActivityDisplay = waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
+                }
+            }
+        } else {
+            //wait for start app
+            delay(5000)
+        }
+
+        return waitActivityDisplay
+    }
+
+    private suspend fun startDeeplinkWithActivity(
+            jadbDevice: JadbDevice,
+            deeplink: String,
+            packageName: String,
+            deeplinkStartActivity: String,
+            extraDeeplinkKey: String,
+            deeplinkWaitActivity: String?,
+            waitStartActivityDisappear: String?
+    ): Boolean {
+        val builder = StringBuilder()
+        val deeplinkOutStop = ByteArrayOutputStream()
+        jadbDevice.executeShell(deeplinkOutStop, "am force-stop $packageName")
+        builder.appendln(String(deeplinkOutStop.toByteArray()).trim())
+
+        val deeplinkOut = ByteArrayOutputStream()
+        jadbDevice.executeShell(deeplinkOut, "monkey -p $packageName -c android.intent.category.LAUNCHER 1")
+        builder.appendln(String(deeplinkOut.toByteArray()).trim())
+
+        delay(500)
+
+        if (!waitStartActivityDisappear.isNullOrBlank()) {
+            waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
+        }
+
+        goToDeviceHome(jadbDevice)
+
+        val deeplinkOutDeeplink = ByteArrayOutputStream()
+        jadbDevice.executeShell(deeplinkOutDeeplink, "am start -e \"$extraDeeplinkKey\" \"$deeplink\" -n \"$packageName/$deeplinkStartActivity\" ")
+        builder.appendln(String(deeplinkOutDeeplink.toByteArray()).trim())
+
+        val deeplinkOutMsg = builder.toString()
+        logger.log("startDeeplink $deeplink $deeplinkOutMsg")
+        var waitActivityDisplay = true
+
+        if (!deeplinkWaitActivity.isNullOrBlank()) {
+            waitActivityDisplay = waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
+        } else {
+            //wait for start app
+            delay(5000)
+        }
+
+        return waitActivityDisplay
     }
 
     private fun fireEventTestCaseError(id: Int, msg: String) {
@@ -451,13 +545,12 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 getFileConfigs()
             }
 
-            fileConfigsText.clear()
-            fileConfigsText.addAll(result.map { file ->
-                file.nameWithoutExtension
+            configFiles.clear()
+            configFiles.addAll(result.map { file ->
+                TestCaseConfigFile(file)
             })
 
-            selectedFileConfig = result.firstOrNull()
-            selectedFileConfigText.value = selectedFileConfig?.nameWithoutExtension
+            selectedConfigFile.value = configFiles.firstOrNull()
         }
     }
 
@@ -482,16 +575,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     },
                     successAction = {
                         devices.clear()
-                        devices.addAll(it)
+                        devices.addAll(it.map { device ->
+                            TestCaseDevice(device)
+                        })
 
-                        devicesText.clear()
-                        val list = devices.map { device ->
-                            device.serial
-                        }
-                        devicesText.addAll(list)
-
-                        selectedDevice = devices.firstOrNull()
-                        selectedDeviceText.value = selectedDevice?.serial
+                        selectedDevice.value = devices.firstOrNull()
                     }
             )
         }
