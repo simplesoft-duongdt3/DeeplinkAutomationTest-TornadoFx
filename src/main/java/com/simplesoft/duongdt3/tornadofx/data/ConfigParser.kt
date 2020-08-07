@@ -3,10 +3,13 @@ package com.simplesoft.duongdt3.tornadofx.data
 import com.google.gson.Gson
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfigInput
+import com.simplesoft.duongdt3.tornadofx.helper.default
 import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
 
 class ConfigParser {
     private val gson = Gson()
+
+    private val timeoutLoadingDefault = 3000L
 
     fun parse(configText: String): DeeplinkTestConfig? {
         val inputTrim = configText.trim()
@@ -22,7 +25,10 @@ class ConfigParser {
                 val deeplinks = inputTrim.trim().lines()
                 return DeeplinkTestConfig(
                         packageName = null,
+                        timeoutLoadingMilis = timeoutLoadingDefault,
                         waitStartActivityDisappear = null,
+                        deeplinkStartActivity = null,
+                        extraDeeplinkKey = null,
                         deeplinks = deeplinks.filter { link -> link.isNotBlank() }.map { link ->
                             DeeplinkTestConfig.Deeplink(
                                     activityName = null,
@@ -39,6 +45,9 @@ class ConfigParser {
     private fun mapConfig(inputConfig: DeeplinkTestConfigInput?): DeeplinkTestConfig {
         return DeeplinkTestConfig(
                 packageName = inputConfig?.packageName,
+                timeoutLoadingMilis = inputConfig?.timeoutLoadingMilis.default(timeoutLoadingDefault),
+                extraDeeplinkKey = inputConfig?.extraDeeplinkKey,
+                deeplinkStartActivity = inputConfig?.deeplinkStartActivity,
                 waitStartActivityDisappear = inputConfig?.waitStartActivityDisappear,
                 deeplinks = inputConfig?.deeplinks.defaultEmpty().filterNotNull().filter { link ->
                     !link.deeplink.isNullOrBlank()
