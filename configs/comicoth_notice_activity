@@ -6,10 +6,6 @@
   "extra_deeplink_key": "WEB_URL",
   "deeplinks": [
 	{
-      "deeplink": "https://www.google.com/",
-      "activity_name": "MainActivity"
-    },
-	{
       "deeplink": "comicoth://home",
       "activity_name": "MainActivity"
     },
