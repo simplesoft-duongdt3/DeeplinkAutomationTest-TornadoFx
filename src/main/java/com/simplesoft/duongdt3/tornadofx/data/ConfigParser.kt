@@ -29,8 +29,9 @@ class ConfigParser {
                         waitStartActivityDisappear = null,
                         deeplinkStartActivity = null,
                         extraDeeplinkKey = null,
-                        deeplinks = deeplinks.filter { link -> link.isNotBlank() }.map { link ->
+                        deeplinks = deeplinks.filter { link -> link.isNotBlank() }.mapIndexed { index, link ->
                             DeeplinkTestConfig.Deeplink(
+                                    id = "$index".padStart(3, '0'),
                                     activityName = null,
                                     deeplink = link
                             )
@@ -51,9 +52,10 @@ class ConfigParser {
                 waitStartActivityDisappear = inputConfig?.waitStartActivityDisappear,
                 deeplinks = inputConfig?.deeplinks.defaultEmpty().filterNotNull().filter { link ->
                     !link.deeplink.isNullOrBlank()
-                }.map { link ->
+                }.mapIndexed { index, link ->
                     DeeplinkTestConfig.Deeplink(
                             activityName = link.activityName,
+                            id = link.id.default("$index".padStart(3, '0')),
                             deeplink = link.deeplink.defaultEmpty()
                     )
                 }
