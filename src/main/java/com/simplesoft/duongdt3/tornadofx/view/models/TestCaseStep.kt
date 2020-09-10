@@ -5,13 +5,15 @@ import javafx.beans.property.SimpleStringProperty
 import java.io.File
 
 data class TestCaseStep(
-        val id: Int,
+        val index: Int,
+        val id: String,
         val deepLinkText: String,
         val status: Status,
         val fileScreenshot: File?,
         val fileVideo: File?
 ) {
-    val idProperty = SimpleStringProperty("$id".padStart(3, '0'))
+    val indexProperty = SimpleStringProperty("$index".padStart(3, '0'))
+    val idProperty = SimpleStringProperty(id)
     val deepLinkTextProperty = SimpleStringProperty(deepLinkText)
     val statusProperty = SimpleObjectProperty(status)
     val fileScreenshotProperty = SimpleObjectProperty(fileScreenshot)

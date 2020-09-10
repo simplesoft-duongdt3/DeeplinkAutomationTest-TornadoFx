@@ -9,6 +9,7 @@ data class DeeplinkTestConfig(
         val waitStartActivityDisappear: String?
 ) {
     data class Deeplink(
+            val id: String,
             val activityName: String?,
             val deeplink: String
     )

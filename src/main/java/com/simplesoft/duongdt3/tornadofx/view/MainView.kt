@@ -133,6 +133,10 @@ class MainView : BaseView("Deeplink Automation test") {
                         isEditable = false
                         prefHeight = 300.0
                         fitToParentWidth()
+                        column("#", TestCaseStep::indexProperty) {
+                            minWidth = 20.0
+                        }
+
                         column("ID", TestCaseStep::idProperty) {
                             minWidth = 30.0
                         }
@@ -151,7 +155,7 @@ class MainView : BaseView("Deeplink Automation test") {
                                     when (it) {
                                         TestCaseStep.Status.TODO -> {
                                             circle.fill = c("white")
-                                            text = ""
+                                            text = "Todo"
                                         }
                                         TestCaseStep.Status.RUNNING -> {
                                             circle.fill = c("yellow")
@@ -181,7 +185,7 @@ class MainView : BaseView("Deeplink Automation test") {
                             }
                         }
 
-                        column("Screenshot", TestCaseStep::fileScreenshotProperty) {
+                        column("Image", TestCaseStep::fileScreenshotProperty) {
                             contentWidth(padding = 10.0)
                             cellFormat { file ->
                                 if (file != null && file.exists()) {

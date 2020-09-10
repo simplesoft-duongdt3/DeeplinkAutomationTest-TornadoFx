@@ -20,6 +20,8 @@ data class DeeplinkTestConfigInput(
     data class Deeplink(
             @SerializedName("activity_name")
             val activityName: String?,
+            @SerializedName("id")
+            val id: String?,
             @SerializedName("deeplink")
             val deeplink: String?
     )
