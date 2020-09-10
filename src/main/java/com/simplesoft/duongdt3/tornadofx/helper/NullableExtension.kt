@@ -46,6 +46,10 @@ fun <T> List<T>?.defaultEmpty(): List<T> {
     return this ?: listOf()
 }
 
+inline fun <reified T> Array<T>?.defaultEmpty(): Array<T> {
+    return this ?: emptyArray()
+}
+
 
 fun Date?.default(default: Date): Date {
     return this ?: default
