@@ -42,10 +42,13 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //image comparison #https://github.com/romankh3/image-comparison
-    compile 'com.github.romankh3:image-comparison:4.2.1'
+    compile 'com.github.romankh3:image-comparison:4.3.0'
 
     //Mock server
     compile 'org.mock-server:mockserver-client-java:5.11.1'
+
+    //zip
+    compile 'net.lingala.zip4j:zip4j:2.6.2'
 
     // Koin for Kotlin apps
     compile "org.koin:koin-core:$koin_version"
