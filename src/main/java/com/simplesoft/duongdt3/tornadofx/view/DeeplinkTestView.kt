@@ -78,8 +78,8 @@ class DeeplinkTestView : BaseView("Deeplink Automation test") {
         }
     }
 
-    override fun onDock() {
-        super.onDock()
+    override fun onBeforeShow() {
+        super.onBeforeShow()
         currentStage?.width = 720.0
         currentStage?.height = 480.0
 
@@ -87,12 +87,11 @@ class DeeplinkTestView : BaseView("Deeplink Automation test") {
         mainViewModel.selectedTestCaseStep.addListener(listenerTestCaseSelected)
         mainViewModel.statusTest.addListener(listenerTestCaseStatus)
         mainViewModel.requestInit()
-
-        find<ScreenshotTestFragment>().openModal(owner = this.currentWindow)
     }
 
-    override fun onUndock() {
-        super.onUndock()
+    override fun onDelete() {
+        //never call it
+        super.onDelete()
         mainViewModel.statusTest.removeListener(listenerTestCaseStatus)
         mainViewModel.selectedTestCaseStep.removeListener(listenerTestCaseSelected)
         mainViewModel.processingSteps.removeListener(listenerProcessing)

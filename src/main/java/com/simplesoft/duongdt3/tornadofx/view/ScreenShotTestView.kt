@@ -32,8 +32,7 @@ class ScreenShotTestView : BaseView("Screenshot Automation test") {
     }
 
 
-    override fun onDock() {
-        super.onDock()
+    override fun onBeforeShow() {
         currentStage?.width = 400.0
         currentStage?.height = 320.0
 
