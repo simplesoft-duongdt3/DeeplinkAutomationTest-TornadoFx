@@ -2,159 +2,193 @@
   "package_name": "com.toast.comico.th",
   "wait_start_activity_disappear": "SplashActivity",
   "deeplinks": [
-    {
-      "deeplink": "https://www.google.com/",
-      "activity_name": "MainActivity"
-    },
 	{
+	  "id": "home",
       "deeplink": "comicoth://home",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "giftbox",
       "deeplink": "comicoth://giftbox",
       "activity_name": "GiftBoxActivity"
     },
 	{
+	  "id": "purchase",
       "deeplink": "comicoth://purchase",
       "activity_name": "CoinActivity"
     },
 	{
+	  "id": "weekly_mon",
       "deeplink": "comicoth://titles/weekly/mon",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_tue",
       "deeplink": "comicoth://titles/weekly/tue",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_wed",
       "deeplink": "comicoth://titles/weekly/wed",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_thu",
       "deeplink": "comicoth://titles/weekly/thu",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_fri",
       "deeplink": "comicoth://titles/weekly/fri",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_sat",
       "deeplink": "comicoth://titles/weekly/sat",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_sun",
       "deeplink": "comicoth://titles/weekly/sun",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly",
       "deeplink": "comicoth://titles/weekly",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_completed",
       "deeplink": "comicoth://titles/weekly/completed",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "weekly_ranking",
       "deeplink": "comicoth://ranking",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "articlelist_title",
       "deeplink": "comicoth://articlelist/titleno/2089",
       "activity_name": "ChapterActivity"
     },
 	{
+	  "id": "chapter_detail",
       "deeplink": "comicoth://titleno/2089/chapterno/1",
       "activity_name": "DetailActivity"
     },
 	{
+	  "id": "ecomic",
       "deeplink": "comicoth://ecomic",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "ecomic_ranking",
       "deeplink": "comicoth://ecomic/ranking",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "ecomic_title",
       "deeplink": "comicoth://ecomic/articlelist/titleno/1564",
       "activity_name": "ChapterActivity"
     },
 	{
+	  "id": "ecomic_chapter",
       "deeplink": "comicoth://ecomic/titleno/1564/chapterno/1",
       "activity_name": "DetailActivity"
     },
 	{
+	  "id": "webnovel_mon",
       "deeplink": "comicoth://webnovel/weekly/mon",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_tue",
       "deeplink": "comicoth://webnovel/weekly/tue",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_wed",
       "deeplink": "comicoth://webnovel/weekly/wed",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_thu",
       "deeplink": "comicoth://webnovel/weekly/thu",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_fri",
       "deeplink": "comicoth://webnovel/weekly/fri",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_sat",
       "deeplink": "comicoth://webnovel/weekly/sat",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_sun",
       "deeplink": "comicoth://webnovel/weekly/sun",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_weekly",
       "deeplink": "comicoth://webnovel/weekly",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_completed",
       "deeplink": "comicoth://webnovel/weekly/completed",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_ranking",
       "deeplink": "comicoth://webnovel/ranking",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "webnovel_title",
       "deeplink": "comicoth://webnovel/articlelist/titleno/6",
       "activity_name": "ChapterActivity"
     },
 	{
+	  "id": "webnovel_chapter",
       "deeplink": "comicoth://webnovel/titleno/6/chapterno/1",
       "activity_name": "DetailActivity"
     },
 	{
+	  "id": "enovel",
       "deeplink": "comicoth://enovel",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "enovel_ranking",
       "deeplink": "comicoth://enovel/ranking",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "enovel_title",
       "deeplink": "comicoth://enovel/articlelist/titleno/1662",
       "activity_name": "ChapterActivity"
     },
 	{
+	  "id": "enovel_chapter",
       "deeplink": "comicoth://enovel/titleno/1662/chapterno/1",
       "activity_name": "DetailActivity"
     },
 	{
+	  "id": "contentslist",
       "deeplink": "comicoth://contentslist/105",
       "activity_name": "RecommendContentActivity"
     },
 	{
+	  "id": "profile",
       "deeplink": "comicoth://user/profile",
       "activity_name": "MainActivity"
     },
 	{
+	  "id": "favorite",
       "deeplink": "comicoth://favorite",
       "activity_name": "MainActivity"
     }

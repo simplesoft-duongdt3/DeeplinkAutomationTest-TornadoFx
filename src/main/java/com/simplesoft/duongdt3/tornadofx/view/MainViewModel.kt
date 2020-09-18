@@ -17,6 +17,7 @@ import org.koin.core.inject
 import se.vidstige.jadb.JadbConnection
 import se.vidstige.jadb.JadbDevice
 import se.vidstige.jadb.RemoteFile
+import tornadofx.*
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.lang.StringBuilder
@@ -37,7 +38,30 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     val selectedTestCaseStep = SimpleObjectProperty<TestCaseStep>()
 
     val configFiles: ObservableList<TestCaseConfigFile> = FXCollections.observableArrayList<TestCaseConfigFile>()
-    val selectedConfigFile = SimpleObjectProperty<TestCaseConfigFile>()
+    val selectedConfigFile = SimpleObjectProperty<TestCaseConfigFile>().apply {
+        onChange { file ->
+            onFileSelected(file)
+        }
+    }
+
+    private fun onFileSelected(file: TestCaseConfigFile?) {
+        viewModelScope.launch(appDispatchers.main) {
+            if (file != null) {
+                withContext(appDispatchers.io) {
+                    val configText = fileReader.readFile(file.file)
+                    val deeplinkTestConfig = configParser.parse(configText)
+                    if (deeplinkTestConfig != null) {
+                        val deeplinks = deeplinkTestConfig.deeplinks
+                        initDeeplinkTestCaseSteps(deeplinks)
+                    } else {
+                        initDeeplinkTestCaseSteps(listOf())
+                    }
+                }
+            } else {
+                initDeeplinkTestCaseSteps(listOf())
+            }
+        }
+    }
 
     val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
 
@@ -114,14 +138,12 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 initDeeplinkTestCaseSteps(deeplinks)
 
                 deeplinks.forEachIndexed { index, deeplink ->
-                    val filePrefix = "${index + 1}".padStart(3, '0')
                     runDeeplinkTestCase(
-                            id = index + 1,
+                            id = deeplink.id,
                             waitStartActivityDisappear = deeplinkTestConfig.waitStartActivityDisappear,
                             device = device,
                             deeplink = deeplink.deeplink,
                             deeplinkWaitActivity = deeplink.activityName,
-                            filePrefix = filePrefix,
                             takeScreenshot = takeScreenshot,
                             recordSreen = recordSreen,
                             dirTestCase = dirTestCaseResult,
@@ -151,7 +173,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private fun mapDeepLinkSteps(deeplinks: List<DeeplinkTestConfig.Deeplink>): List<TestCaseStep> {
         return deeplinks.mapIndexed { index, deeplink ->
             TestCaseStep(
-                    id = index + 1,
+                    index = index,
+                    id = deeplink.id,
                     deepLinkText = deeplink.deeplink,
                     status = TestCaseStep.Status.TODO,
                     fileScreenshot = null,
@@ -165,12 +188,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             device: JadbDevice,
             deeplink: String,
             deeplinkWaitActivity: String?,
-            filePrefix: String,
             takeScreenshot: Boolean,
             recordSreen: Boolean,
             dirTestCase: File,
             fileRoot: File,
-            id: Int,
+            id: String,
             packageName: String?,
             deeplinkStartActivity: String?,
             extraDeeplinkKey: String?,
@@ -194,8 +216,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             delay(500)
         }
 
-        val imgFileName = "${filePrefix}_screenshot.png"
-        val videoFileName = "${filePrefix}_video.mp4"
+        val imgFileName = "${id}_screenshot.png"
+        val videoFileName = "${id}_video.mp4"
 
         val fileScreenshot = File(dirTestCase, imgFileName)
         val fileVideo = File(dirTestCase, videoFileName)
@@ -242,7 +264,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
     }
 
-    private fun fireEventTestCaseUpdateFileResult(id: Int, fileScreenshot: File, fileVideo: File) {
+    private fun fireEventTestCaseUpdateFileResult(id: String, fileScreenshot: File, fileVideo: File) {
         viewModelScope.launch(appDispatchers.main) {
             val indexTestCaseStep = processingSteps.indexOfFirst {
                 it.id == id
@@ -256,7 +278,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
-    private fun fireEventTestCaseDone(id: Int, milis: Long) {
+    private fun fireEventTestCaseDone(id: String, milis: Long) {
         viewModelScope.launch(appDispatchers.main) {
             val indexTestCaseStep = processingSteps.indexOfFirst {
                 it.id == id
@@ -270,7 +292,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
-    private fun fireEventTestCaseRunning(id: Int) {
+    private fun fireEventTestCaseRunning(id: String) {
         viewModelScope.launch(appDispatchers.main) {
             val indexTestCaseStep = processingSteps.indexOfFirst {
                 it.id == id
@@ -393,7 +415,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     }
 
     private suspend fun startDeeplink(
-            id: Int,
+            id: String,
             jadbDevice: JadbDevice,
             deeplink: String,
             deeplinkWaitActivity: String?,
@@ -506,7 +528,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         return waitActivityDisplay
     }
 
-    private fun fireEventTestCaseError(id: Int, msg: String) {
+    private fun fireEventTestCaseError(id: String, msg: String) {
         viewModelScope.launch(appDispatchers.main) {
             val indexTestCaseStep = processingSteps.indexOfFirst {
                 it.id == id
@@ -520,7 +542,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
-    private fun fireEventTestCaseTimeout(id: Int) {
+    private fun fireEventTestCaseTimeout(id: String) {
         val indexTestCaseStep = processingSteps.indexOfFirst {
             it.id == id
         }
