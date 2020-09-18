@@ -5,43 +5,71 @@ import com.github.romankh3.image.comparison.ImageComparisonUtil
 import com.github.romankh3.image.comparison.model.ImageComparisonState
 import com.github.romankh3.image.comparison.model.Rectangle
 import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
-import java.io.File
+import net.lingala.zip4j.ZipFile
+import java.io.*
+import java.lang.StringBuilder
 
 
 class CompareImageService {
-    fun compareFolderImages(folder1st: File, folder2nd: File, dirResult: File, prefixResultFile: String, excludedAreas: List<Rectangle>): ReportCompareResult {
+
+    private val fileRoot = File(System.getProperty("user.dir"))
+
+    fun compareFolderImages(
+            folder1st: File,
+            folder2nd: File,
+            folderResult: File,
+            prefixResultFile: String,
+            excludedAreas: List<Rectangle>,
+            diffFolder: String,
+            oldFolder: String,
+            newFolder: String
+    ): ReportCompareResult {
         val imagesExts = listOf("jpg", "jpeg", "png")
-        val listFiles1 = folder1st.listFiles()?.toList().defaultEmpty()
-        val folder1stImageExists = listFiles1.any { file ->
-            imagesExts.contains(file.extension)
-        }
+        val listFiles1Source = folder1st.listFiles()?.toList().defaultEmpty().filter { imagesExts.contains(it.extension) }
 
-        val listFiles2 = folder2nd.listFiles()?.toList().defaultEmpty()
-        val folder2ndImageExists = listFiles2.any { file ->
-            imagesExts.contains(file.extension)
-        }
+        val listFiles2Source = folder2nd.listFiles()?.toList().defaultEmpty().filter { imagesExts.contains(it.extension) }
 
-        if (folder1stImageExists && folder2ndImageExists) {
-            dirResult.mkdirs()
+        if (listFiles1Source.isNotEmpty() && listFiles2Source.isNotEmpty()) {
+            folderResult.deleteRecursively()
+            folderResult.mkdirs()
+
+            val dirDiffImagesResult = File(folderResult, diffFolder)
+            dirDiffImagesResult.mkdirs()
+            val dirOldImagesResult = File(folderResult, oldFolder)
+            dirOldImagesResult.mkdirs()
+            val dirNewImagesResult = File(folderResult, newFolder)
+            dirNewImagesResult.mkdirs()
+
+            listFiles1Source.forEach {
+                it.copyTo(target = File(dirOldImagesResult, it.name), overwrite = true)
+            }
+
+            listFiles2Source.forEach {
+                it.copyTo(target = File(dirNewImagesResult, it.name), overwrite = true)
+            }
+
+            val listFiles1 = dirOldImagesResult.listFiles()?.toList().defaultEmpty()
+            val listFiles2 = dirNewImagesResult.listFiles()?.toList().defaultEmpty()
             val fileComparePairs: List<Pair<File?, File?>> = getFileComparePairs(listFiles1, listFiles2)
             val results = fileComparePairs.map { pair ->
                 val file1 = pair.first
                 val file2 = pair.second
 
                 if (file1 != null && file2 != null) {
-                    val fileResult = File(dirResult, "${file1.name}$prefixResultFile.png")
-                    val result: ImageComparisonResult = compareImages(file1, file2, fileResult, excludedAreas)
+                    val fileDiff = File(dirDiffImagesResult, "${file1.nameWithoutExtension}$prefixResultFile.png")
+                    val result: ImageComparisonResult = compareImages(file1, file2, fileDiff, excludedAreas)
 
                     //case match but still draw result file
-                    if(result == ImageComparisonResult.MATCH) {
-                        fileResult.delete()
+                    if (result == ImageComparisonResult.MATCH) {
+                        fileDiff.delete()
                     }
 
                     return@map ReportCompareResult.Item(
+                            name = file1.name,
                             file1 = file1,
                             file2 = file2,
-                            resultFile = if(fileResult.exists()) {
-                                fileResult
+                            resultFile = if (fileDiff.exists()) {
+                                fileDiff
                             } else {
                                 null
                             },
@@ -50,6 +78,17 @@ class CompareImageService {
                 }
 
                 return@map ReportCompareResult.Item(
+                        name = when {
+                            file1 != null -> {
+                                file1.name
+                            }
+                            file2 != null -> {
+                                file2.name
+                            }
+                            else -> {
+                                ""
+                            }
+                        },
                         file1 = file1,
                         file2 = file2,
                         resultFile = null,
@@ -60,7 +99,7 @@ class CompareImageService {
             return ReportCompareResult(results)
         }
 
-        throw Exception("")
+        throw Exception("Not found images.")
     }
 
     private fun getFileComparePairs(listFiles1: List<File>, listFiles2: List<File>): List<Pair<File?, File?>> {
@@ -143,14 +182,72 @@ class CompareImageService {
     }
 
 
-    class ReportCompareResult(items: List<Item>) {
-        class Item(val file1: File?, val file2: File?, val resultFile: File?, val isMatch: Boolean)
+    class ReportCompareResult(val items: List<Item>) {
+        class Item(val name: String, val file1: File?, val file2: File?, val resultFile: File?, val isMatch: Boolean)
     }
 
 
-    fun genReportHtml(reportCompareResult: ReportCompareResult, fileReport: File) {
-        //TODO gen report
+    fun genReportHtml(
+            reportCompareResult: ReportCompareResult,
+            dirReport: File,
+            diffFolder: String,
+            oldFolder: String,
+            newFolder: String
+    ): File? {
+        val fileTemplateZip = File(fileRoot, "report_template/report_template.zip")
+        ZipFile(fileTemplateZip).extractAll(dirReport.path);
+        val templateFolder = File(dirReport, "template")
+        val indexTemplateFile = File(templateFolder, "index.template")
+        val successTemplateFile = File(templateFolder, "success.template")
+        val failTemplateFile = File(templateFolder, "fail.template")
+
+        val successTemplate = successTemplateFile.readText()
+        val failTemplate = failTemplateFile.readText()
+        var indexTemplate = indexTemplateFile.readText()
+
+        val stringBuilder = StringBuilder()
+        reportCompareResult.items.forEach { item ->
+            var templateText = if (item.isMatch) {
+                successTemplate
+            } else {
+                failTemplate
+            }
+
+
+            val oldImagePath = if (item.file1 != null) {
+                oldFolder + "/" + item.file1.name
+            } else {
+                ""
+            }
+
+            val newImagePath = if (item.file2 != null) {
+                newFolder + "/" + item.file2.name
+            } else {
+                ""
+            }
+
+            val diffImagePath = if (item.resultFile != null) {
+                diffFolder + "/" + item.resultFile.name
+            } else {
+                ""
+            }
+            templateText = templateText.replace("{test_name}", item.name)
+            templateText = templateText.replace("{old_image_path}", oldImagePath)
+            templateText = templateText.replace("{new_image_path}", newImagePath)
+            templateText = templateText.replace("{diff_image_path}", diffImagePath)
+            stringBuilder.append(templateText)
+        }
+
+        indexTemplate = indexTemplate.replace("{testcase}", stringBuilder.toString())
+
+        val fileIndexReport = File(dirReport, "index.html")
+        fileIndexReport.writeText(indexTemplate)
+
+        templateFolder.deleteRecursively()
+
+        return fileIndexReport
     }
+
 
     enum class ImageComparisonResult {
         SIZE_MISMATCH,

@@ -3,12 +3,20 @@ package com.simplesoft.duongdt3.tornadofx.view
 import com.github.romankh3.image.comparison.model.Rectangle
 import com.simplesoft.duongdt3.tornadofx.base.BaseViewModel
 import com.simplesoft.duongdt3.tornadofx.data.CompareImageService
+import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
+import com.simplesoft.duongdt3.tornadofx.helper.formatyyyyMMddHHMM
 import javafx.beans.property.SimpleObjectProperty
 import kotlinx.coroutines.*
 import java.io.File
+import java.util.*
 
-class ScreenShotTestViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatchers, private val compareImageService: CompareImageService) : BaseViewModel(coroutineScope, appDispatchers) {
+class ScreenShotTestViewModel(
+        coroutineScope: CoroutineScope,
+        appDispatchers: AppDispatchers,
+        private val fileOpener: FileOpener,
+        private val compareImageService: CompareImageService
+) : BaseViewModel(coroutineScope, appDispatchers) {
     private var job: Job? = null
     val current1stFolder = SimpleObjectProperty<File>()
     val current2ndFolder = SimpleObjectProperty<File>()
@@ -20,28 +28,45 @@ class ScreenShotTestViewModel(coroutineScope: CoroutineScope, appDispatchers: Ap
         if (folder1st != null && folder1st.isDirectory && folder2nd != null && folder2nd.isDirectory) {
             job?.cancel()
             job = viewModelScope.launch(appDispatchers.main) {
-                val dirResult = File("${folder1st.name}_${folder2nd.name}")
+
+                val resultDir = File("${Date().formatyyyyMMddHHMM()}_screenshot_result")
+                val diffFolder = "images/diff"
+                val oldFolder = "images/old"
+                val newFolder = "images/new"
+
                 val compareFolderResultJob: Deferred<CompareImageService.ReportCompareResult> = async(appDispatchers.io) {
                     compareImageService.compareFolderImages(
                             folder1st = folder1st,
                             folder2nd = folder2nd,
-                            dirResult = dirResult,
+                            folderResult = resultDir,
                             prefixResultFile = "_compare_result",
-                            excludedAreas = listOf(Rectangle(0, 0, 1080, 60), Rectangle(0, 1790, 1080, 1920))
+                            excludedAreas = listOf(Rectangle(0, 0, 1080, 60), Rectangle(0, 1790, 1080, 1920)),
+                            diffFolder = diffFolder,
+                            oldFolder = oldFolder,
+                            newFolder = newFolder
                     )
                 }
 
                 try {
                     val reportCompareResult = compareFolderResultJob.await()
                     val makeReportJob = async(appDispatchers.io) {
-                        val reportFile = File("${folder1st.name}_${folder2nd.name}_report.html")
+
                         compareImageService.genReportHtml(
                                 reportCompareResult = reportCompareResult,
-                                fileReport = reportFile
+                                dirReport = resultDir,
+                                diffFolder = diffFolder,
+                                oldFolder = oldFolder,
+                                newFolder = newFolder
                         )
+
                     }
 
-                    makeReportJob.await()
+                    val reportFile = makeReportJob.await()
+                    if (reportFile != null) {
+                        fileOpener.openFile(reportFile)
+                    } else {
+                        errorStatus.value = ErrorStatus.ERROR
+                    }
                 } catch (e: Exception) {
                     errorStatus.value = ErrorStatus.ERROR
                 }
