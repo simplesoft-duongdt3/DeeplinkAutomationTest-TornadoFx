@@ -30,6 +30,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private val logger by inject<AppLogger>()
     private val fileReader by inject<FileReader>()
     private val configParser by inject<ConfigParser>()
+    private val mockServerService by inject<MockServerService>()
 
     val statusTest = SimpleObjectProperty<TestStatus>()
 
@@ -140,6 +141,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 deeplinks.forEachIndexed { index, deeplink ->
                     runDeeplinkTestCase(
                             id = deeplink.id,
+                            mockServerRules = deeplink.mockServerRules,
                             waitStartActivityDisappear = deeplinkTestConfig.waitStartActivityDisappear,
                             device = device,
                             deeplink = deeplink.deeplink,
@@ -196,10 +198,13 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             packageName: String?,
             deeplinkStartActivity: String?,
             extraDeeplinkKey: String?,
-            timeoutLoadingMilis: Long
+            timeoutLoadingMilis: Long,
+            mockServerRules: List<DeeplinkTestConfig.Rule>
     ) {
         fireEventTestCaseRunning(id)
         val startTimeMilis = System.currentTimeMillis()
+        mockServerService.updateConfig(MockServerService.MockServerConfig(rules = mockServerRules))
+
         goToDeviceHome(device)
         delay(500)
         val externalStoragePath = getDeviceStoragePath(device)
@@ -568,7 +573,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             }
 
             configFiles.clear()
-            configFiles.addAll(result.map { file ->
+            configFiles.addAll(result.filter { it.isFile }.map { file ->
                 TestCaseConfigFile(file)
             })
 

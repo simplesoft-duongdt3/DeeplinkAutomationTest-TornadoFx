@@ -1,0 +1,34 @@
+{
+  "package_name": "com.toast.comico.vn",
+  "wait_start_activity_disappear": "SplashActivity",
+  "mockserver_url": "http://10.78.249.3:9999",
+  "deeplinks": [
+    {
+      "id": "home",
+      "deeplink": "comicovn://home",
+      "activity_name": "MainActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signup/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signup/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home/recommandation/request",
+			"responseConfig": "configs/mockserver/comicovn/home/recommandation/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home/except-recommandation/request",
+			"responseConfig": "configs/mockserver/comicovn/home/except-recommandation/response"
+		}
+	  ]
+    }
+  ]
+}

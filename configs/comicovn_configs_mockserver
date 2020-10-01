@@ -1,0 +1,151 @@
+{
+  "package_name": "com.toast.comico.vn",
+  "wait_start_activity_disappear": "SplashActivity",
+  "mockserver_url": "http://localhost:9999",
+  "deeplinks": [
+    {
+      "id": "home",
+      "deeplink": "comicovn://home",
+      "activity_name": "MainActivity",
+	  "mockserver_configs": [
+		{
+			"request": {
+				"method": "GET",
+				"path": "/launching/v3.0/appkeys/baxicDLHVAc7Po7F/configurations",
+				"bodyFilePath": "configs/mockserver/comicovn/launching_request.json"
+			},
+			"response": {
+				"statusCode": 200,
+				"delayMillis": 500,
+				"bodyFilePath": "configs/mockserver/comicovn/launching_response.json"
+			}
+		}
+	  ]
+    },
+    {
+      "id": "webcomic",
+      "deeplink": "comicovn://webcomic?target=default",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_mon",
+      "deeplink": "comicovn://webcomic?target=mon",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_tue",
+      "deeplink": "comicovn://webcomic?target=tue",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_wed",
+      "deeplink": "comicovn://webcomic?target=wed",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_thu",
+      "deeplink": "comicovn://webcomic?target=thu",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_fri",
+      "deeplink": "comicovn://webcomic?target=fri",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_sat",
+      "deeplink": "comicovn://webcomic?target=sat",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_sun",
+      "deeplink": "comicovn://webcomic?target=sun",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "webcomic_ranking",
+      "deeplink": "comicovn://webcomic?target=ranking",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "title_detail",
+      "deeplink": "comicovn://titleDetail?titleId=22",
+      "activity_name": "TitleDetailActivity"
+    },
+    {
+      "id": "chapter_detail",
+      "deeplink": "comicovn://chapterDetail?titleId=22&chapterId=1",
+      "activity_name": "ChapterDetailActivity"
+    },
+    {
+      "id": "content_list",
+      "deeplink": "comicovn://content?contentId=10",
+      "activity_name": "ContentListActivity"
+    },
+    {
+      "id": "purchase",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity"
+    },
+    {
+      "id": "giftbox",
+      "deeplink": "comicovn://giftbox",
+      "activity_name": "InboxActivity"
+    },
+    {
+      "id": "chargepass",
+      "deeplink": "comicovn://news?target=chargepass",
+      "activity_name": "InboxActivity"
+    },
+    {
+      "id": "favorite",
+      "deeplink": "comicovn://bookshelf?target=favorite",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "history",
+      "deeplink": "comicovn://bookshelf?target=history",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "bookshelf_rentbuy",
+      "deeplink": "comicovn://bookshelf?target=rentbuy",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "user",
+      "deeplink": "comicovn://user",
+      "activity_name": "MainActivity"
+    },
+    {
+      "id": "event",
+      "deeplink": "comicovn://event",
+      "activity_name": "EventActivity"
+    },
+    {
+      "id": "event_detail",
+      "deeplink": "comicovn://event?target=10",
+      "activity_name": "EventActivity"
+    },
+    {
+      "id": "mission",
+      "deeplink": "comicovn://mission",
+      "activity_name": "MissionActivity"
+    },
+    {
+      "id": "transaction_coin",
+      "deeplink": "comicovn://transaction?target=coin",
+      "activity_name": "HistoryActivity"
+    },
+    {
+      "id": "transaction_point",
+      "deeplink": "comicovn://transaction?target=point",
+      "activity_name": "HistoryActivity"
+    },
+    {
+      "id": "transaction_ticket",
+      "deeplink": "comicovn://transaction?target=ticket",
+      "activity_name": "HistoryActivity"
+    }
+  ]
+}

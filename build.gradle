@@ -46,6 +46,7 @@ dependencies {
 
     //Mock server
     compile 'org.mock-server:mockserver-client-java:5.11.1'
+    compile 'org.mock-server:mockserver-netty:5.11.1'
 
     //zip
     compile 'net.lingala.zip4j:zip4j:2.6.2'
