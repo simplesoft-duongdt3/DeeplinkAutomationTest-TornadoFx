@@ -1,5 +1,5 @@
 {
-  "package_name": "com.toast.comico.vn",
+  "package_name": "com.toast.comico.vn.alpha",
   "wait_start_activity_disappear": "SplashActivity",
   "mockserver_url": "http://10.78.249.3:9999",
   "deeplinks": [
@@ -29,6 +29,60 @@
 			"responseConfig": "configs/mockserver/comicovn/home/except-recommandation/response"
 		}
 	  ]
-    }
+    },
+	{
+      "id": "purchase",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items/response"
+		}
+	  ]
+    },
+	{
+		"id": "user",
+		"deeplink": "comicovn://user",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/profile/profile/request",
+			"responseConfig": "configs/mockserver/comicovn/profile/profile/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/profile/news/request",
+			"responseConfig": "configs/mockserver/comicovn/profile/news/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/profile/mission/request",
+			"responseConfig": "configs/mockserver/comicovn/profile/mission/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/profile/attendance/request",
+			"responseConfig": "configs/mockserver/comicovn/profile/attendance/response"
+		}
+	  ]
+	}
   ]
 }
