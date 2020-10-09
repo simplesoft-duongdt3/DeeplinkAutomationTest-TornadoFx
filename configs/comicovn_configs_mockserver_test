@@ -83,6 +83,67 @@
 			"responseConfig": "configs/mockserver/comicovn/profile/attendance/response"
 		}
 	  ]
+	},
+	{
+		"id": "home_case_popup_gift",
+		"deeplink": "comicovn://home",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_popup_gift/gift_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_popup_gift/gift_popup/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_popup_gift/home_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_popup_gift/home_popup/response"
+		}
+	  ]
+	},
+	{
+		"id": "home_case_banner",
+		"deeplink": "comicovn://home",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_banner/gift_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_banner/gift_popup/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_banner/home_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_banner/home_popup/response"
+		}
+	  ]
+	},
+	{
+		"id": "home_case_attendance",
+		"deeplink": "comicovn://home",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_attendance/attendance/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_attendance/attendance/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_attendance/gift_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_attendance/gift_popup/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home_popup/case_attendance/home_popup/request",
+			"responseConfig": "configs/mockserver/comicovn/home_popup/case_attendance/home_popup/response"
+		}
+	  ]
 	}
   ]
 }

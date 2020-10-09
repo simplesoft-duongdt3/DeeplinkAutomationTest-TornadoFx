@@ -1,0 +1,14 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "subject": "Free chapter",
+    "imageUrl": "https://comico-vn.gslb.toastoven.net/release/banner/FLOATING/HOME/344/ANDROID.png",
+    "linkUrl": "/event/56"
+  }
+}
