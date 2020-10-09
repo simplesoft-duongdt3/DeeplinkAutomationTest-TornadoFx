@@ -138,6 +138,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
                 initDeeplinkTestCaseSteps(deeplinks)
 
+                clearDataApp(device, deeplinkTestConfig)
+
                 deeplinks.forEachIndexed { index, deeplink ->
                     runDeeplinkTestCase(
                             id = deeplink.id,
@@ -163,6 +165,14 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         } catch (ex: Exception) {
             Either.Fail(Failure.UnCatchError(ex))
         }
+    }
+
+    private fun clearDataApp(device: JadbDevice, deeplinkTestConfig: DeeplinkTestConfig) {
+        val clearAppOut = ByteArrayOutputStream()
+        device.executeShell(clearAppOut, "pm clear '${deeplinkTestConfig.packageName}'")
+        val clearAppOutMsg = String(clearAppOut.toByteArray()).trim()
+
+        logger.log("clearApp ${deeplinkTestConfig.packageName} $clearAppOutMsg")
     }
 
     private fun initDeeplinkTestCaseSteps(deeplinks: List<DeeplinkTestConfig.Deeplink>) {
