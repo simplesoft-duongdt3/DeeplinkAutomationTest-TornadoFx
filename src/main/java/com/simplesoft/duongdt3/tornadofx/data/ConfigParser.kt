@@ -3,14 +3,19 @@ package com.simplesoft.duongdt3.tornadofx.data
 import com.google.gson.Gson
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfigInput
+import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
 import com.simplesoft.duongdt3.tornadofx.helper.default
 import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
 import com.simplesoft.duongdt3.tornadofx.helper.defaultZero
+import org.koin.core.KoinComponent
+import org.koin.core.inject
+import org.koin.core.qualifier.qualifier
 import java.io.File
 import java.lang.StringBuilder
 
-class ConfigParser {
+class ConfigParser: KoinComponent {
     private val gson = Gson()
+    private val logger by inject<AppLogger>(qualifier = null)
 
     private val timeoutLoadingDefault = 3000L
 
@@ -25,23 +30,8 @@ class ConfigParser {
                     null
                 }
             } catch (e: Exception) {
-                val deeplinks = inputTrim.trim().lines()
-                return DeeplinkTestConfig(
-                        packageName = null,
-                        timeoutLoadingMilis = timeoutLoadingDefault,
-                        waitStartActivityDisappear = null,
-                        deeplinkStartActivity = null,
-                        extraDeeplinkKey = null,
-                        mockServerUrl = null,
-                        deeplinks = deeplinks.filter { link -> link.isNotBlank() }.mapIndexed { index, link ->
-                            DeeplinkTestConfig.Deeplink(
-                                    id = "$index".padStart(3, '0'),
-                                    activityName = null,
-                                    mockServerRules = listOf(),
-                                    deeplink = link
-                            )
-                        }
-                )
+                logger.log(e)
+                return null
             }
         } else {
             return null
