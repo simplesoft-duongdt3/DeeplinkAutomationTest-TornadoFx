@@ -1,13 +1,12 @@
 package com.simplesoft.duongdt3.tornadofx.view
 
 import com.simplesoft.duongdt3.tornadofx.base.BaseView
+import com.simplesoft.duongdt3.tornadofx.data.MockServerService
 import javafx.geometry.Pos
-import javafx.scene.Scene
-import javafx.stage.Stage
+import org.koin.core.inject
 import tornadofx.*
 
 class MainView : BaseView("Automation test") {
-
 
     override fun onDock() {
         super.onDock()

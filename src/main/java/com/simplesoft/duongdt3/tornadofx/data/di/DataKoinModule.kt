@@ -3,6 +3,7 @@ package com.simplesoft.duongdt3.tornadofx.data.di
 import com.simplesoft.duongdt3.tornadofx.data.ConfigParser
 import com.simplesoft.duongdt3.tornadofx.data.FileOpener
 import com.simplesoft.duongdt3.tornadofx.data.FileReader
+import com.simplesoft.duongdt3.tornadofx.data.MockServerService
 import com.simplesoft.duongdt3.tornadofx.helper.AppDispatchers
 import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
 import com.simplesoft.duongdt3.tornadofx.helper.AppLoggerImpl
@@ -21,5 +22,9 @@ val dataModule = module {
 
     single {
         FileOpener()
+    }
+
+    single {
+        MockServerService()
     }
 }

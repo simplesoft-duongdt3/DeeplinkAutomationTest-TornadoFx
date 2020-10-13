@@ -6,11 +6,30 @@ data class DeeplinkTestConfig(
         val packageName: String?,
         val deeplinkStartActivity: String?,
         val extraDeeplinkKey: String?,
+        val mockServerUrl: String?,
         val waitStartActivityDisappear: String?
 ) {
     data class Deeplink(
             val id: String,
             val activityName: String?,
+            val mockServerRules: List<Rule>,
             val deeplink: String
     )
+
+    data class Rule(
+            val request: RequestConfig,
+            val response: ResponseConfig
+    ) {
+        data class RequestConfig(
+                val method: String,
+                val path: String,
+                val body: String
+        )
+
+        data class ResponseConfig(
+                val statusCode: Int,
+                val body: String,
+                val delayMillis: Long
+        )
+    }
 }

@@ -1,0 +1,115 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "titleId": 5,
+      "titleSubject": "Nữ sinh ở cung Hoàng hậu",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/5/square.png",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 52,
+      "titleSubject": "Cuộc phỏng vấn định mệnh",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/52/square.png",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 62,
+      "titleSubject": "Tình nhân",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.png",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 70,
+      "titleSubject": "Bí mật của Hoàng phi Isana",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/70/square.png",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 102,
+      "titleSubject": "Ôi! Hoàng tử",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/102/square.jpg",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 113,
+      "titleSubject": "Tà y cuồng thê",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/113/square.jpg",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 126,
+      "titleSubject": "Nhóc con nhà crush gọi tôi là mama!",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/126/square.png",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    },
+    {
+      "titleId": 130,
+      "titleSubject": "Hoàng tử bé của rồng con",
+      "titleThumbnailSquareUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/130/square.jpg",
+      "productList": [
+        {
+          "ticketType": "RENT_TICKET",
+          "balance": 2,
+          "receivedDateTime": "2020-10-13 14:34:32",
+          "expiryDateTime": "2020-10-20 23:59:59"
+        }
+      ]
+    }
+  ]
+}

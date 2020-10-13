@@ -52,6 +52,11 @@
       "deeplink": "comicovn://webcomic?target=ranking",
       "activity_name": "MainActivity"
     },
+	{
+      "id": "webcomic_end",
+      "deeplink": "comicovn://webcomic?target=end",
+      "activity_name": "MainActivity"
+    },
     {
       "id": "title_detail",
       "deeplink": "comicovn://titleDetail?titleId=22",

@@ -1,0 +1,252 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "attendanceId": 87,
+    "type": "TEN_DAYS",
+    "subject": "Điểm danh 10 ngày",
+    "startDateTime": "2019-12-29 00:00:00",
+    "endDateTime": "2020-01-07 23:59:59",
+    "isCompletedReward": false,
+    "componentList": [
+      {
+        "id": 614,
+        "type": "NORMAL",
+        "date": "2019-12-29",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_freecoin-2.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_freecoin-2.jpg",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "FREE_COIN",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/307_thumbnail.jpg",
+            "amount": 10
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 615,
+        "type": "NORMAL",
+        "date": "2019-12-30",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110(Point).png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110(Point).png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110(Point).png",
+            "amount": 10
+          }
+        ],
+        "isReceived": true
+      },
+      {
+        "id": 616,
+        "type": "NORMAL",
+        "date": "2019-12-31",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vemua.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vemua.jpg",
+        "productList": [
+          {
+            "mappedTitleId": 144,
+            "subject": "Nhà tù Namba",
+            "type": "COLLECTION_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+            "amount": 1
+          }
+        ],
+        "isReceived": true
+      },
+      {
+        "id": 617,
+        "type": "NORMAL",
+        "date": "2020-01-01",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vethue.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vethue.jpg",
+        "productList": [
+          {
+            "mappedTitleId": 105,
+            "subject": "HOA HỒNG TRẮNG",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/312_thumbnail.png",
+            "amount": 2
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 618,
+        "type": "NORMAL",
+        "date": "2020-01-02",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_freecoin-2.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_freecoin-2.jpg",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "FREE_COIN",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110(Point).png",
+            "amount": 2
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 619,
+        "type": "NORMAL",
+        "date": "2020-01-03",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/619.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/619.jpg",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/143_thumbnail.png",
+            "amount": 20
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 620,
+        "type": "NORMAL",
+        "date": "2020-01-04",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vethue.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_vethue.jpg",
+        "productList": [
+          {
+            "mappedTitleId": 114,
+            "subject": "Amina và cây đèn thần test long title name test tên title dài cực dài chút xíu nhen bà con iu vấu ơi.",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/114/square.jpg",
+            "amount": 2
+          },
+          {
+            "mappedTitleId": 127,
+            "subject": "Theppitak và cô gái may mắn",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/127/square.jpg",
+            "amount": 2
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 621,
+        "type": "NORMAL",
+        "date": "2020-01-05",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110.png",
+        "productList": [
+          {
+            "mappedTitleId": 105,
+            "subject": "HOA HỒNG TRẮNG",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/105/square.jpg",
+            "amount": 5
+          },
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110(Point).png",
+            "amount": 10
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 622,
+        "type": "NORMAL",
+        "date": "2020-01-06",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/622.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/622.jpg",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/143_thumbnail.png",
+            "amount": 20
+          },
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "FREE_COIN",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/161_thumbnail.png",
+            "amount": 1
+          },
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/163_thumbnail.png",
+            "amount": 1
+          },
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "FREE_COIN",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/307_thumbnail.jpg",
+            "amount": 10
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 623,
+        "type": "NORMAL",
+        "date": "2020-01-07",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/623.jpg",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/attendance/87/popup/623.jpg",
+        "productList": [
+          {
+            "mappedTitleId": 106,
+            "subject": "Hai chị em",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+            "amount": 2
+          },
+          {
+            "mappedTitleId": 118,
+            "subject": "Cuốn sách tình yêu của bác sĩ",
+            "type": "COLLECTION_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/118/square.jpg",
+            "amount": 1
+          },
+          {
+            "mappedTitleId": 144,
+            "subject": "Nhà tù Namba",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+            "amount": 1
+          },
+          {
+            "mappedTitleId": 105,
+            "subject": "HOA HỒNG TRẮNG",
+            "type": "RENT_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/312_thumbnail.png",
+            "amount": 2
+          },
+          {
+            "mappedTitleId": 131,
+            "subject": "Phải lòng với cô đơn",
+            "type": "COLLECTION_TICKET",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/313_thumbnail.png",
+            "amount": 2
+          }
+        ],
+        "isReceived": false
+      }
+    ]
+  }
+}
