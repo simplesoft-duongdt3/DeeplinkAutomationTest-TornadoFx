@@ -1,0 +1,124 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "commentList": [
+      {
+        "commentId": 2065,
+        "avatarId": 2,
+        "nickname": "G1952155974",
+        "content": "Úi bách a ",
+        "likeCount": 16,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-03 17:53:56",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 149,
+        "avatarId": 1,
+        "nickname": "Shiroinu",
+        "content": "Truyện rất dễ thương :)) ",
+        "likeCount": 11,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-04-18 23:40:52",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 132,
+        "avatarId": 8,
+        "nickname": "Alex27",
+        "content": "Bể bóng :)))",
+        "likeCount": 10,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-04-18 01:41:20",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 2221,
+        "avatarId": 12,
+        "nickname": "H15072051234",
+        "content": "Bónk bể liền",
+        "likeCount": 9,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-05 07:47:03",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 3930,
+        "avatarId": 1,
+        "nickname": "G673260011",
+        "content": "Ê mấy bà thấy cô gái trong truyện bị người con trai cởi đồ ra kìa",
+        "likeCount": 4,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-19 20:45:31",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 2939,
+        "avatarId": 16,
+        "nickname": "Sekai",
+        "content": "pể pónk : ))",
+        "likeCount": 4,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-11 09:19:29",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 5208,
+        "avatarId": 16,
+        "nickname": "AlooMunzDey",
+        "content": "Mé, cutee vãi chưởng m.n ahh 👏",
+        "likeCount": 3,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-27 12:31:57",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 4795,
+        "avatarId": 1,
+        "nickname": "G227750241",
+        "content": "Rat hay ",
+        "likeCount": 3,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-24 17:49:31",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 4575,
+        "avatarId": 1,
+        "nickname": "G164765562",
+        "content": "hay",
+        "likeCount": 3,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-23 14:47:10",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 4554,
+        "avatarId": 19,
+        "nickname": "hellumoinguoi",
+        "content": "Bách hả mọi người ?🤨🤨",
+        "likeCount": 3,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-07-23 14:03:48",
+        "replyCommentCount": 1
+      }
+    ],
+    "totalCount": 56
+  }
+}

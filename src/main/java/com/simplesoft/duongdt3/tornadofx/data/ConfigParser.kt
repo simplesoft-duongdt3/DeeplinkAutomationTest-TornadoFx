@@ -51,7 +51,7 @@ class ConfigParser: KoinComponent {
                 }.mapIndexed { index, link ->
                     DeeplinkTestConfig.Deeplink(
                             activityName = link.activityName,
-                            id = link.id.default("$index".padStart(3, '0')),
+                            id = link.id.default("${index + 1}".padStart(3, '0')),
                             mockServerRules = mapRules(link.rules),
                             deeplink = link.deeplink.defaultEmpty()
                     )

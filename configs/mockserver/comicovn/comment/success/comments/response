@@ -1,0 +1,124 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "commentList": [
+      {
+        "commentId": 17332,
+        "avatarId": 24,
+        "nickname": "G1118136904",
+        "content": "rất hay",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-10-11 15:00:20",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 16749,
+        "avatarId": 15,
+        "nickname": "nhuphan123",
+        "content": "úi thế là k cần hoàng tử.cần côg chúa à 😂😂",
+        "likeCount": 1,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-10-07 19:32:26",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 16176,
+        "avatarId": 18,
+        "nickname": "LamDauTramHo",
+        "content": "Con lạy mấy ba mấy má, đọc truyện thì coi tag r vô. Cứ \"Bách hả\" quài",
+        "likeCount": 1,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-10-04 11:30:26",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 15839,
+        "avatarId": 1,
+        "nickname": "G403556602",
+        "content": "truyện hay lắm",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-10-02 19:32:06",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 15359,
+        "avatarId": 1,
+        "nickname": "G1505284570",
+        "content": "đọc tốn tiền quá 🥺",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-09-29 15:05:10",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 13936,
+        "avatarId": 11,
+        "nickname": "BaoAnh123456",
+        "content": "Pể póng luôn rồi ;-;",
+        "likeCount": 2,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-09-18 16:24:35",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 13851,
+        "avatarId": 25,
+        "nickname": "LeThuThuy1234",
+        "content": "truyện hay quá",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-09-17 19:21:21",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 13849,
+        "avatarId": 25,
+        "nickname": "LeThuThuy1234",
+        "content": "truyện hay phết",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-09-17 19:20:59",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 10115,
+        "avatarId": 25,
+        "nickname": "Samichery",
+        "content": "Thế tóc xanh công à",
+        "likeCount": 0,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-08-26 07:47:58",
+        "replyCommentCount": 0
+      },
+      {
+        "commentId": 9935,
+        "avatarId": 1,
+        "nickname": "G1344626804",
+        "content": "chuyện này hay thât đấy😆😆😆",
+        "likeCount": 2,
+        "isOwned": false,
+        "isLikeClicked": false,
+        "writtenDateTime": "2020-08-25 09:41:59",
+        "replyCommentCount": 0
+      }
+    ],
+    "totalCount": 56
+  }
+}
