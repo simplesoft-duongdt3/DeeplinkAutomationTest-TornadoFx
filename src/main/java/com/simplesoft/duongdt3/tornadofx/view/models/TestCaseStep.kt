@@ -12,7 +12,7 @@ data class TestCaseStep(
         val fileScreenshot: File?,
         val fileVideo: File?
 ) {
-    val indexProperty = SimpleStringProperty("$index".padStart(3, '0'))
+    val indexProperty = SimpleStringProperty("${index + 1}".padStart(3, '0'))
     val idProperty = SimpleStringProperty(id)
     val deepLinkTextProperty = SimpleStringProperty(deepLinkText)
     val statusProperty = SimpleObjectProperty(status)
