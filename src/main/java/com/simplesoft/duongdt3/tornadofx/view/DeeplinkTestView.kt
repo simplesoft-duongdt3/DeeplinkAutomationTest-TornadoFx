@@ -80,8 +80,8 @@ class DeeplinkTestView : BaseView("Deeplink Automation test") {
 
     override fun onBeforeShow() {
         super.onBeforeShow()
-        currentStage?.width = 720.0
-        currentStage?.height = 480.0
+        currentStage?.width = 1024.0
+        currentStage?.height = 640.0
 
         mainViewModel.processingSteps.addListener(listenerProcessing)
         mainViewModel.selectedTestCaseStep.addListener(listenerTestCaseSelected)
@@ -98,7 +98,7 @@ class DeeplinkTestView : BaseView("Deeplink Automation test") {
     }
 
     override val root = vbox {
-        minWidth = 680.0
+        minWidth = 1024.0
         paddingAll = 4.0
         hbox {
             alignment = Pos.CENTER_LEFT
@@ -136,7 +136,7 @@ class DeeplinkTestView : BaseView("Deeplink Automation test") {
                             textAlignment = TextAlignment.CENTER
                         }
                         isEditable = false
-                        prefHeight = 300.0
+                        prefHeight = 430.0
                         fitToParentWidth()
                         column("#", TestCaseStep::indexProperty) {
                             minWidth = 20.0
