@@ -1,0 +1,35 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "titleId": 1,
+            "subject": "Mùa xuân quá bự",
+            "author": "Kim Dung",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/136/square.jpg",
+            "shortDescription": "Tinh hoa của lục địa nào đây ta",
+            "likeCount": 10009
+        },
+		{
+            "titleId": 2,
+            "subject": "Hóa thành mưa bay, Giấc mơ có thật giữa cuộc đời đầy biến động",
+            "author": "Kim Dung Tùy Tâm Sở dục cửa chuyển tinh thần bánh tính nhân sinh hữu tinh cân vũ trụ",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.jpg",
+            "shortDescription": "Giấc mơ có thật giữa cuộc đời đầy biến động, nhưng biết làm sao đây, tình yêu của chúng ta là cái gì hả anh",
+            "likeCount": 0
+        },
+		{
+            "titleId": 4,
+            "subject": "Động đất to vl",
+            "author": "Kim Ngọc Bình An Hỏa",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/102/square.jpg",
+            "shortDescription": "109 Tính chất của cuộc đời",
+            "likeCount": 12
+        }
+    ]
+}

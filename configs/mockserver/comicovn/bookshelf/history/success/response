@@ -1,0 +1,35 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "titleId": 1,
+            "titleSubject": "Giấc mơ có thật giữa cuộc đời đầy biến động, nhưng biết làm sao đây, tình yêu của chúng ta là cái gì hả anh",
+            "author": "Kim Dung Tùy Tâm Sở dục cửa chuyển tinh thần bánh tính nhân sinh hữu tinh cân vũ trụ",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/136/square.jpg",
+            "chapterSubject": "Chapter 01",
+            "lastReadDateTime": "2019-02-25 18:48:54"
+        },
+		{
+            "titleId": 2,
+            "titleSubject": "Hóa thành mưa bay",
+            "author": "Ngũ Thử bánh bèo",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.jpg",
+            "chapterSubject": "Chapter 01",
+            "lastReadDateTime": "2019-02-25 18:48:54"
+        },
+		{
+            "titleId": 4,
+            "titleSubject": "Động đất to vl",
+            "author": "Kim Ngọc Bình An Hỏa",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/102/square.jpg",
+            "chapterSubject": "Chapter 01",
+            "lastReadDateTime": "2019-02-25 18:48:54"
+        }
+    ]
+}
