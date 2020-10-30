@@ -1,0 +1,17 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": {
+        "noticeId": 45,
+        "subject": "Notice mới nhất",
+        "shortDescription": "Notice mới nhất",
+        "longDescription": null,
+        "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/notice/45.png",
+        "publishedDateTime": "2020-10-30 10:10:28"
+    }
+}

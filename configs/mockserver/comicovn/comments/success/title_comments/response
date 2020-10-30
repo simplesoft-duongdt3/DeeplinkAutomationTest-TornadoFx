@@ -1,0 +1,50 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "chapterId": 288,
+            "chapterSubject": "Chương 1 - Lần đầu gặp gỡ giữa Amina và Cây đèn thần",
+            "commentId": 1035,
+            "avatarId": 1,
+            "nickname": "tuluu",
+            "content": "tesst mission",
+            "likeCount": 0,
+            "isOwned": false,
+            "isLikeClicked": false,
+            "writtenDateTime": "2020-10-07 16:55:59",
+            "replyCommentCount": 0
+        },
+        {
+            "chapterId": 288,
+            "chapterSubject": "Chương 1 - Lần đầu gặp gỡ giữa Amina và Cây đèn thần",
+            "commentId": 799,
+            "avatarId": 1,
+            "nickname": "G1347668914",
+            "content": "Vhhhh",
+            "likeCount": 0,
+            "isOwned": false,
+            "isLikeClicked": false,
+            "writtenDateTime": "2020-04-09 14:39:30",
+            "replyCommentCount": 0
+        },
+        {
+            "chapterId": 288,
+            "chapterSubject": "Chương 1 - Lần đầu gặp gỡ giữa Amina và Cây đèn thần",
+            "commentId": 790,
+            "avatarId": 3,
+            "nickname": "G473",
+            "content": "Thôi toang rồi",
+            "likeCount": 0,
+            "isOwned": false,
+            "isLikeClicked": false,
+            "writtenDateTime": "2020-04-07 14:53:47",
+            "replyCommentCount": 0
+        }
+    ]
+}
