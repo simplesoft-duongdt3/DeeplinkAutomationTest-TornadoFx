@@ -111,5 +111,36 @@
 		}
 	  ]
 	},
+	{
+		"id": "home_case_history",
+		"deeplink": "comicovn://home",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home/recommandation/case_linebanner_top/request",
+			"responseConfig": "configs/mockserver/comicovn/home/recommandation/case_linebanner_top/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home/except-recommandation/request",
+			"responseConfig": "configs/mockserver/comicovn/home/except-recommandation/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/home/linebanner/linebanner_top/request",
+			"responseConfig": "configs/mockserver/comicovn/home/linebanner/linebanner_top/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/bookshelf/history/success/request",
+			"responseConfig": "configs/mockserver/comicovn/bookshelf/history/success/response"
+		}
+	  ]
+	},
   ]
 }
