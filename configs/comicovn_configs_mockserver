@@ -2262,5 +2262,59 @@
 		}
 	  ]
 	},
+    {
+		"id": "title_comments_case_success",
+		"deeplink": "comicovn://comments/title?titleId=114&titleSubject=Amina va cay den than",
+		"activity_name": "CommentListActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/success/title_comments/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/success/title_comments/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/success/title_comments_best/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/success/title_comments_best/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/success/title_comments_count/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/success/title_comments_count/response"
+		}
+	  ]
+	},
+    {
+		"id": "title_comments_case_error",
+		"deeplink": "comicovn://comments/title?titleId=114&titleSubject=Amina va cay den than",
+		"activity_name": "CommentListActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/error/title_comments/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/error/title_comments/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/error/title_comments_best/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/error/title_comments_best/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/comments/error/title_comments_count/request",
+			"responseConfig": "configs/mockserver/comicovn/comments/error/title_comments_count/response"
+		}
+	  ]
+	},
   ]
 }
