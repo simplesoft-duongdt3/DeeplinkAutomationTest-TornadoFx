@@ -257,5 +257,62 @@
 		}
 	  ]
 	},
+    {
+		"id": "notice_list_case_success",
+		"deeplink": "comicovn://notice",
+		"activity_name": "EventActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/notices/notices_not_at_home/request",
+			"responseConfig": "configs/mockserver/comicovn/notices/notices_not_at_home/response"
+		}
+	  ]
+	},
+    {
+		"id": "notice_list_case_error",
+		"deeplink": "comicovn://notice",
+		"activity_name": "EventActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/notices/error/notices_not_at_home/request",
+			"responseConfig": "configs/mockserver/comicovn/notices/error/notices_not_at_home/response"
+		}
+	  ]
+	},
+    {
+		"id": "notice_detail",
+		"deeplink": "comicovn://notice?target=45",
+		"activity_name": "EventActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/notices/notice_detail/request",
+			"responseConfig": "configs/mockserver/comicovn/notices/notice_detail/response"
+		}
+	  ]
+	},
   ]
 }
