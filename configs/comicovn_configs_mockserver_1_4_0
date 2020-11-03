@@ -314,5 +314,62 @@
 		}
 	  ]
 	},
+	{
+		"id": "coupon_register",
+		"deeplink": "comicovn://coupon?target=register",
+		"activity_name": "CouponActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/notices/notice_detail/request",
+			"responseConfig": "configs/mockserver/comicovn/notices/notice_detail/response"
+		}
+	  ]
+	},
+    {
+		"id": "coupon_history_case_success",
+		"deeplink": "comicovn://coupon?target=history",
+		"activity_name": "CouponActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/coupons/histories/success/request",
+			"responseConfig": "configs/mockserver/comicovn/coupons/histories/success/response"
+		}
+	  ]
+	},
+    {
+		"id": "coupon_history_case_error",
+		"deeplink": "comicovn://coupon?target=history",
+		"activity_name": "CouponActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/coupons/histories/error/request",
+			"responseConfig": "configs/mockserver/comicovn/coupons/histories/error/response"
+		}
+	  ]
+	},
   ]
 }
