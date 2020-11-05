@@ -1,0 +1,27 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "mainBannerList": [
+      {
+        "subject": "Daily collection 29/9",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/MAIN/HOME/325/ANDROID.png",
+        "linkUrl": "comicovn://event?target\u003d55"
+      }
+    ],
+    "eventBannerList": [],
+    "latestTitleList": {
+      "WEB_COMIC": [],
+      "WEB_NOVEL": []
+    },
+    "rankedTitleList": {
+      "WEB_COMIC": [],
+      "WEB_NOVEL": []
+    }
+  }
+}
