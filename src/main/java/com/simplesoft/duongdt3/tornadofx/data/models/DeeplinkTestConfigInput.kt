@@ -22,6 +22,8 @@ data class DeeplinkTestConfigInput(
     data class Deeplink(
             @SerializedName("activity_name")
             val activityName: String?,
+            @SerializedName("ignoreWaitStartActivity")
+            val ignoreWaitStartActivity: Boolean?,
             @SerializedName("id")
             val id: String?,
             @SerializedName("mockserver_configs")

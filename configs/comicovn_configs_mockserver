@@ -7,6 +7,7 @@
       "id": "signin_error",
       "deeplink": "comicovn://home",
       "activity_name": "ForceLinkSNSActivity",
+      "ignoreWaitStartActivity": true,
 	  "mockserver_configs": [
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
@@ -22,29 +23,15 @@
 		}
 	  ]
 	},
-    {
+	{
        "id": "splash_case_force_up_version",
        "deeplink": "comicovn://home",
        "activity_name": "SplashActivity",
+	   "ignoreWaitStartActivity": true,
  	  "mockserver_configs": [
  		{
  			"requestConfig": "configs/mockserver/comicovn/common/launching/force_up_version/request",
  			"responseConfig": "configs/mockserver/comicovn/common/launching/force_up_version/response"
- 		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
-			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
-		}
- 	  ]
- 	},
-    {
-       "id": "splash_case_maintain",
-       "deeplink": "comicovn://home",
-       "activity_name": "SplashActivity",
- 	  "mockserver_configs": [
- 		{
- 			"requestConfig": "configs/mockserver/comicovn/common/launching/is_maintaining/request",
- 			"responseConfig": "configs/mockserver/comicovn/common/launching/is_maintaining/response"
  		},
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
@@ -1979,7 +1966,12 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/profile/news/request",
+			"responseConfig": "configs/mockserver/comicovn/profile/news/response"
 		}
+		
 	  ]
     },
 	{
@@ -2491,5 +2483,21 @@
 		}
 	  ]
 	},
+	{
+       "id": "splash_case_maintain",
+       "deeplink": "comicovn://home",
+       "activity_name": "SplashActivity",
+	   "ignoreWaitStartActivity": true,
+ 	  "mockserver_configs": [
+ 		{
+ 			"requestConfig": "configs/mockserver/comicovn/common/launching/is_maintaining/request",
+ 			"responseConfig": "configs/mockserver/comicovn/common/launching/is_maintaining/response"
+ 		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		}
+ 	  ]
+ 	}
   ]
 }

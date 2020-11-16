@@ -9,12 +9,12 @@
     "data": [
         {
             "subject": "line bottom",
-            "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/201/ANDROID.jpg",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/201/ANDROID.jpg",
             "linkUrl": "comicovn://webcomic?target=mon"
         },
         {
             "subject": "line banner bottom 2",
-            "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/204/ANDROID.jpg",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/204/ANDROID.jpg",
             "linkUrl": null
         }
     ]

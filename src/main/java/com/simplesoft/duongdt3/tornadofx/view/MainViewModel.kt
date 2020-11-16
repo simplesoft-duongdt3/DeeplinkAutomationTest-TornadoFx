@@ -152,6 +152,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                             recordSreen = recordSreen,
                             dirTestCase = dirTestCaseResult,
                             fileRoot = fileRoot,
+                            ignoreWaitStartActivity = deeplink.ignoreWaitStartActivity,
                             deeplinkStartActivity = deeplinkTestConfig.deeplinkStartActivity,
                             extraDeeplinkKey = deeplinkTestConfig.extraDeeplinkKey,
                             packageName = deeplinkTestConfig.packageName,
@@ -207,6 +208,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             id: String,
             packageName: String?,
             deeplinkStartActivity: String?,
+            ignoreWaitStartActivity: Boolean,
             extraDeeplinkKey: String?,
             timeoutLoadingMilis: Long,
             mockServerRules: List<DeeplinkTestConfig.Rule>
@@ -244,6 +246,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 deeplinkWaitActivity = deeplinkWaitActivity,
                 waitStartActivityDisappear = waitStartActivityDisappear,
                 packageName = packageName,
+                ignoreWaitStartActivity = ignoreWaitStartActivity,
                 extraDeeplinkKey = extraDeeplinkKey,
                 deeplinkStartActivity = deeplinkStartActivity,
                 timeoutLoadingMilis = timeoutLoadingMilis
@@ -437,6 +440,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             waitStartActivityDisappear: String?,
             packageName: String?,
             deeplinkStartActivity: String?,
+            ignoreWaitStartActivity: Boolean,
             extraDeeplinkKey: String?,
             timeoutLoadingMilis: Long
     ): Boolean {
@@ -458,6 +462,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                         jadbDevice = jadbDevice,
                         deeplink = deeplink,
                         deeplinkWaitActivity = deeplinkWaitActivity,
+                        ignoreWaitStartActivity = ignoreWaitStartActivity,
                         waitStartActivityDisappear = waitStartActivityDisappear
                 )
             }
@@ -477,14 +482,21 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
     }
 
-    private suspend fun startDeeplinkWithWebAction(jadbDevice: JadbDevice, deeplink: String, waitStartActivityDisappear: String?, deeplinkWaitActivity: String?): Boolean {
+    private suspend fun startDeeplinkWithWebAction(
+            jadbDevice: JadbDevice,
+            deeplink: String,
+            ignoreWaitStartActivity: Boolean,
+            waitStartActivityDisappear: String?,
+            deeplinkWaitActivity: String?
+    ): Boolean {
         val deeplinkOut = ByteArrayOutputStream()
-        jadbDevice.executeShell(deeplinkOut, "am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
+        // -W wait
+        jadbDevice.executeShell(deeplinkOut, "am start -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d '$deeplink'")
         val deeplinkOutMsg = String(deeplinkOut.toByteArray()).trim()
 
         logger.log("startDeeplink $deeplink $deeplinkOutMsg")
         var waitActivityDisplay = true
-        if (!waitStartActivityDisappear.isNullOrBlank()) {
+        if (!ignoreWaitStartActivity && !waitStartActivityDisappear.isNullOrBlank()) {
             waitActivityDisplay = waitActivityDisappear(jadbDevice = jadbDevice, activityName = waitStartActivityDisappear)
             if (waitActivityDisplay) {
                 if (!deeplinkWaitActivity.isNullOrBlank()) {
@@ -494,6 +506,10 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         } else {
             //wait for start app
             delay(5000)
+
+            if (!deeplinkWaitActivity.isNullOrBlank()) {
+                waitActivityDisplay = waitActivityDisplay(jadbDevice = jadbDevice, activityName = deeplinkWaitActivity)
+            }
         }
 
         return waitActivityDisplay

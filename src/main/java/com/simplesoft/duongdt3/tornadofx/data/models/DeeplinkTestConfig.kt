@@ -4,14 +4,15 @@ data class DeeplinkTestConfig(
         val deeplinks: List<Deeplink>,
         val timeoutLoadingMilis: Long,
         val packageName: String?,
+        val waitStartActivityDisappear: String?,
         val deeplinkStartActivity: String?,
         val extraDeeplinkKey: String?,
-        val mockServerUrl: String?,
-        val waitStartActivityDisappear: String?
+        val mockServerUrl: String?
 ) {
     data class Deeplink(
             val id: String,
             val activityName: String?,
+            val ignoreWaitStartActivity: Boolean,
             val mockServerRules: List<Rule>,
             val deeplink: String
     )

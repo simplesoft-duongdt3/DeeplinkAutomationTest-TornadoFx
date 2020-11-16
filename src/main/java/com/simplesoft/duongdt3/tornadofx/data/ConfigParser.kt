@@ -3,10 +3,7 @@ package com.simplesoft.duongdt3.tornadofx.data
 import com.google.gson.Gson
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfigInput
-import com.simplesoft.duongdt3.tornadofx.helper.AppLogger
-import com.simplesoft.duongdt3.tornadofx.helper.default
-import com.simplesoft.duongdt3.tornadofx.helper.defaultEmpty
-import com.simplesoft.duongdt3.tornadofx.helper.defaultZero
+import com.simplesoft.duongdt3.tornadofx.helper.*
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 import org.koin.core.qualifier.qualifier
@@ -51,6 +48,7 @@ class ConfigParser: KoinComponent {
                 }.mapIndexed { index, link ->
                     DeeplinkTestConfig.Deeplink(
                             activityName = link.activityName,
+                            ignoreWaitStartActivity = link.ignoreWaitStartActivity.defaultFalse(),
                             id = link.id.default("${index + 1}".padStart(3, '0')),
                             mockServerRules = mapRules(link.rules),
                             deeplink = link.deeplink.defaultEmpty()
