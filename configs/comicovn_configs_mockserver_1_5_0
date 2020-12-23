@@ -791,5 +791,24 @@
 		}
 	  ]
 	},
+    {
+		"id": "notice_detail_with_link",
+		"deeplink": "comicovn://notice?target=45",
+		"activity_name": "EventActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/notices/notice_detail_with_link/request",
+			"responseConfig": "configs/mockserver/comicovn/notices/notice_detail_with_link/response"
+		}
+	  ]
+	},
   ]
 }
