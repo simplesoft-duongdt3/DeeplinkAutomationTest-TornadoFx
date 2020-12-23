@@ -810,5 +810,160 @@
 		}
 	  ]
 	},
+    {
+      "id": "purchase_case_none",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items/response"
+		}
+	  ]
+    },
+    {
+      "id": "purchase_case_one_time",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items_one_time/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items_one_time/response"
+		}
+	  ]
+    },
+    {
+      "id": "purchase_case_unlimited",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items_unlimited/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items_unlimited/response"
+		}
+	  ]
+    },
+    {
+      "id": "purchase_case_special_deal",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items_special_detail/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items_special_detail/response"
+		}
+	  ]
+    },
+    {
+      "id": "purchase_case_none_with_tag",
+      "deeplink": "comicovn://purchase",
+      "activity_name": "TopUpCoinActivity",
+	  "mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/with_purchase_tag/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/coin_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/coin_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/has_special_deal/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/has_special_deal/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/point_status/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/point_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/topup/iap_items_with_tag/request",
+			"responseConfig": "configs/mockserver/comicovn/topup/iap_items_with_tag/response"
+		}
+	  ]
+    },
   ]
 }
