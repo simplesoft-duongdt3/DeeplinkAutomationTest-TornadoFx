@@ -1956,7 +1956,7 @@
     },
 	{
       "id": "news_case_success",
-      "deeplink": "comicovn://news",
+      "deeplink": "comicovn://inbox",
       "activity_name": "InboxActivity",
 	  "mockserver_configs": [
 		{
@@ -1966,17 +1966,12 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/profile/news/request",
-			"responseConfig": "configs/mockserver/comicovn/profile/news/response"
 		}
-		
 	  ]
     },
 	{
       "id": "news_case_fail",
-      "deeplink": "comicovn://news",
+      "deeplink": "comicovn://inbox",
       "activity_name": "InboxActivity",
 	  "mockserver_configs": [
 		{
@@ -1991,8 +1986,8 @@
     },
 	{
       "id": "chargepass_case_success",
-      "deeplink": "comicovn://news?target=chargepass",
-      "activity_name": "InboxActivity",
+      "deeplink": "comicovn://bookshelf?target=chargepass",
+      "activity_name": "MainActivity",
 	  "mockserver_configs": [
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
@@ -2001,13 +1996,17 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+        {
+			"requestConfig": "configs/mockserver/comicovn/bookshelf/chargepass/success/request",
+			"responseConfig": "configs/mockserver/comicovn/bookshelf/chargepass/success/response"
 		}
 	  ]
     },
 	{
       "id": "chargepass_case_fail",
-      "deeplink": "comicovn://news?target=chargepass",
-      "activity_name": "InboxActivity",
+      "deeplink": "comicovn://bookshelf?target=chargepass",
+      "activity_name": "MainActivity",
 	  "mockserver_configs": [
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
@@ -2016,6 +2015,10 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+        {
+			"requestConfig": "configs/mockserver/comicovn/bookshelf/chargepass/error/request",
+			"responseConfig": "configs/mockserver/comicovn/bookshelf/chargepass/error/response"
 		}
 	  ]
     },
