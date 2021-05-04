@@ -1,7 +1,7 @@
 {
   "package_name": "com.toast.comico.vn.alpha",
   "wait_start_activity_disappear": "SplashActivity",
-  "mockserver_url": "http://10.78.249.37:9999",
+  "mockserver_url": "http://10.78.250.153:9999",
   "deeplinks": [
     {
        "id": "splash_case_force_up_version",
