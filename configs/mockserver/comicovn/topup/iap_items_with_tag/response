@@ -35,10 +35,10 @@
       "purchaseCoinProductId": 275,
       "purchaseEventId": 54,
       "referenceId": 1007211,
-      "subject": "[100% BONUS] 540 Coins",
+      "subject": "540 Coins",
       "originalPrice": 69000,
       "price": 69000,
-      "purchaseCoinProductTag": null,
+      "purchaseCoinProductTag": "Bonus 20%",
       "purchaseEventTagType": "NONE",
       "bonusProductList": [
         {

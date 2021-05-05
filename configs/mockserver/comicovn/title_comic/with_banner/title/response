@@ -17,6 +17,8 @@
     "isFavoriteClicked": false,
     "isFreeCharge": true,
     "freeChargeDuration": 48,
+    "freeChargeAlarmStatus": "NONE",
+    "isFavoriteReward": false,
     "chargeStartDateTime": null,
     "chargeEndDateTime": null,
     "isCompleted": false,

@@ -16,7 +16,7 @@
       "price": 22000,
       "bonusProductList": [],
       "purchaseCoinProductTag": null,
-      "purchaseEventTagType": "NONE",
+      "purchaseEventTagType": "ONE_TIME",
       "bonusList": []
     },
     {
