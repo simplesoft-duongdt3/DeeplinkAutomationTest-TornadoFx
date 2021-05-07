@@ -21,19 +21,19 @@
                   {
                      "subject":"Tuổi học trò",
                      "description":"HangNguyen",
-                     "thumbnailUrl":"https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
                      "linkUrl":"comicovn://titleDetail?titleId=101&type=WEB_COMIC"
                   },
                   {
                      "subject":"Hai chị em",
                      "description":"HangNguyen",
-                     "thumbnailUrl":"https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
                      "linkUrl":"comicovn://titleDetail?titleId=106&type=WEB_COMIC"
                   },
                   {
                      "subject":"Những người bạn",
                      "description":"Đổng Phi",
-                     "thumbnailUrl":"https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
                      "linkUrl":"comicovn://titleDetail?titleId=107&type=WEB_COMIC"
                   }
                ]

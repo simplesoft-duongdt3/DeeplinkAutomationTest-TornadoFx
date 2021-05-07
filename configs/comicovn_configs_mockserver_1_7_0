@@ -3081,6 +3081,40 @@
 	  ]
     },
     {
+		"id": "content_list_for_you_case_success",
+		"deeplink": "comicovn://forYou",
+		"activity_name": "KoostRecommendationActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/content_list/for_you/request",
+			"responseConfig": "configs/mockserver/comicovn/content_list/for_you/response"
+		}
+	  ]
+	},
+    {
+		"id": "content_list_for_you_case_fail",
+		"deeplink": "comicovn://forYou",
+		"activity_name": "KoostRecommendationActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		}
+	  ]
+	},
+    {
 		"id": "title_comments_case_success",
 		"deeplink": "comicovn://comments/title?titleId=114&titleSubject=Amina va cay den than",
 		"activity_name": "CommentListActivity",

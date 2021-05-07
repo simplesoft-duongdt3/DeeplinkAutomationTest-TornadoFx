@@ -10,7 +10,7 @@
     {
       "chapterId": 307,
       "subject": "Chương 1",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/307/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/307/thumbnail.jpg",
       "isUp": false,
       "likeCount": 1,
       "isLikeClicked": false,
@@ -25,7 +25,7 @@
     {
       "chapterId": 308,
       "subject": "Chương 2",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/308/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/308/thumbnail.jpg",
       "isUp": false,
       "likeCount": 0,
       "isLikeClicked": false,
@@ -40,7 +40,7 @@
     {
       "chapterId": 309,
       "subject": "Chương 3",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/309/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/309/thumbnail.jpg",
       "isUp": false,
       "likeCount": 0,
       "isLikeClicked": false,
@@ -55,7 +55,7 @@
     {
       "chapterId": 310,
       "subject": "Chương 4",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/310/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/310/thumbnail.jpg",
       "isUp": false,
       "likeCount": 1,
       "isLikeClicked": false,
@@ -70,7 +70,7 @@
     {
       "chapterId": 311,
       "subject": "Chương 5",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/311/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/311/thumbnail.jpg",
       "isUp": false,
       "likeCount": 0,
       "isLikeClicked": false,
@@ -85,7 +85,7 @@
     {
       "chapterId": 382,
       "subject": "Chương 6",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/382/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/382/thumbnail.jpg",
       "isUp": false,
       "likeCount": 0,
       "isLikeClicked": false,
@@ -100,7 +100,7 @@
     {
       "chapterId": 386,
       "subject": "Chương 7",
-      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/386/thumbnail.jpg",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/386/thumbnail.jpg",
       "isUp": false,
       "likeCount": 0,
       "isLikeClicked": false,
