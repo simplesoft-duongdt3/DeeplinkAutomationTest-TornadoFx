@@ -20,7 +20,8 @@
                "isFavoriteClicked":false,
                "isFavoriteReward":false,
                "freeChargeStatus":"NONE",
-               "freeChargeDuration":0
+               "freeChargeDuration":0,
+               "eventTag": "DISCOUNT"
             },
             {
                "titleId":142,
@@ -32,7 +33,8 @@
                "isFavoriteClicked":false,
                "isFavoriteReward":true,
                "freeChargeStatus":"NONE",
-               "freeChargeDuration":0
+               "freeChargeDuration":0,
+               "eventTag": "FREE_CHARGE_DURATION"
             },
             {
                "titleId":130,
@@ -44,7 +46,8 @@
                "isFavoriteClicked":true,
                "isFavoriteReward":false,
                "freeChargeStatus":"FULL",
-               "freeChargeDuration":3
+               "freeChargeDuration":3,
+               "eventTag": "FREE_CHAPTER_EXTENSION"
             },
             {
                "titleId":124,
@@ -56,7 +59,8 @@
                "isFavoriteClicked":false,
                "isFavoriteReward":false,
                "freeChargeStatus":"FULL",
-               "freeChargeDuration":6
+               "freeChargeDuration":6,
+               "eventTag": null
             },
             {
                "titleId":127,
@@ -68,7 +72,8 @@
                "isFavoriteClicked":false,
                "isFavoriteReward":false,
                "freeChargeStatus":"FULL",
-               "freeChargeDuration":12
+               "freeChargeDuration":12,
+               "eventTag": null
             },
             {
                "titleId":137,
@@ -80,7 +85,8 @@
                "isFavoriteClicked":false,
                "isFavoriteReward":true,
                "freeChargeStatus":"FULL",
-               "freeChargeDuration":6
+               "freeChargeDuration":6,
+               "eventTag": null
             }
          ]
       }
