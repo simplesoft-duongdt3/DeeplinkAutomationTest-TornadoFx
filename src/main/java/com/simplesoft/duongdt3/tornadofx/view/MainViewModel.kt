@@ -29,6 +29,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private val fileRoot = File(System.getProperty("user.dir"))
     private val logger by inject<AppLogger>()
     private val fileReader by inject<FileReader>()
+    private val fileWriter by inject<FileWriter>()
     private val configParser by inject<ConfigParser>()
     private val mockServerService by inject<MockServerService>()
 
@@ -117,6 +118,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     }
             )
 
+            logger.log("getApiLogs all ${mockServerService.getApiLogs()}")
         }
     }
 
@@ -159,6 +161,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                             timeoutLoadingMilis = deeplinkTestConfig.timeoutLoadingMilis
                     )
                 }
+
                 Either.Success(true)
             } else {
                 Either.Fail(Failure.UnCatchError(Exception()))
@@ -234,11 +237,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
 
         val imgFileName = "${id}_screenshot.png"
+        val apiLogFileName = "${id}_api_logs.json"
         val videoFileName = "${id}_video.mp4"
-
         val fileScreenshot = File(dirTestCase, imgFileName)
         val fileVideo = File(dirTestCase, videoFileName)
-
+        val fileApiLogs = File(dirTestCase, apiLogFileName)
         val startDeeplinkSuccess = startDeeplink(
                 id = id,
                 jadbDevice = device,
@@ -270,6 +273,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     imagePathInDevice = videoPathInDevice
             )
         }
+
+        fileWriter.writeFile(file = fileApiLogs, text = mockServerService.getApiLogs().defaultEmpty())
 
         val endTimeMilis = System.currentTimeMillis()
         val workingTime = endTimeMilis - startTimeMilis
