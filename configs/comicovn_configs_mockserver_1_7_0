@@ -1744,6 +1744,60 @@
 		}
 	  ]
 	},
+    {
+		"id": "title_detail_case_coming_soon_open_reserved",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_open_reserved/title/response"
+		}
+	  ]
+	},
+    {
+		"id": "title_detail_case_coming_soon_pre_open",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/coming_soon_pre_open/title/response"
+		}
+	  ]
+	},
 	{
       "id": "chapter_detail_case_first_chapter",
       "deeplink": "comicovn://chapterDetail?titleId=141&chapterId=7677",
