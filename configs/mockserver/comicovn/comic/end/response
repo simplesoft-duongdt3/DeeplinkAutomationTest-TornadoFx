@@ -16,7 +16,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/22/square.jpg",
         "likeCount": 24940,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 48
+        "freeChargeDuration": 48,
+        "eventTag": "DISCOUNT"
       },
       {
         "titleId": 52,
@@ -26,7 +27,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/52/square.jpg",
         "likeCount": 27903,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+         "eventTag": "FREE_CHARGE_DURATION"
       },
       {
         "titleId": 13,
@@ -36,7 +38,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/13/square.png",
         "likeCount": 10287,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": "FREE_CHAPTER_EXTENSION"
       },
       {
         "titleId": 134,
@@ -46,7 +49,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/134/square.jpg",
         "likeCount": 1185,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 114,
@@ -56,7 +60,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/114/square.jpg",
         "likeCount": 2685,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 72,
@@ -66,7 +71,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/72/square.jpg",
         "likeCount": 1775,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 110,
@@ -76,7 +82,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/110/square.jpg",
         "likeCount": 1777,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 84,
@@ -86,7 +93,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/84/square.jpg",
         "likeCount": 1640,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 36,
@@ -96,7 +104,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/36/square.jpg",
         "likeCount": 3158,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 17,
@@ -106,7 +115,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/17/square.jpg",
         "likeCount": 280,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 111,
@@ -116,7 +126,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/111/square.jpg",
         "likeCount": 1108,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 1,
@@ -126,7 +137,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/1/square.png",
         "likeCount": 1860,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 104,
@@ -136,7 +148,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/104/square.jpg",
         "likeCount": 967,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 88,
@@ -146,7 +159,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/88/square.jpg",
         "likeCount": 825,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 67,
@@ -156,7 +170,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/67/square.jpg",
         "likeCount": 1044,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 46,
@@ -166,7 +181,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/46/square.jpg",
         "likeCount": 406,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 32,
@@ -176,7 +192,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/32/square.jpg",
         "likeCount": 467,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 29,
@@ -186,7 +203,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/29/square.jpg",
         "likeCount": 1441,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 21,
@@ -196,7 +214,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/21/square.jpg",
         "likeCount": 1043,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       },
       {
         "titleId": 10,
@@ -206,7 +225,8 @@
         "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/10/square.png",
         "likeCount": 289,
         "freeChargeStatus": "FULL",
-        "freeChargeDuration": 24
+        "freeChargeDuration": 24,
+        "eventTag": null
       }
     ],
     "totalCount": 26

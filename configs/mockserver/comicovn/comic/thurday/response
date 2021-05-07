@@ -20,7 +20,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "DISCOUNT"
       },
       {
         "titleId": 116,
@@ -34,7 +35,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+         "eventTag": "FREE_CHARGE_DURATION"
       },
       {
         "titleId": 74,
@@ -48,7 +50,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "FREE_CHAPTER_EXTENSION"
       },
       {
         "titleId": 93,
@@ -62,7 +65,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 45,
@@ -76,7 +80,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 62,
@@ -90,7 +95,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 5,
@@ -104,7 +110,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 95,
@@ -118,7 +125,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 101,
@@ -132,7 +140,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 76,
@@ -146,7 +155,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 38,
@@ -160,7 +170,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 120,
@@ -174,7 +185,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 56,
@@ -188,7 +200,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 44,
@@ -202,7 +215,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 71,
@@ -216,7 +230,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 47,
@@ -230,7 +245,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 42,
@@ -244,7 +260,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 115,
@@ -258,7 +275,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 57,
@@ -272,7 +290,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 48,
@@ -286,7 +305,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       }
     ],
     "totalCount": 26

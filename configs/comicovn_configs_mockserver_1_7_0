@@ -441,10 +441,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/ranking/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/ranking/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -506,10 +502,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/monday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/monday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -571,10 +563,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/tuesday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/tuesday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -636,10 +624,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/wednesday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/wednesday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -701,10 +685,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/thurday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/thurday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -766,10 +746,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/friday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/friday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -831,10 +807,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/saturday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/saturday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -904,10 +876,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/sunday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/sunday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -969,10 +937,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/wednesday/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/wednesday/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
@@ -1007,10 +971,6 @@
 		{
 			"requestConfig": "configs/mockserver/comicovn/comic/end/request",
 			"responseConfig": "configs/mockserver/comicovn/comic/end/response"
-		},
-		{
-			"requestConfig": "configs/mockserver/comicovn/comic/banner/request",
-			"responseConfig": "configs/mockserver/comicovn/comic/banner/response"
 		}
 	  ]
 	},
