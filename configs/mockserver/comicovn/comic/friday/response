@@ -20,7 +20,8 @@
         "isNew": true,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "DISCOUNT"
       },
       {
         "titleId": 70,
@@ -34,7 +35,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+         "eventTag": "FREE_CHARGE_DURATION"
       },
       {
         "titleId": 27,
@@ -48,7 +50,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "FREE_CHAPTER_EXTENSION"
       },
       {
         "titleId": 126,
@@ -62,7 +65,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 66,
@@ -76,7 +80,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 116,
@@ -90,7 +95,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 74,
@@ -104,7 +110,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 93,
@@ -118,7 +125,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 89,
@@ -132,7 +140,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 45,
@@ -146,7 +155,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 118,
@@ -160,7 +170,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 2,
@@ -174,7 +185,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 94,
@@ -188,7 +200,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 51,
@@ -202,7 +215,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 18,
@@ -216,7 +230,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 122,
@@ -230,7 +245,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 107,
@@ -244,7 +260,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 103,
@@ -258,7 +275,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 53,
@@ -272,7 +290,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 91,
@@ -286,7 +305,8 @@
         "isNew": false,
         "isUp": true,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       }
     ],
     "totalCount": 27
