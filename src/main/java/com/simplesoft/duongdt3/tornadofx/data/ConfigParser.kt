@@ -64,7 +64,7 @@ class ConfigParser: KoinComponent {
     private fun mapVars(varsInput: List<EnvVarsConfigInput.Var?>?): EnvironmentVars {
         val vars: List<EnvironmentVars.Var> = varsInput?.mapNotNull {
             return@mapNotNull EnvironmentVars.Var(
-                    name = it?.key.defaultEmpty(),
+                    key = it?.key.defaultEmpty(),
                     value = it?.value.defaultEmpty()
             )
         }.defaultEmpty()

@@ -6,8 +6,7 @@ data class EnvironmentVars(
 ) {
 
     data class Var(
-            val name: String,
+            val key: String,
             val value: String
     )
-
 }

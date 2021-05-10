@@ -12,14 +12,14 @@ class EnvironmentVarsMerger: KoinComponent {
         var newText = contentText
         logger.log("EnvironmentVarsMerger $environmentVars")
         environmentVars.vars.forEach { varItem ->
-            newText = newText.replace("\$ENV{${varItem.name}}", varItem.value)
+            newText = newText.replace("\$ENV{${varItem.key}}", varItem.value)
         }
         return newText
     }
 
     fun getVar(key: String, environmentVars: EnvironmentVars): String? {
         return environmentVars.vars.firstOrNull {
-            it.name == key
+            it.key == key
         }?.value
     }
 
