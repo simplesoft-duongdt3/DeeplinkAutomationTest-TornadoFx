@@ -2,6 +2,7 @@ package com.simplesoft.duongdt3.tornadofx.data
 
 import com.simplesoft.duongdt3.tornadofx.data.models.DeeplinkTestConfig
 import org.mockserver.integration.ClientAndServer
+import org.mockserver.model.Format
 import org.mockserver.model.HttpRequest.request
 import org.mockserver.model.HttpResponse.response
 import org.mockserver.model.MediaType
@@ -21,6 +22,12 @@ class MockServerService {
         mockServerConfig.rules.forEach { rule ->
             addMockRule(rule)
         }
+    }
+
+    fun getApiLogs(): String? {
+        return server?.retrieveRecordedRequestsAndResponses(
+            null, Format.JSON
+        )
     }
 
     private fun addMockRule(rule: DeeplinkTestConfig.Rule) {
