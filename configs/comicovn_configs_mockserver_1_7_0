@@ -1914,6 +1914,37 @@
 	  ]
 	},
 	{
+		"id": "title_detail_case_purchased",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/purchased/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/purchased/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/purchased/ticket_status/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/purchased/ticket_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/purchased/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/purchased/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/purchased/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/purchased/title/response"
+		}
+	  ]
+	},
+	{
       "id": "chapter_detail_case_first_chapter",
       "deeplink": "comicovn://chapterDetail?titleId=141&chapterId=7677",
       "activity_name": "ChapterDetailActivity",
