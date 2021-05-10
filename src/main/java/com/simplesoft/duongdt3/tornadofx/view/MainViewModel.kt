@@ -51,7 +51,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             if (file != null) {
                 withContext(appDispatchers.io) {
                     val configText = fileReader.readFile(file.file)
-                    val deeplinkTestConfig = configParser.parse(configText)
+                    val envVarsText = fileReader.readFile(getEnvVarsFile())
+                    val deeplinkTestConfig = configParser.parse(configText = configText, envVarsText = envVarsText)
                     if (deeplinkTestConfig != null) {
                         val deeplinks = deeplinkTestConfig.deeplinks
                         initDeeplinkTestCaseSteps(deeplinks)
@@ -63,6 +64,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 initDeeplinkTestCaseSteps(listOf())
             }
         }
+    }
+
+    private fun getEnvVarsFile(): File? {
+        val folderConfigs = File(File(fileRoot, "configs"), "env_vars")
+        return folderConfigs.listFiles()?.toList()?.firstOrNull()
     }
 
     val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
@@ -97,8 +103,10 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             processingSteps.clear()
             val resultDeeplinkTestCase = withContext(appDispatchers.io) {
                 val configText = fileReader.readFile(file.file)
+                val envVarsText = fileReader.readFile(getEnvVarsFile())
                 runTestCaseFromInputDeeplinks(
                         configText = configText,
+                        envVarsText = envVarsText,
                         device = device.device,
                         takeScreenshot = isTakeScreenshot,
                         recordSreen = isRecordScreen
@@ -124,12 +132,13 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
 
     private suspend fun runTestCaseFromInputDeeplinks(
             configText: String,
+            envVarsText: String,
             device: JadbDevice,
             takeScreenshot: Boolean,
             recordSreen: Boolean
     ): Either<Failure.UnCatchError, Boolean> {
         return try {
-            val deeplinkTestConfig = configParser.parse(configText)
+            val deeplinkTestConfig = configParser.parse(configText = configText, envVarsText = envVarsText)
             if (deeplinkTestConfig != null) {
                 val dirName = "deeplink_test_${System.currentTimeMillis()}"
                 val dirTestCaseResult = File(fileRoot, dirName).apply {
@@ -615,7 +624,6 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private fun getFileConfigs(): List<File> {
         val folderConfigs = File(fileRoot, "configs")
         return folderConfigs.listFiles()?.toList().defaultEmpty()
-
     }
 
     private fun requestDevices() {

@@ -7,6 +7,7 @@ data class DeeplinkTestConfig(
         val waitStartActivityDisappear: String?,
         val deeplinkStartActivity: String?,
         val extraDeeplinkKey: String?,
+        val environmentVars: EnvironmentVars,
         val mockServerUrl: String?
 ) {
     data class Deeplink(

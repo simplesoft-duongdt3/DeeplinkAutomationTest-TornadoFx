@@ -1,0 +1,7 @@
+{
+  "environmentVars": [
+    {
+      "key": "proxy_host",
+      "value": "http://10.78.249.133:9999"
+    }
+}

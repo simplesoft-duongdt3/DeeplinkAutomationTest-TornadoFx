@@ -14,6 +14,10 @@ val dataModule = module {
     }
 
     single {
+        EnvironmentVarsMerger()
+    }
+
+    single {
         FileReader()
     }
 
