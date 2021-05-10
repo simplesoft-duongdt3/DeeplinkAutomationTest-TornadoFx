@@ -1790,6 +1790,130 @@
 	  ]
 	},
 	{
+		"id": "title_detail_has_event_discount",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/ticket_status/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/ticket_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_discount/title/response"
+		}
+	  ]
+	},
+	{
+		"id": "title_detail_has_event_free_charge",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/ticket_status/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/ticket_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_charge/title/response"
+		}
+	  ]
+	},
+	{
+		"id": "title_detail_has_event_free_chapter",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/ticket_status/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/ticket_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_free_chapter/title/response"
+		}
+	  ]
+	},
+	{
+		"id": "title_detail_has_event_all",
+		"deeplink": "comicovn://titleDetail?titleId=113",
+		"activity_name": "MainActivity",
+		"mockserver_configs": [
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/launching/request",
+			"responseConfig": "configs/mockserver/comicovn/common/launching/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver/comicovn/common/signin/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_all/chapters/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_all/chapters/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_all/ticket_status/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_all/ticket_status/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_all/tickets/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_all/tickets/response"
+		},
+		{
+			"requestConfig": "configs/mockserver/comicovn/title_comic/has_event_all/title/request",
+			"responseConfig": "configs/mockserver/comicovn/title_comic/has_event_all/title/response"
+		}
+	  ]
+	},
+	{
       "id": "chapter_detail_case_first_chapter",
       "deeplink": "comicovn://chapterDetail?titleId=141&chapterId=7677",
       "activity_name": "ChapterDetailActivity",
