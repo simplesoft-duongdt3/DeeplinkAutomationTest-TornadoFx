@@ -22,7 +22,7 @@ class ConfigParser: KoinComponent {
         if (inputTrim.isNotBlank()) {
             try {
                 val inputConfig = gson.fromJson(inputTrim, DeeplinkTestConfigInput::class.java)
-                val envVarsConfigInput = gson.fromJson(inputTrim, EnvVarsConfigInput::class.java)
+                val envVarsConfigInput = gson.fromJson(envVarsText, EnvVarsConfigInput::class.java)
                 return if (!inputConfig.deeplinks.isNullOrEmpty()) {
                     mapConfig(inputConfig, envVarsConfigInput)
                 } else {
