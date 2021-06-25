@@ -4363,6 +4363,60 @@
   			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
   		}
   	  ]
+    },
+    {
+      "id": "contest_title_detail",
+      "deeplink": "comicovn://titleDetail?titleId=245&type=CONTEST",
+      "activity_name": "TitleDetailActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_detail/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_detail/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_chapters/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_chapters/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_related/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_related/response"
+  		}
+  	  ]
+    },
+    {
+      "id": "contest_title_detail",
+      "deeplink": "comicovn://titleDetail?titleId=245&type=CONTEST",
+      "activity_name": "TitleDetailActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_detail/no_data/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_detail/no_data/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_chapters/no_data/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_chapters/no_data/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/title_related/no_data/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/title_related/no_data/response"
+  		}
+  	  ]
     }
   ]
 }

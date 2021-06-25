@@ -1,0 +1,56 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "chapterId": 729,
+      "subject": "Ch. 1",
+      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/729/thumbnail.png",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "openReservedDateTime": "2021-06-09 15:31:11"
+    },
+    {
+      "chapterId": 730,
+      "subject": "Ch. 2",
+      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/730/thumbnail.png",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "openReservedDateTime": "2021-06-09 15:32:42"
+    },
+    {
+      "chapterId": 731,
+      "subject": "Ch. 3",
+      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/731/thumbnail.png",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "openReservedDateTime": "2021-06-09 15:33:10"
+    },
+    {
+      "chapterId": 733,
+      "subject": "Ch. 5",
+      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/733/thumbnail.png",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "openReservedDateTime": "2021-06-09 15:39:21"
+    },
+    {
+      "chapterId": 901,
+      "subject": "Ch 7",
+      "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/901/thumbnail_20210614131134.png",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "openReservedDateTime": "2021-06-14 13:11:34"
+    }
+  ]
+}
