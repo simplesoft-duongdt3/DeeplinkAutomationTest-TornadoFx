@@ -21,7 +21,7 @@
             {
               "subject": "Test truyện",
               "description": "Null",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/311/square_20210616172610.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/311/square_20210616172610.png",
               "linkUrl": null,
               "eventTag": null,
               "likeCount": 0
@@ -29,7 +29,7 @@
             {
               "subject": "191",
               "description": "4331Nexx",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
               "linkUrl": "comicovn://titleDetail?titleId\u003d191\u0026type\u003dWEB_COMIC",
               "eventTag": null,
               "likeCount": 14
@@ -37,7 +37,7 @@
             {
               "subject": "Test contest 2",
               "description": "Null",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
               "linkUrl": "comicovn://titleDetail?titleId\u003d190\u0026type\u003dCONTEST",
               "eventTag": null,
               "likeCount": 27
@@ -45,7 +45,7 @@
             {
               "subject": "Đã quá Cola ơi!!",
               "description": "dattest97",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/246/square.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/246/square.png",
               "linkUrl": null,
               "eventTag": null,
               "likeCount": 0
@@ -53,7 +53,7 @@
             {
               "subject": "cbvc bvhb hvbv  hbfhc hv vjc vbfhcd",
               "description": "G274458653",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/217/square.jpg",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/217/square.jpg",
               "linkUrl": null,
               "eventTag": null,
               "likeCount": 0
@@ -61,7 +61,7 @@
             {
               "subject": "test chương ",
               "description": "G1137489914",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
               "linkUrl": "comicovn://giftbox",
               "eventTag": null,
               "likeCount": 14
@@ -77,35 +77,35 @@
           "titleId": 250,
           "subject": "Test new updatee",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/250/square.jpg",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/250/square.jpg",
           "likeCount": 0
         },
         {
           "titleId": 285,
           "subject": "truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống tru",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/285/square_20210614103528.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/285/square_20210614103528.png",
           "likeCount": 2
         },
         {
           "titleId": 302,
           "subject": "test chương ",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
           "likeCount": 14
         },
         {
           "titleId": 280,
           "subject": "test truyện ",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
           "likeCount": 7
         },
         {
           "titleId": 265,
           "subject": "Tung test title 1",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
           "likeCount": 9
         }
       ]
@@ -116,12 +116,12 @@
       "lineBannerList": [
         {
           "subject": "banner test ",
-          "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/423/ANDROID.png",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/423/ANDROID.png",
           "linkUrl": "comicovn://contestInfo?target\u003dguide"
         },
         {
           "subject": "Dtest",
-          "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/424/ANDROID.png",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/424/ANDROID.png",
           "linkUrl": null
         }
       ]
@@ -139,70 +139,70 @@
             "titleId": 264,
             "subject": "The Avengers",
             "author": "dattest97",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
             "likeCount": 51
           },
           {
             "titleId": 190,
             "subject": "Test contest 2",
             "author": "Null",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
             "likeCount": 27
           },
           {
             "titleId": 191,
             "subject": "191",
             "author": "4331Nexx",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
             "likeCount": 14
           },
           {
             "titleId": 302,
             "subject": "test chương ",
             "author": "G1137489914",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
             "likeCount": 14
           },
           {
             "titleId": 181,
             "subject": "Title 181",
             "author": "Null",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/181/square_20210611083005.jpg",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/181/square_20210611083005.jpg",
             "likeCount": 13
           },
           {
             "titleId": 327,
             "subject": "Grow up",
             "author": "G1137489914",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
             "likeCount": 10
           },
           {
             "titleId": 265,
             "subject": "Tung test title 1",
             "author": "G1022701476",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
             "likeCount": 9
           },
           {
             "titleId": 248,
             "subject": "Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng  Truyện cây xương rồng 11",
             "author": "G1137489914",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/248/square.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/248/square.png",
             "likeCount": 8
           },
           {
             "titleId": 280,
             "subject": "test truyện ",
             "author": "G1137489914",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
             "likeCount": 7
           },
           {
             "titleId": 334,
             "subject": "Chú chó loắt choắt - part 2",
             "author": "dattest97",
-            "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
             "likeCount": 6
           }
         ]
@@ -215,42 +215,42 @@
           "titleId": 336,
           "subject": "test truyện có 1 chương bị block",
           "author": "G1137489914",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/336/square_20210624083306.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/336/square_20210624083306.png",
           "likeCount": 1
         },
         {
           "titleId": 334,
           "subject": "Chú chó loắt choắt - part 2",
           "author": "dattest97",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
           "likeCount": 6
         },
         {
           "titleId": 333,
           "subject": "Chú chó loắt choắt phần 1",
           "author": "dattest97",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/333/square_20210623093518.jpg",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/333/square_20210623093518.jpg",
           "likeCount": 3
         },
         {
           "titleId": 327,
           "subject": "Grow up",
           "author": "G1137489914",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
           "likeCount": 10
         },
         {
           "titleId": 326,
           "subject": "Check không có chapter",
           "author": "G1137489914",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/326/square_20210618105212.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/326/square_20210618105212.png",
           "likeCount": 0
         },
         {
           "titleId": 309,
           "subject": "Test Statistics 1",
           "author": "Null",
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/309/square_20210616172248.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/309/square_20210616172248.png",
           "likeCount": 0
         }
       ]
@@ -269,7 +269,7 @@
             {
               "subject": "Hoàng tử đầu cắt tôi",
               "description": "Hihihaha",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/198/square.jpg",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/198/square.jpg",
               "linkUrl": "comicovn://titleDetail?titleId\u003d147\u0026type\u003dWEB_COMIC",
               "eventTag": null,
               "likeCount": 0
@@ -277,7 +277,7 @@
             {
               "subject": "Truyện Pass",
               "description": "dattest97",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/293/square_20210615084746.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/293/square_20210615084746.png",
               "linkUrl": "comicovn://titleDetail?titleId\u003d293\u0026type\u003dCONTEST",
               "eventTag": null,
               "likeCount": 1
@@ -285,7 +285,7 @@
             {
               "subject": "The Avengers",
               "description": "dattest97",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
               "linkUrl": "comicovn://titleDetail?titleId\u003d264\u0026type\u003dCONTEST",
               "eventTag": null,
               "likeCount": 51
@@ -293,7 +293,7 @@
             {
               "subject": "câu chuyện về chú heo con tinh nghịch bỏ nhà ra đi, câu chuyện về heo con đi học ",
               "description": "Vi Thị Thảo Mai",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
               "linkUrl": "comicovn://giftbox",
               "eventTag": null,
               "likeCount": 4
@@ -301,7 +301,7 @@
             {
               "subject": "câu chuyện về chú heo con tinh nghịch bỏ nhà ra đi, câu chuyện về heo con đi học ",
               "description": "Vi Thị Thảo Mai",
-              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
+              "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
               "linkUrl": "comicovn://giftbox",
               "eventTag": null,
               "likeCount": 4

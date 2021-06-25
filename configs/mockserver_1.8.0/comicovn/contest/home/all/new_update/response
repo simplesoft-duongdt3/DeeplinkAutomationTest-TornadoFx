@@ -14,35 +14,35 @@
           "titleId": 250,
           "subject": "Test new updatee",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/250/square.jpg",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/250/square.jpg",
           "likeCount": 0
         },
         {
           "titleId": 285,
           "subject": "truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống truyện về  cách sống tru",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/285/square_20210614103528.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/285/square_20210614103528.png",
           "likeCount": 2
         },
         {
           "titleId": 302,
           "subject": "test chương ",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
           "likeCount": 14
         },
         {
           "titleId": 280,
           "subject": "test truyện ",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/280/square_20210614083254.png",
           "likeCount": 7
         },
         {
           "titleId": 265,
           "subject": "Tung test title 1",
           "author": null,
-          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
           "likeCount": 9
         }
       ]

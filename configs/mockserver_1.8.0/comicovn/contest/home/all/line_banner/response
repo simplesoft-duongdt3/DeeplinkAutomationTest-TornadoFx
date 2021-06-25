@@ -13,12 +13,12 @@
       "lineBannerList": [
         {
           "subject": "banner test ",
-          "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/423/ANDROID.png",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/423/ANDROID.png",
           "linkUrl": "comicovn://contestInfo?target\u003dguide"
         },
         {
           "subject": "Dtest",
-          "imageUrl": "https://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/424/ANDROID.png",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/424/ANDROID.png",
           "linkUrl": null
         }
       ]

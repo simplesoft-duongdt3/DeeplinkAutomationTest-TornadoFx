@@ -18,7 +18,7 @@
          "minimumVersion":"1.0.4",
          "latestVersion":"1.2.0",
          "minimumOSVersion":"12.0.0",
-         "updateUrl":"https://apps.apple.com/app/apple-store/id1182360240",
+         "updateUrl":"http://apps.apple.com/app/apple-store/id1182360240",
          "loggerList":{
             "lcsLogger":"true",
             "firebaseLogger":"true",
