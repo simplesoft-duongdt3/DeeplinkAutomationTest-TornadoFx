@@ -1,0 +1,52 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"readHistory",
+         "readHistory":[
+            {
+               "titleId":101,
+               "chapterId":435,
+               "titleSubject":"Tuổi học trò",
+               "chapterSubject":"ch 13",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/medium.jpg",
+               "lastReadDateTime":"2021-03-05 08:45:38",
+               "freeChargeDuration":0
+            },
+            {
+               "titleId":107,
+               "chapterId":270,
+               "titleSubject":"Những người bạn",
+               "chapterSubject":"Chương 3",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/medium.jpg",
+               "lastReadDateTime":"2021-03-05 08:44:35",
+               "freeChargeDuration":0
+            },
+            {
+               "titleId":100,
+               "chapterId":234,
+               "titleSubject":"Hoa dã quỳ tôi yêu ",
+               "chapterSubject":"Mùa hoa dã quỳ 03",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/100/medium.jpg",
+               "lastReadDateTime":"2021-03-05 08:44:28",
+               "freeChargeDuration":0
+            },
+            {
+               "titleId":106,
+               "chapterId":262,
+               "titleSubject":"Hai chị em",
+               "chapterSubject":"Chương 1",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/medium.jpg",
+               "lastReadDateTime":"2021-03-04 17:05:19",
+               "freeChargeDuration":0
+            }
+         ]
+      }
+   ]
+}

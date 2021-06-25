@@ -1,0 +1,21 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "subject": "line bottom",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/201/ANDROID.jpg",
+            "linkUrl": "comicovn://webcomic?target=mon"
+        },
+        {
+            "subject": "line banner bottom 2",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_BOTTOM/HOME/204/ANDROID.jpg",
+            "linkUrl": null
+        }
+    ]
+}

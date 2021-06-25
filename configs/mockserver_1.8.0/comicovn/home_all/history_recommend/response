@@ -1,0 +1,149 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"historyRecommend",
+         "historyRecommend":{
+            "historyTitleSubject":"Truyện tương tự với Tuổi học trò",
+            "titleList":[
+               {
+                  "titleId":128,
+                  "subject":"Mùa Họa mi năm ấy",
+                  "shortDescription":"Những bông cúc họa mi báo hiệu một mùa đông đã về. Những bông hoa nhỏ nhỏ xinh xinh toát đã toát lên một vẻ đẹp tinh khiết và vô cùng giản dị.",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/128/square.jpg",
+                  "likeCount":2,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":true,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":1,
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":119,
+                  "subject":"Bạn có thể yêu tôi không?",
+                  "shortDescription":"Kể về chuyện tình yêu giữa một cô gái nghèo và anh chàng nhà giàu",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/119/square.jpg",
+                  "likeCount":2,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":48,
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":123,
+                  "subject":"Tổng tài ma cà rồng của tôi",
+                  "shortDescription":"Tình yêu của tổng tài ma cà rồng dành cho cô thư ký",
+                  "author":"Hayama Izumi, Keiyu",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/123/square.jpg",
+                  "likeCount":1,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":4,
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":120,
+                  "subject":"Người anh yêu chính là em",
+                  "shortDescription":"Tình yêu của một gái mập dành cho chàng trai tài phiệt",
+                  "author":"Semoto Chika",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/120/square.jpg",
+                  "likeCount":0,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":1,
+                  "eventTag": null
+               },
+               {
+                  "titleId":148,
+                  "subject":"Trái tim của Luce",
+                  "shortDescription":"Ta sẽ làm những gì vì người mình yêu?",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/148/square.jpg",
+                  "likeCount":0,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":true,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":10,
+                  "eventTag": null
+               },
+               {
+                  "titleId":100,
+                  "subject":"Hoa dã quỳ tôi yêu ",
+                  "shortDescription":"Dã quỳ hay còn gọi là cúc quỳ, sơn quỳ, quỳ dại, là một chi thuộc họ Cúc có nguồn gốc tại Mexico. Dã quỳ là loài hoa tràn đầy sức sống mãnh liệt biểu tượng cho tình yêu chung thủy , tỏ ý kiêu hãnh không bao giờ chịu khuất phục.",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/100/square.jpg",
+                  "likeCount":1,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"CHARGING",
+                  "freeChargeDuration":12,
+                  "eventTag": null
+               },
+               {
+                  "titleId":124,
+                  "subject":"Ác ma đừng hôn tôi",
+                  "shortDescription":"Câu chuyện về cặp trai gái ghét nhau nhưng lại đến với nhau.",
+                  "author":"Ando Sawano",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/124/square.jpg",
+                  "likeCount":0,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":6,
+                  "eventTag": null
+               },
+               {
+                  "titleId":116,
+                  "subject":"Sự trả thù ngọt ngào",
+                  "shortDescription":"Sự trả thù của một cô gái...",
+                  "author":"Moyashi125",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/116/square.jpg",
+                  "likeCount":2,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":1,
+                  "eventTag": null
+               },
+               {
+                  "titleId":109,
+                  "subject":"Bá Vương Học Đường",
+                  "shortDescription":"Một trò chơi sẽ đưa tất cả mọi người vào một thế giới vui nhộn, hồi hộp và những trận chiến khốc liệt!",
+                  "author":"Tester Huy",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/109/square.jpg",
+                  "likeCount":2,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":12,
+                  "eventTag": null
+               },
+               {
+                  "titleId":105,
+                  "subject":"HOA HỒNG TRẮNG",
+                  "shortDescription":"Hoa hồng trắng là tên gọi chung cho loài hoa hồng lai có nguồn gốc từ châu Âu, được biết đến từ thời cổ đại và được canh tác từ thời phục hưng.",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/105/square.jpg",
+                  "likeCount":3,
+                  "isFavoriteClicked":false,
+                  "isFavoriteReward":false,
+                  "freeChargeStatus":"FULL",
+                  "freeChargeDuration":1,
+                  "eventTag": null
+               }
+            ]
+         }
+      }
+   ]
+}

@@ -1,0 +1,20 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "eventId": 59,
+    "subject": "ĐIỂM DANH 10.10",
+    "shortDescription": "Chuỗi sự kiện 🔟🔟 sắp bắt đầu với sự kiện Điểm danh đặc biệt nha các bạn ơi 🥰",
+    "longDescription": "🎉🎉 NHẬN VÉ THUÊ FREE 1O.1O\nĐỌC TRUYỆN CHO ĐỜI TƯƠI VUI  🎉🎉 \n\nChuỗi sự kiện SIÊU SALE 🔟🔟 sắp bắt đầu với sự kiện Điểm danh đặc biệt nha các bạn ơi 🥰\n\n👉 Check lịch và \"diểm danh\" mỗi ngày để nhận vé thuê free cho 1 truyện theo lịch trong hình nào 🎁🎁🎁",
+    "startDateTime": "2020-10-10 00:00:00",
+    "endDateTime": "2020-10-19 09:56:00",
+    "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/59.png",
+    "contentListId": -1,
+    "linkUrl": null
+  }
+}

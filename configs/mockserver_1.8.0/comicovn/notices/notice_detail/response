@@ -1,0 +1,18 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": {
+        "noticeId": 41,
+        "subject": "✨Mở chương miễn phí cho các truyện đã hoàn thành✨",
+        "shortDescription": "Mở chương miễn phí truyện hoàn thành",
+        "longDescription": "Một cô gái bí ẩn xuất hiện!\nVà cô ấy biết rằng Kamiya Yuiko có thể nhìn thấy những sinh vật kì dị gọi là Ayakashi.\n\"Đừng nên tin vào Bách Quỷ\" - Liệu Yuiko có nên nghe lời khuyên từ cô gái bí ẩn này?\n✨ Mời bạn cùng theo dõi những câu chuyện kì ảo ở ngôi trường được Bách Quỷ bảo hộ trong truyện 『 CÔ GÁI BẤT TỬ VÀ GIAO ƯỚC VỚI BÁCH QUỶ. \n💎 Bạn chỉ cần nhấn nút ngôi sao Theo dõi ở trang chính mỗi truyện bạn yêu thích\nVào app comico Việt Nam => chọn truyện mình thích => bấm nút Theo dõi để tham gia event.\n💎 comico sẽ gửi bạn 2 vé thuê của bộ truyện đó sau khi event kết thúc.\n- - - - -\n⛔ LƯU Ý: Nếu bạn hủy theo dõi trong ngày 08/06 sẽ không nhận được quà.",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/41.png",
+        "publishedDateTime": "2020-10-06 10:16:00",
+        "linkUrl": null
+    }
+}

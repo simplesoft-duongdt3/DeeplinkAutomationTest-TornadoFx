@@ -1,0 +1,10 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": false,
+    "resultCode": -2999,
+    "resultMessage": "need relogin"
+  },
+  "data": false
+}

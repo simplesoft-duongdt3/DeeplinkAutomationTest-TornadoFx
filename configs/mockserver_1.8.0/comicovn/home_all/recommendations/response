@@ -1,0 +1,68 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"recommendations",
+         "recommendations":[
+            {
+               "position":"BOTTOM",
+               "thumbnailType":"SQUARE",
+               "subject":"HIGHLIGHT",
+               "linkText":"",
+               "linkUrl":"",
+               "displayOrder":2,
+               "componentList":[
+                  {
+                     "subject":"Tuổi học trò",
+                     "description":"HangNguyen",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=101&type=WEB_COMIC",
+                     "eventTag": "DISCOUNT"
+                  },
+                  {
+                     "subject":"Hai chị em",
+                     "description":"HangNguyen",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=106&type=WEB_COMIC",
+                     "eventTag": "FREE_CHARGE_DURATION"
+                  },
+                  {
+                     "subject":"Những người bạn",
+                     "description":"Đổng Phi",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=107&type=WEB_COMIC",
+                     "eventTag": "FREE_CHAPTER_EXTENSION"
+                  },
+                  {
+                     "subject":"Tuổi học trò",
+                     "description":"HangNguyen",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=101&type=WEB_COMIC",
+                     "eventTag": null
+                  },
+                  {
+                     "subject":"Hai chị em",
+                     "description":"HangNguyen",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=106&type=WEB_COMIC",
+                     "eventTag": null
+                  },
+                  {
+                     "subject":"Những người bạn",
+                     "description":"Đổng Phi",
+                     "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+                     "linkUrl":"comicovn://titleDetail?titleId=107&type=WEB_COMIC",
+                     "eventTag": null
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

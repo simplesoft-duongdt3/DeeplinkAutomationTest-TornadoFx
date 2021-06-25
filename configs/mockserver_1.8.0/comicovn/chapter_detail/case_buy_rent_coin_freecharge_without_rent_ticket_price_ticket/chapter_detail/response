@@ -1,0 +1,29 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 2000,
+    "resultMessage": "This chapter need to purchase for read."
+  },
+  "data": {
+    "chapterId": 141,
+    "subject": "Ch.13: Đồ ăn",
+    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/7751/thumbnail.jpg",
+    "freeChargeStatus": "CHARGING",
+    "freeChargeDuration": 10,
+    "isAvailableRentTicket": true,
+    "isAvailableCollectionTicket": true,
+    "rentDuration": 72,
+    "prevChapter": {
+      "chapterId": 7750,
+      "isFree": false,
+      "ownedExpiryDateTime": null
+    },
+    "nextChapter": {
+      "chapterId": 7752,
+      "isFree": false,
+      "ownedExpiryDateTime": null
+    }
+  }
+}

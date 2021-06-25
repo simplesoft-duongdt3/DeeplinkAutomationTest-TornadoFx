@@ -1,0 +1,94 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"forYou",
+         "forYou":[
+            {
+               "titleId":136,
+               "subject":"Big Sale",
+               "shortDescription":"aaaaa",
+               "author":"Rima",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/136/square.jpg",
+               "likeCount":0,
+               "isFavoriteClicked":false,
+               "isFavoriteReward":false,
+               "freeChargeStatus":"NONE",
+               "freeChargeDuration":0,
+               "eventTag": "DISCOUNT"
+            },
+            {
+               "titleId":142,
+               "subject":"reservation title",
+               "shortDescription":"title để reservation",
+               "author":"Manga Too",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/142/square.jpg",
+               "likeCount":0,
+               "isFavoriteClicked":false,
+               "isFavoriteReward":true,
+               "freeChargeStatus":"NONE",
+               "freeChargeDuration":0,
+               "eventTag": "FREE_CHARGE_DURATION"
+            },
+            {
+               "titleId":130,
+               "subject":"Tiểu thư đỏng đảnh",
+               "shortDescription":"MA LẠT THIÊN KIM ĐẨU ÁC THIẾU (TIỂU THƯ ĐỎNG ĐẢNH)",
+               "author":"Sakana",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/130/square.jpg",
+               "likeCount":1,
+               "isFavoriteClicked":true,
+               "isFavoriteReward":false,
+               "freeChargeStatus":"FULL",
+               "freeChargeDuration":3,
+               "eventTag": "FREE_CHAPTER_EXTENSION"
+            },
+            {
+               "titleId":124,
+               "subject":"Ác ma đừng hôn tôi",
+               "shortDescription":"Câu chuyện về cặp trai gái ghét nhau nhưng lại đến với nhau.",
+               "author":"Ando Sawano",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/124/square.jpg",
+               "likeCount":0,
+               "isFavoriteClicked":false,
+               "isFavoriteReward":false,
+               "freeChargeStatus":"FULL",
+               "freeChargeDuration":6,
+               "eventTag": null
+            },
+            {
+               "titleId":127,
+               "subject":"Theppitak và cô gái may mắn",
+               "shortDescription":"Khi người phụ nữ xui xẻo gặp một vị thần hộ mệnh đẹp trai ~!",
+               "author":"Semoto Chika",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/127/square.jpg",
+               "likeCount":1,
+               "isFavoriteClicked":false,
+               "isFavoriteReward":false,
+               "freeChargeStatus":"FULL",
+               "freeChargeDuration":12,
+               "eventTag": null
+            },
+            {
+               "titleId":137,
+               "subject":"sadasd",
+               "shortDescription":"âs",
+               "author":"Rima",
+               "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/137/square.jpg",
+               "likeCount":0,
+               "isFavoriteClicked":false,
+               "isFavoriteReward":true,
+               "freeChargeStatus":"FULL",
+               "freeChargeDuration":6,
+               "eventTag": null
+            }
+         ]
+      }
+   ]
+}

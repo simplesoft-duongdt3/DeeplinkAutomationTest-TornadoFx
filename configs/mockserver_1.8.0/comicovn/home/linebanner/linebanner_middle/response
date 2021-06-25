@@ -1,0 +1,21 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "subject": "Line Middle banner",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_MIDDLE/HOME/198/ANDROID.jpg",
+            "linkUrl": null
+        },
+        {
+            "subject": "Line banner middle 01",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_MIDDLE/HOME/199/ANDROID.jpg",
+            "linkUrl": "comicovn://webcomic?target=mon"
+        }
+    ]
+}

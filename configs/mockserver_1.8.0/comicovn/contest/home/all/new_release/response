@@ -1,0 +1,58 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "type": "contestNewReleaseTitleList",
+      "contestNewReleaseTitleList": [
+        {
+          "titleId": 336,
+          "subject": "test truyện có 1 chương bị block",
+          "author": "G1137489914",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/336/square_20210624083306.png",
+          "likeCount": 1
+        },
+        {
+          "titleId": 334,
+          "subject": "Chú chó loắt choắt - part 2",
+          "author": "dattest97",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+          "likeCount": 6
+        },
+        {
+          "titleId": 333,
+          "subject": "Chú chó loắt choắt phần 1",
+          "author": "dattest97",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/333/square_20210623093518.jpg",
+          "likeCount": 3
+        },
+        {
+          "titleId": 327,
+          "subject": "Grow up",
+          "author": "G1137489914",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+          "likeCount": 10
+        },
+        {
+          "titleId": 326,
+          "subject": "Check không có chapter",
+          "author": "G1137489914",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/326/square_20210618105212.png",
+          "likeCount": 0
+        },
+        {
+          "titleId": 309,
+          "subject": "Test Statistics 1",
+          "author": "Null",
+          "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/309/square_20210616172248.png",
+          "likeCount": 0
+        }
+      ]
+    }
+  ]
+}

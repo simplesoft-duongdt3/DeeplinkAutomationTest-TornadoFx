@@ -1,0 +1,91 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+	{
+      "amount": 101,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-01 03:34:32",
+      "subject": "Gift Test Device nhận 2 lần",
+      "titlesSubject": "Nhà tù Namba"
+    },
+	{
+      "amount": 2098,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-02 08:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 10,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-03 12:58:09",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 123,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-04 16:35:34",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 2,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-05 03:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 101,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-06 03:34:12",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 2098,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-07 03:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 234,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-08 03:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 125,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-09 22:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+	{
+      "amount": 24,
+      "message": "Tặng POINT",
+      "isUsed": false,
+      "registeredDateTime": "2019-12-10 03:34:32",
+      "subject": null,
+      "titlesSubject": null
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"weeklyList",
+         "weeklyList":{
+            "MON":[
+               {
+                  "titleId":109,
+                  "subject":"Bá Vương Học Đường",
+                  "author":"Tester Huy",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/109/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":148,
+                  "subject":"Trái tim của Luce",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/148/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":150,
+                  "subject":"Dev test - Dark Mode",
+                  "author":"Huy Tran",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/150/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":144,
+                  "subject":"Nhà tù Namba",
+                  "author":"aaaa",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":122,
+                  "subject":"Trở về tuổi thơ",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/122/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":145,
+                  "subject":"Coming soon ",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/145/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "TUE":[
+               {
+                  "titleId":144,
+                  "subject":"Nhà tù Namba",
+                  "author":"aaaa",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":132,
+                  "subject":"Cô gái bé nhỏ",
+                  "author":"Chizo",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/132/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":110,
+                  "subject":"Chàng trai ngoại cảm",
+                  "author":"Oribalism",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/110/square.png",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":122,
+                  "subject":"Trở về tuổi thơ",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/122/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":148,
+                  "subject":"Trái tim của Luce",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/148/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":116,
+                  "subject":"Sự trả thù ngọt ngào",
+                  "author":"Moyashi125",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/116/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "WED":[
+               {
+                  "titleId":141,
+                  "subject":"Tổng tài tại thượng",
+                  "author":"Chang, Renzo",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/141/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":144,
+                  "subject":"Nhà tù Namba",
+                  "author":"aaaa",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":117,
+                  "subject":"Nhân chứng tình yêu ma cà rồng",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/117/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":127,
+                  "subject":"Theppitak và cô gái may mắn",
+                  "author":"Semoto Chika",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/127/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":122,
+                  "subject":"Trở về tuổi thơ",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/122/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":102,
+                  "subject":"Chạy Theo Bong Bóng",
+                  "author":"Huy MeME",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/102/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "THU":[
+               {
+                  "titleId":125,
+                  "subject":"Gray Scale",
+                  "author":"Đổng Phi",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/125/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":144,
+                  "subject":"Nhà tù Namba",
+                  "author":"aaaa",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":122,
+                  "subject":"Trở về tuổi thơ",
+                  "author":"Han Jeong",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/122/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":105,
+                  "subject":"HOA HỒNG TRẮNG",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/105/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":132,
+                  "subject":"Cô gái bé nhỏ",
+                  "author":"Chizo",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/132/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":121,
+                  "subject":"Tôi yêu anh sếp đẹp trai",
+                  "author":"Tester Huy",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/121/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "FRI":[
+               {
+                  "titleId":132,
+                  "subject":"Cô gái bé nhỏ",
+                  "author":"Chizo",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/132/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":135,
+                  "subject":"Trò chơi gay cấn",
+                  "author":"Huy Lãng Tử22",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/135/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":140,
+                  "subject":"Big Sale",
+                  "author":"Rima",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/140/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":105,
+                  "subject":"HOA HỒNG TRẮNG",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/105/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":103,
+                  "subject":"10 Năm Tình Bạn",
+                  "author":"Huy MeME",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/103/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":101,
+                  "subject":"Tuổi học trò",
+                  "author":"HangNguyen",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "SAT":[
+               {
+                  "titleId":137,
+                  "subject":"sadasd",
+                  "author":"Rima",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/137/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":144,
+                  "subject":"Nhà tù Namba",
+                  "author":"aaaa",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":118,
+                  "subject":"Cuốn sách tình yêu của bác sĩ",
+                  "author":"Gi Ryang, Heo Sa Rin",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/118/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":109,
+                  "subject":"Bá Vương Học Đường",
+                  "author":"Tester Huy",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/109/square.jpg",
+                  "eventTag": null
+               }
+            ]
+         }
+      }
+   ]
+}

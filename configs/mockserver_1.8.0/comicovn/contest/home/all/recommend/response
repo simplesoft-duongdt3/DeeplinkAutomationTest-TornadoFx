@@ -1,0 +1,74 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "type": "recommendations",
+      "recommendations": [
+        {
+          "position": "TOP",
+          "thumbnailType": "SQUARE",
+          "subject": "🔥 CONTEST - BL HOT 🔥",
+          "linkText": "Xem thêm",
+          "linkUrl": "comicovn://content?contentId\u003d25",
+          "displayOrder": 3,
+          "componentList": [
+            {
+              "subject": "Test truyện",
+              "description": "Null",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/311/square_20210616172610.png",
+              "linkUrl": null,
+              "eventTag": null,
+              "likeCount": 0
+            },
+            {
+              "subject": "191",
+              "description": "4331Nexx",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+              "linkUrl": "comicovn://titleDetail?titleId\u003d191\u0026type\u003dWEB_COMIC",
+              "eventTag": null,
+              "likeCount": 14
+            },
+            {
+              "subject": "Test contest 2",
+              "description": "Null",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
+              "linkUrl": "comicovn://titleDetail?titleId\u003d190\u0026type\u003dCONTEST",
+              "eventTag": null,
+              "likeCount": 27
+            },
+            {
+              "subject": "Đã quá Cola ơi!!",
+              "description": "dattest97",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/246/square.png",
+              "linkUrl": null,
+              "eventTag": null,
+              "likeCount": 0
+            },
+            {
+              "subject": "cbvc bvhb hvbv  hbfhc hv vjc vbfhcd",
+              "description": "G274458653",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/217/square.jpg",
+              "linkUrl": null,
+              "eventTag": null,
+              "likeCount": 0
+            },
+            {
+              "subject": "test chương ",
+              "description": "G1137489914",
+              "thumbnailUrl": "https://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+              "linkUrl": "comicovn://giftbox",
+              "eventTag": null,
+              "likeCount": 14
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

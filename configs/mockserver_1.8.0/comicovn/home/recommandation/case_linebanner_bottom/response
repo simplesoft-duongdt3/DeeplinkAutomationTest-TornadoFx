@@ -1,0 +1,39 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "🤣CƯỜI QUÊN TRỜI ĐẤT🤣",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d39",
+      "displayOrder": 9,
+      "componentList": [
+        {
+          "subject": "Cacao 79%",
+          "description": "Aoi Umi",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/40/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d40\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chưởng môn nhà em",
+          "description": "Thiện Thủy, Lưu Xán",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/87/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d87\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Bựa cả đôi",
+          "description": "Jemin",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/56/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d56\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    }
+  ]
+}

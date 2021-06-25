@@ -1,0 +1,33 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "RENT_TICKET": [
+      {
+        "purchaseTicketProductId": 101,
+        "subject": "Mua 1 vé mua chương",
+        "originalPrice": 30,
+        "price": 25,
+        "amount": 1,
+        "isAvailableCoin": false,
+        "isAvailablePoint": true
+      }
+    ],
+    "COLLECTION_TICKET": [
+      {
+        "purchaseTicketProductId": 96,
+        "subject": "Mua 2 vé mua chương",
+        "originalPrice": 25,
+        "price": 15,
+        "amount": 1,
+        "isAvailableCoin": true,
+        "isAvailablePoint": false
+      }
+    ]
+  }
+}

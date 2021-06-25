@@ -1,0 +1,155 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "attendanceId": 23,
+    "type": "SEVEN_DAYS",
+    "subject": "17th Attendance - 28.Sep.2020",
+    "startDateTime": "2020-09-28 00:00:00",
+    "endDateTime": "2020-10-04 23:59:59",
+    "isCompletedReward": true,
+    "componentList": [
+      {
+        "id": 193,
+        "type": "NORMAL",
+        "date": "2020-09-28",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 194,
+        "type": "NORMAL",
+        "date": "2020-09-29",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 195,
+        "type": "NORMAL",
+        "date": "2020-09-30",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 196,
+        "type": "NORMAL",
+        "date": "2020-10-01",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": true
+      },
+      {
+        "id": 197,
+        "type": "NORMAL",
+        "date": "2020-10-02",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 198,
+        "type": "NORMAL",
+        "date": "2020-10-03",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 199,
+        "type": "NORMAL",
+        "date": "2020-10-04",
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/100P_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 100
+          }
+        ],
+        "isReceived": false
+      },
+      {
+        "id": 200,
+        "type": "COMPLETE",
+        "date": null,
+        "panelImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/300p_Complete_New.png",
+        "popupImageUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/300p_Complete_New.png",
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+            "amount": 300
+          }
+        ],
+        "isReceived": false
+      }
+    ]
+  }
+}

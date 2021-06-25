@@ -1,0 +1,110 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 5,
+      "message": "Nhận Vé thuê từ Điểm danh",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-15 14:33:01",
+      "subject": "Gift Test Device nhận 2 lần",
+      "titlesSubject": "Nhà tù Namba"
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 5,
+      "message": "Nhận Vé thuê từ Điểm danh",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-14 12:06:20",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 5,
+      "message": "Nhận Vé thuê từ Điểm danh",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:35:26",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:56:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:32:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 09:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 14:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 08:34:32",
+      "subject": null,
+      "titlesSubject": null
+    },
+    {
+      "ticketType": "RENT_TICKET",
+      "amount": 2,
+      "message": "[PHẦN QUÀ] VÉ THUÊ",
+      "isUsed": false,
+      "registeredDateTime": "2019-10-13 13:23:32",
+      "subject": null,
+      "titlesSubject": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "titleId": 113,
+    "subject": "Tà y cuồng thê",
+    "longDescription": "Phượng Vô Tà, quân y của bộ đội đặc chủng, một lần gặp nạn xuyên không đến thế giới của các hồn thuật sư, xuyên vào thân xác một cô gái ngu ngốc bẩm sinh, không có hồn lực để tu luyện, bị anh chị em trong nhà xem như cái đinh trong mắt, dồn vào chỗ chết. Phượng Vô Tà sẽ làm gì để thoát khỏi nghịch cảnh, làm gì để bảo vệ bản thân, làm gì để bước lên đỉnh của thế giới trở thành người ai ai cũng ngưỡng mộ?",
+    "author": "Tam Phúc Động Mạn",
+    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/113/square.jpg",
+    "coverImageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/113/large.jpg",
+    "favoriteCount": 0,
+    "isFavoriteClicked": false,
+    "isFreeCharge": true,
+    "freeChargeDuration": 48,
+    "freeChargeAlarmStatus": "OFF",
+    "isFavoriteReward": false,
+    "chargeStartDateTime": null,
+    "chargeEndDateTime": null,
+    "isCompleted": false,
+    "isPostponed": false,
+    "isComingSoon": false,
+    "openReservedDateTime": null,
+    "restrictRentChapterCount": 40,
+    "publishedDayList": [
+      "SUN",
+      "TUE"
+    ],
+    "genreNameList": [
+      "Lãng mạn",
+      "Kịch tính",
+      "Kỳ ảo",
+      "Huyền bí"
+    ],
+    "noticeList": null,
+    "contentListId": -1
+  }
+}
