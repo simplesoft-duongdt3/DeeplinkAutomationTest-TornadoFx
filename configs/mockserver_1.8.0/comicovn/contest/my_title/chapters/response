@@ -1,0 +1,83 @@
+200
+500
+{
+    "header": {
+        "resultCode": 0,
+        "resultMessage": "SUCCESS",
+        "isSuccessful": true
+    },
+    "data": {
+        "totalCount": 16,
+        "chapterList": [
+            {
+                "id": 611,
+                "subject": "Chapter 1",
+                "description": "Description",
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/5308/thumbnail.jpg",
+                "dispOrder": 25,
+                "viewCount": 251,
+                "likeCount": 172,
+                "commentCount": 84,
+                "openReservedDateTime": "2021-06-06 15:33:24",
+                "status": "DRAFT",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "registerDateTime": "2021-05-28 13:57:19",
+                "updateDateTime": "2021-06-06 15:33:27"
+            },
+            {
+                "id": 611,
+                "subject": "Chapter 2",
+                "description": "Description",
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/5336/thumbnail.jpg",
+                "dispOrder": 25,
+                "viewCount": 284,
+                "likeCount": 47,
+                "commentCount": 23,
+                "openReservedDateTime": "2021-06-06 15:33:24",
+                "status": "UN_PUBLISHED",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "registerDateTime": "2021-05-28 13:57:19",
+                "updateDateTime": "2021-06-06 15:33:27"
+            },
+            {
+                "id": 611,
+                "subject": "Chapter 3",
+                "description": "Description",
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/5337/thumbnail.jpg",
+                "dispOrder": 25,
+                "viewCount": 324,
+                "likeCount": 75,
+                "commentCount": 56,
+                "openReservedDateTime": "2021-06-06 15:33:24",
+                "status": "BLOCKED",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "registerDateTime": "2021-05-28 13:57:19",
+                "updateDateTime": "2021-06-06 15:33:27"
+            },
+            {
+                "id": 610,
+                "subject": "Chapter 4",
+                "description": "Description",
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/5338/thumbnail.jpg",
+                "dispOrder": 24,
+                "viewCount": 128,
+                "likeCount": 47,
+                "commentCount": 12,
+                "openReservedDateTime": "2021-05-28 13:56:33",
+                "status": "PUBLISHED",
+                "blockedReason": null,
+                "registerDateTime": "2021-05-28 13:56:34",
+                "updateDateTime": "2021-05-28 13:56:34"
+            }
+        ]
+    }
+}
