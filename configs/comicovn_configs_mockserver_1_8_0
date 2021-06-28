@@ -4574,6 +4574,82 @@
   			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/my_title/chapters/no_data/response"
   		}
   	  ]
+    },
+    {
+      "id": "contest_contest_favorite_case_success",
+      "deeplink": "comicovn://bookshelf?target=favorite&type=CONTEST",
+      "activity_name": "MainActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_favorite/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_favorite/response"
+  		}
+  	  ]
+    },
+    {
+      "id": "contest_contest_favorite_case_no_data",
+      "deeplink": "comicovn://bookshelf?target=favorite&type=CONTEST",
+      "activity_name": "MainActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_favorite/no_data/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_favorite/no_data/response"
+  		}
+  	  ]
+    },
+    {
+      "id": "contest_contest_history_case_success",
+      "deeplink": "comicovn://bookshelf?target=history&type=CONTEST",
+      "activity_name": "MainActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_history/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_history/response"
+  		}
+  	  ]
+    },
+    {
+      "id": "contest_contest_history_case_no_data",
+      "deeplink": "comicovn://bookshelf?target=history&type=CONTEST",
+      "activity_name": "MainActivity",
+  	  "mockserver_configs": [
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/response"
+  		},
+  		{
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_history/no_data/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/contest/bookshelf_history/no_data/response"
+  		}
+  	  ]
     }
   ]
 }

@@ -1,0 +1,137 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "titleId": 303,
+      "subject": "câu chuyện về chú heo con tinh nghịch bỏ nhà ra đi, câu chuyện về heo con đi học ",
+      "author": "Vi Thị Thảo Mai",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:44:43",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 334,
+      "subject": "Chú chó loắt choắt - part 2",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:44:31",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 248,
+      "subject": "Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng  Truyện cây xương rồng 11",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/248/square.png",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:44:13",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 327,
+      "subject": "Grow up",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:43:45",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 191,
+      "subject": "191x",
+      "author": "4331Nexx",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:43:30",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 342,
+      "subject": "aâ",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/342/square_20210625160748.png",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:43:14",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 356,
+      "subject": "Death note",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/356/square_20210628100549.jpg",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:42:58",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 354,
+      "subject": "Nhật ký trong trại",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/354/square_20210628100505.jpg",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:42:40",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 287,
+      "subject": "The Boys",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/287/square_20210614104343.jpg",
+      "isUp": false,
+      "isNew": false,
+      "isPostponed": false,
+      "isCompleted": false,
+      "isEnableAlarm": true,
+      "favoriteDateTime": "2021-06-28 11:42:10",
+      "isPreOpen": false,
+      "freeChargeDuration": 0
+    }
+  ]
+}

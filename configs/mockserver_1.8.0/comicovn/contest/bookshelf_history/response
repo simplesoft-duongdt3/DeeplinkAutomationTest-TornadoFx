@@ -1,0 +1,101 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "titleId": 265,
+      "chapterId": 775,
+      "titleSubject": "Tung test title 1",
+      "chapterSubject": "chapter 1 update",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/265/square_20210611084237.png",
+      "lastReadDateTime": "2021-06-28 11:52:35",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 191,
+      "chapterId": 571,
+      "titleSubject": "191x",
+      "chapterSubject": "Chuong 3",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+      "lastReadDateTime": "2021-06-28 11:52:24",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 190,
+      "chapterId": 605,
+      "titleSubject": "Test contest 2",
+      "chapterSubject": "chuong 1",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
+      "lastReadDateTime": "2021-06-28 11:52:17",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 264,
+      "chapterId": 806,
+      "titleSubject": "The Avengers",
+      "chapterSubject": "Captain Americano: The first Bartender",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
+      "lastReadDateTime": "2021-06-28 11:52:12",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 303,
+      "chapterId": 938,
+      "titleSubject": "câu chuyện về chú heo con tinh nghịch bỏ nhà ra đi, câu chuyện về heo con đi học ",
+      "chapterSubject": "Chương 1 ",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/303/square_20210616131608.png",
+      "lastReadDateTime": "2021-06-28 11:52:05",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 309,
+      "chapterId": 970,
+      "titleSubject": "Test Statistics 1",
+      "chapterSubject": "Chuong 1",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/309/square_20210616172248.png",
+      "lastReadDateTime": "2021-06-28 11:52:00",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 326,
+      "chapterId": 1011,
+      "titleSubject": "Check không có chapter",
+      "chapterSubject": "c2",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/326/square_20210618105212.png",
+      "lastReadDateTime": "2021-06-28 11:51:54",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 327,
+      "chapterId": 982,
+      "titleSubject": "Grow up",
+      "chapterSubject": "C2",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+      "lastReadDateTime": "2021-06-28 11:51:50",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 333,
+      "chapterId": 1012,
+      "titleSubject": "Chú chó loắt choắt phần 1",
+      "chapterSubject": "Chương 1",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/333/square_20210623093518.jpg",
+      "lastReadDateTime": "2021-06-28 11:51:45",
+      "freeChargeDuration": 0
+    },
+    {
+      "titleId": 334,
+      "chapterId": 1014,
+      "titleSubject": "Chú chó loắt choắt - part 2",
+      "chapterSubject": "Tập 2",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+      "lastReadDateTime": "2021-06-28 11:51:41",
+      "freeChargeDuration": 0
+    }
+  ]
+}
