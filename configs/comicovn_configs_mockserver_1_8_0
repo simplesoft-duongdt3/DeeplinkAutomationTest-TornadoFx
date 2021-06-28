@@ -4392,7 +4392,7 @@
   	  ]
     },
     {
-      "id": "contest_title_detail",
+      "id": "contest_title_detail_case_no_data",
       "deeplink": "comicovn://titleDetail?titleId=245&type=CONTEST",
       "activity_name": "TitleDetailActivity",
   	  "mockserver_configs": [
