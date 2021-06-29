@@ -332,14 +332,14 @@
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
 		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/response"
-		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/response"
-		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/response"
+  		},
 		{
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_popup_gift/gift_popup/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_popup_gift/gift_popup/response"
@@ -363,14 +363,14 @@
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
 		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/response"
-		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/response"
-		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/response"
+  		},
 		{
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_attendance_atend_error/attendance/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_attendance_atend_error/attendance/response"
@@ -398,14 +398,14 @@
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
 		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/recommandation/response"
-		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/home/except-recommandation/response"
-		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/top_banner/response"
+  		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_all/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_all/response"
+  		},
 		{
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_attendance_atend_auto/attendance/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/home_popup/case_attendance_atend_auto/attendance/response"
