@@ -20,7 +20,8 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": "DISCOUNT"
     },
     {
       "titleId": 62,
@@ -35,7 +36,8 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": "FREE_CHARGE_DURATION"
     },
     {
       "titleId": 22,
@@ -50,7 +52,8 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": "FREE_CHAPTER_EXTENSION"
     },
     {
       "titleId": 27,
@@ -65,7 +68,8 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 126,
@@ -80,7 +84,8 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 5,
@@ -95,7 +100,8 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 66,
@@ -110,7 +116,8 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 113,
@@ -125,7 +132,8 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 52,
@@ -140,7 +148,8 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
+      "isPostponed": false,
+      "eventTag": null
     },
     {
       "titleId": 68,
@@ -155,8 +164,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 130,
       "subject": "Hoàng tử bé của rồng con",
@@ -170,8 +180,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 116,
       "subject": "Thuần tình nha đầu hỏa lạt lạt",
@@ -185,8 +196,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 74,
       "subject": "Hai mệnh đề",
@@ -200,8 +212,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 93,
       "subject": "Gâu gâu Meo meo",
@@ -215,8 +228,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 136,
       "subject": "Blood Link",
@@ -230,8 +244,9 @@
       "isNew": true,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 133,
       "subject": "Cuộc chiến tình yêu của boy tâm cơ",
@@ -245,8 +260,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 137,
       "subject": "Bất chấp chiều cao để yêu anh",
@@ -260,8 +276,9 @@
       "isNew": true,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 13,
       "subject": "Ngọt ngào đến vậy",
@@ -275,8 +292,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 95,
       "subject": "Thần hộ vệ nguy hiểm",
@@ -290,8 +308,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 102,
       "subject": "Ôi! Hoàng tử",
@@ -305,8 +324,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 138,
       "subject": "Bí mật bóng đêm",
@@ -320,8 +340,9 @@
       "isNew": true,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 30,
       "subject": "Giấc mơ đưa anh đến",
@@ -335,8 +356,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 101,
       "subject": "Ai là nô lệ của cậu chứ~!",
@@ -350,8 +372,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 89,
       "subject": "Black hole disco",
@@ -365,8 +388,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 83,
       "subject": "Dịch bệnh u sầu",
@@ -380,8 +404,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 39,
       "subject": "Thợ may của Nữ hoàng Cessia",
@@ -395,8 +420,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 76,
       "subject": "Ái thần",
@@ -410,8 +436,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 124,
       "subject": "Vết cắn ngọt ngào",
@@ -425,8 +452,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 38,
       "subject": "Kế hoạch trả thù của nàng bướm đêm",
@@ -440,8 +468,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 139,
       "subject": "Làm cha làm mẹ",
@@ -455,8 +484,9 @@
       "isNew": true,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 134,
       "subject": "Hoa nở trong đêm",
@@ -470,8 +500,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 132,
       "subject": "Family Stalker",
@@ -485,8 +516,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 127,
       "subject": "Chuyển sinh làm công chúa giả mạo",
@@ -500,8 +532,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 114,
       "subject": "Uống nhầm cường dược, đầu gấu biến hình",
@@ -515,8 +548,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 45,
       "subject": "Nàng Shimjeong",
@@ -530,8 +564,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 141,
       "subject": "Ngôi trường tội lỗi",
@@ -545,8 +580,9 @@
       "isNew": true,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 120,
       "subject": "Giam giữ ái tình",
@@ -560,8 +596,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 118,
       "subject": "Silent bird",
@@ -575,8 +612,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 72,
       "subject": "Tam yêu bàn chuyện nhân sinh",
@@ -590,8 +628,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 2,
       "subject": "Bảo mẫu xác ướp",
@@ -605,8 +644,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 105,
       "subject": "Chị em hờ",
@@ -620,8 +660,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 110,
       "subject": "\"Chỗ ấy\" dễ thương của Tsukishiro ",
@@ -635,8 +676,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 56,
       "subject": "Bựa cả đôi",
@@ -650,8 +692,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 28,
       "subject": "Đây không cần hoàng tử",
@@ -665,8 +708,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 8,
       "subject": "Duyên mộc cầu ái",
@@ -680,8 +724,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 140,
       "subject": "Truyền thuyết về chú cáo sa mạc hoàng kim",
@@ -695,8 +740,9 @@
       "isNew": true,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 117,
       "subject": "Quý cô báo thù",
@@ -710,8 +756,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 94,
       "subject": "Phượng khởi Hoa Tàng",
@@ -725,8 +772,9 @@
       "isNew": false,
       "isUp": true,
       "isCompleted": false,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 84,
       "subject": "Nói yêu anh đi",
@@ -740,8 +788,9 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": true,
-      "isPostponed": false
-    },
+      "isPostponed": false,
+      "eventTag": null
+      },
     {
       "titleId": 99,
       "subject": "Vận mệnh bí ẩn",
@@ -755,7 +804,8 @@
       "isNew": false,
       "isUp": false,
       "isCompleted": false,
-      "isPostponed": false
-    }
+      "isPostponed": false,
+      "eventTag": null
+      }
   ]
 }

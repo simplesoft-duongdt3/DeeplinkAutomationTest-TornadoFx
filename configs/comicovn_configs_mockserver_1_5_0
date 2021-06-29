@@ -1,7 +1,6 @@
 {
   "package_name": "com.toast.comico.vn.alpha",
   "wait_start_activity_disappear": "SplashActivity",
-  "mockserver_url": "http://10.78.249.37:9999",
   "deeplinks": [
     {
       "id": "home_case_floating_banner",

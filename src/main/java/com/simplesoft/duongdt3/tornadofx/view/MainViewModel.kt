@@ -29,6 +29,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private val fileRoot = File(System.getProperty("user.dir"))
     private val logger by inject<AppLogger>()
     private val fileReader by inject<FileReader>()
+    private val fileWriter by inject<FileWriter>()
     private val configParser by inject<ConfigParser>()
     private val mockServerService by inject<MockServerService>()
 
@@ -50,7 +51,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             if (file != null) {
                 withContext(appDispatchers.io) {
                     val configText = fileReader.readFile(file.file)
-                    val deeplinkTestConfig = configParser.parse(configText)
+                    val envVarsText = fileReader.readFile(getEnvVarsFile())
+                    val deeplinkTestConfig = configParser.parse(configText = configText, envVarsText = envVarsText)
                     if (deeplinkTestConfig != null) {
                         val deeplinks = deeplinkTestConfig.deeplinks
                         initDeeplinkTestCaseSteps(deeplinks)
@@ -62,6 +64,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                 initDeeplinkTestCaseSteps(listOf())
             }
         }
+    }
+
+    private fun getEnvVarsFile(): File? {
+        val folderConfigs = File(File(fileRoot, "configs"), "env_vars")
+        return folderConfigs.listFiles()?.toList()?.firstOrNull()
     }
 
     val processingSteps: ObservableList<TestCaseStep> = FXCollections.observableArrayList<TestCaseStep>()
@@ -96,8 +103,10 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
             processingSteps.clear()
             val resultDeeplinkTestCase = withContext(appDispatchers.io) {
                 val configText = fileReader.readFile(file.file)
+                val envVarsText = fileReader.readFile(getEnvVarsFile())
                 runTestCaseFromInputDeeplinks(
                         configText = configText,
+                        envVarsText = envVarsText,
                         device = device.device,
                         takeScreenshot = isTakeScreenshot,
                         recordSreen = isRecordScreen
@@ -117,17 +126,19 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     }
             )
 
+            logger.log("getApiLogs all ${mockServerService.getApiLogs()}")
         }
     }
 
     private suspend fun runTestCaseFromInputDeeplinks(
             configText: String,
+            envVarsText: String,
             device: JadbDevice,
             takeScreenshot: Boolean,
             recordSreen: Boolean
     ): Either<Failure.UnCatchError, Boolean> {
         return try {
-            val deeplinkTestConfig = configParser.parse(configText)
+            val deeplinkTestConfig = configParser.parse(configText = configText, envVarsText = envVarsText)
             if (deeplinkTestConfig != null) {
                 val dirName = "deeplink_test_${System.currentTimeMillis()}"
                 val dirTestCaseResult = File(fileRoot, dirName).apply {
@@ -159,6 +170,7 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                             timeoutLoadingMilis = deeplinkTestConfig.timeoutLoadingMilis
                     )
                 }
+
                 Either.Success(true)
             } else {
                 Either.Fail(Failure.UnCatchError(Exception()))
@@ -234,11 +246,11 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
         }
 
         val imgFileName = "${id}_screenshot.png"
+        val apiLogFileName = "${id}_api_logs.json"
         val videoFileName = "${id}_video.mp4"
-
         val fileScreenshot = File(dirTestCase, imgFileName)
         val fileVideo = File(dirTestCase, videoFileName)
-
+        val fileApiLogs = File(dirTestCase, apiLogFileName)
         val startDeeplinkSuccess = startDeeplink(
                 id = id,
                 jadbDevice = device,
@@ -270,6 +282,8 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
                     imagePathInDevice = videoPathInDevice
             )
         }
+
+        fileWriter.writeFile(file = fileApiLogs, text = mockServerService.getApiLogs().defaultEmpty())
 
         val endTimeMilis = System.currentTimeMillis()
         val workingTime = endTimeMilis - startTimeMilis
@@ -610,7 +624,6 @@ class MainViewModel(coroutineScope: CoroutineScope, appDispatchers: AppDispatche
     private fun getFileConfigs(): List<File> {
         val folderConfigs = File(fileRoot, "configs")
         return folderConfigs.listFiles()?.toList().defaultEmpty()
-
     }
 
     private fun requestDevices() {

@@ -1,0 +1,116 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "chapterId": 307,
+      "subject": "Chương 1",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/307/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "isFree": true,
+      "isAvailableRentTicket": false,
+      "isAvailableCollectionTicket": false,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-03 00:00:00",
+      "isInEvent": false
+    },
+    {
+      "chapterId": 308,
+      "subject": "Chương 2",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/308/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 0,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": true,
+      "isAvailableCollectionTicket": false,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-03 00:00:00",
+      "isInEvent": true
+    },
+    {
+      "chapterId": 309,
+      "subject": "Chương 3",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/309/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 0,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": true,
+      "isAvailableCollectionTicket": true,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-03 00:00:00",
+      "isInEvent": true
+    },
+    {
+      "chapterId": 310,
+      "subject": "Chương 4",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/310/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 1,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": false,
+      "isAvailableCollectionTicket": true,
+      "ownedExpiryDateTime": null,
+      "ownedType": "COLLECT",
+      "displayOpenDateTime": "2020-04-03 00:00:00",
+      "isInEvent": true
+    },
+    {
+      "chapterId": 311,
+      "subject": "Chương 5",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/311/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 0,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": true,
+      "isAvailableCollectionTicket": true,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-03 00:00:00",
+      "isInEvent": false
+    },
+    {
+      "chapterId": 382,
+      "subject": "Chương 6",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/382/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 0,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": true,
+      "isAvailableCollectionTicket": true,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-21 00:00:00",
+      "isInEvent": false
+    },
+    {
+      "chapterId": 386,
+      "subject": "Chương 7",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/386/thumbnail.jpg",
+      "isUp": false,
+      "likeCount": 0,
+      "isLikeClicked": false,
+      "isFree": false,
+      "isAvailableRentTicket": false,
+      "isAvailableCollectionTicket": true,
+      "ownedExpiryDateTime": null,
+      "ownedType": null,
+      "displayOpenDateTime": "2020-04-25 00:00:00",
+      "isInEvent": false
+    }
+  ]
+}

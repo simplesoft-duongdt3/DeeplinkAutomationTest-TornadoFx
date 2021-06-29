@@ -8,9 +8,9 @@
    },
    "launching":{
       "server":{
-         "authUrl":"http://10.78.249.38:9999/",
-         "baseUrl":"http://10.78.249.38:9999/",
-         "billingUrl":"http://10.78.249.38:9999/"
+         "authUrl":"http://10.78.250.153:9999/",
+         "baseUrl":"http://10.78.250.153:9999/",
+         "billingUrl":"http://10.78.250.153:9999/"
       },
       "iOSClient":{
          "isRequireUpdate":"false",
@@ -61,7 +61,7 @@
          "popupDelay":"168",
          "minimumVersion":"1.5.0",
          "tokenRefresh":"55",
-         "latestVersion":"1.5.0",
+         "latestVersion":"1.7.0",
          "updateUrl":"com.toast.comico.vn.alpha",
          "payment":{
             "zaloAppId":"772",

@@ -14,8 +14,6 @@ data class DeeplinkTestConfigInput(
         val deeplinkStartActivity: String?,
         @SerializedName("extra_deeplink_key")
         val extraDeeplinkKey: String?,
-        @SerializedName("mockserver_url")
-        val mockserverUrl: String?,
         @SerializedName("wait_start_activity_disappear")
         val waitStartActivityDisappear: String?
 ) {
@@ -38,5 +36,4 @@ data class DeeplinkTestConfigInput(
             @SerializedName("responseConfig")
             val responseConfig: String?
     )
-
 }

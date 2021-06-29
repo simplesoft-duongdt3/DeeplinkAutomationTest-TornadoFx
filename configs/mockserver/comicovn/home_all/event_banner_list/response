@@ -12,12 +12,12 @@
          "eventBannerList":[
             {
                "subject":"ALL - FP: IGNORE x",
-               "imageUrl":"https://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/361/ANDROID.png",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/361/ANDROID.png",
                "linkUrl":"comicovn://mission"
             },
             {
                "subject":"ALL - FP: ENABLE",
-               "imageUrl":"https://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/362/ANDROID.jpg",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/362/ANDROID.jpg",
                "linkUrl":"comicovn://mission"
             }
          ]

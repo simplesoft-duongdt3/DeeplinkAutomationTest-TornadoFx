@@ -5,6 +5,7 @@
  - Kotlin
  - Java 1.8
  - TornadoFx Plugin (for Intellij Idea)
+ - IntelliJ IDEA Community Edition 2020.2.4
 
 ## Configure
  - when importing from Intellij Idea, choose the project as Gradle, not TornadoFx

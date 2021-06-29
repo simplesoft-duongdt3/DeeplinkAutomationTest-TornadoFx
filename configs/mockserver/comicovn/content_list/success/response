@@ -21,7 +21,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "DISCOUNT"
       },
       {
         "titleId": 93,
@@ -35,7 +36,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "FREE_CHARGE_DURATION"
       },
       {
         "titleId": 27,
@@ -49,7 +51,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": "FREE_CHAPTER_EXTENSION"
       },
       {
         "titleId": 45,
@@ -63,7 +66,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 42,
@@ -77,7 +81,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 105,
@@ -91,7 +96,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 30,
@@ -105,7 +111,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 28,
@@ -119,7 +126,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 76,
@@ -133,7 +141,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       },
       {
         "titleId": 74,
@@ -147,7 +156,8 @@
         "isNew": false,
         "isUp": false,
         "isCompleted": false,
-        "isPostponed": false
+        "isPostponed": false,
+        "eventTag": null
       }
     ]
   }

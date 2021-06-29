@@ -1,0 +1,35 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "purchaseChapterBundleEventId": 104,
+    "specialDealList": [
+      {
+        "purchaseChapterBundleSpecialDealId": 297,
+        "minChapterCount": 3,
+        "percentageDiscountRate": 0,
+        "productList": [
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "POINT",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/product/163_thumbnail.png",
+            "amount": 100
+          },
+          {
+            "mappedTitleId": -1,
+            "subject": null,
+            "type": "COIN",
+            "thumbnailUrl": null,
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  }
+}

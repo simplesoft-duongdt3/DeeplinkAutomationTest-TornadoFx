@@ -69,7 +69,7 @@
     },
     {
       "id": "content_list",
-      "deeplink": "comicovn://content?contentId=10",
+      "deeplink": "comicovn://content?contentId=100",
       "activity_name": "ContentListActivity"
     },
     {
@@ -80,20 +80,20 @@
     {
       "id": "giftbox",
       "deeplink": "comicovn://giftbox",
-      "activity_name": "InboxActivity"
+      "activity_name": "MainActivity"
     },
     {
-      "id": "chargepass",
-      "deeplink": "comicovn://news?target=chargepass",
-      "activity_name": "InboxActivity"
+      "id": "bookshelf_chargepass",
+      "deeplink": "comicovn://bookshelf?target=chargepass",
+      "activity_name": "MainActivity"
     },
     {
-      "id": "favorite",
+      "id": "bookshelf_favorite",
       "deeplink": "comicovn://bookshelf?target=favorite",
       "activity_name": "MainActivity"
     },
     {
-      "id": "history",
+      "id": "bookshelf_history",
       "deeplink": "comicovn://bookshelf?target=history",
       "activity_name": "MainActivity"
     },
@@ -114,7 +114,7 @@
     },
     {
       "id": "event_detail",
-      "deeplink": "comicovn://event?target=10",
+      "deeplink": "comicovn://event?target=146",
       "activity_name": "EventActivity"
     },
     {

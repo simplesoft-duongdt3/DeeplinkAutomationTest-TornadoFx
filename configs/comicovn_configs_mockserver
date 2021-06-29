@@ -1,7 +1,6 @@
 {
   "package_name": "com.toast.comico.vn.alpha",
   "wait_start_activity_disappear": "SplashActivity",
-  "mockserver_url": "http://10.78.249.37:9999",
   "deeplinks": [
 	{
       "id": "signin_error",
@@ -2431,7 +2430,7 @@
 	},
 	{
 		"id": "coupon_register",
-		"deeplink": "comicovn://coupon?target=register",
+		"deeplink": "comicovn://voucher?target=register",
 		"activity_name": "CouponActivity",
 		"mockserver_configs": [
 		{
@@ -2450,7 +2449,7 @@
 	},
     {
 		"id": "coupon_history_case_success",
-		"deeplink": "comicovn://coupon?target=history",
+		"deeplink": "comicovn://voucher?target=history",
 		"activity_name": "CouponActivity",
 		"mockserver_configs": [
 		{
@@ -2469,7 +2468,7 @@
 	},
     {
 		"id": "coupon_history_case_error",
-		"deeplink": "comicovn://coupon?target=history",
+		"deeplink": "comicovn://voucher?target=history",
 		"activity_name": "CouponActivity",
 		"mockserver_configs": [
 		{
