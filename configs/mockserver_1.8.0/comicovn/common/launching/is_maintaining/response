@@ -8,9 +8,9 @@
    },
    "launching":{
       "server":{
-         "authUrl":"http://10.78.250.153:9999/",
-         "baseUrl":"http://10.78.250.153:9999/",
-         "billingUrl":"http://10.78.250.153:9999/"
+         "authUrl":"$ENV{proxy_host_url}/",
+         "baseUrl":"$ENV{proxy_host_url}/",
+         "billingUrl":"$ENV{proxy_host_url}/"
       },
       "iOSClient":{
          "isRequireUpdate":"false",

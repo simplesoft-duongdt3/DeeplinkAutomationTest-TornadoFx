@@ -1,0 +1,22 @@
+{
+  "package_name": "com.toast.comico.vn.alpha",
+  "wait_start_activity_disappear": "SplashActivity",
+  "deeplinks": [
+	{
+       "id": "splash_case_force_up_version",
+       "deeplink": "comicovn://home",
+       "activity_name": "SplashActivity",
+	   "ignoreWaitStartActivity": true,
+ 	  "mockserver_configs": [
+ 		{
+ 			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/launching/force_up_version/request",
+ 			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/launching/force_up_version/response"
+ 		},
+		{
+			"requestConfig": "configs/mockserver_1.8.0/comicovn/common/signin/request",
+			"responseConfig": "configs/mockserver_1.8.0/comicovn/common/signin/response"
+		}
+ 	  ]
+ 	}
+  ]
+}
