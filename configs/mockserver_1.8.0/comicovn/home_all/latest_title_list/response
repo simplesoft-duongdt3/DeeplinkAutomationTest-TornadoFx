@@ -1,0 +1,63 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"latestTitleList",
+         "latestTitleList":{
+            "WEB_COMIC":[
+               {
+                  "titleId":150,
+                  "subject":"Dev test - Dark Mode",
+                  "author":"Huy Tran",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/150/square.jpg",
+                  "eventTag": "DISCOUNT"
+               },
+               {
+                  "titleId":140,
+                  "subject":"Big Sale",
+                  "author":"Rima",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/140/square.jpg",
+                  "eventTag": "FREE_CHARGE_DURATION"
+               },
+               {
+                  "titleId":149,
+                  "subject":"Test --10181",
+                  "author":"Chang, Renzo",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/149/square.jpg",
+                  "eventTag": "FREE_CHAPTER_EXTENSION"
+               },
+               {
+                  "titleId":148,
+                  "subject":"Trái tim của Luce",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/148/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":142,
+                  "subject":"reservation title",
+                  "author":"Manga Too",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/142/square.jpg",
+                  "eventTag": null
+               },
+               {
+                  "titleId":145,
+                  "subject":"Coming soon ",
+                  "author":"Harushionb",
+                  "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/145/square.jpg",
+                  "eventTag": null
+               }
+            ],
+            "WEB_NOVEL":[
+
+            ]
+         }
+      }
+   ]
+}

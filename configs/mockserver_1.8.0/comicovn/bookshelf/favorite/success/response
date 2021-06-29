@@ -1,0 +1,47 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "titleId": 1,
+            "subject": "Mùa xuân quá bự",
+            "author": "Kim Dung",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/136/square.jpg",
+            "isUp": true,
+            "isNew": true,
+            "isPostponed": false,
+            "isCompleted": false,
+            "isEnableAlarm": true,
+            "favoriteDateTime": "2020-02-13 09:12:48"
+        },
+		{
+            "titleId": 2,
+            "subject": "Hóa thành mưa bay",
+            "author": "Ngũ Thử bánh bèo",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.jpg",
+            "isUp": false,
+            "isNew": false,
+            "isPostponed": false,
+            "isCompleted": true,
+            "isEnableAlarm": true,
+            "favoriteDateTime": "2020-02-04 11:43:48"
+        },
+		{
+            "titleId": 4,
+            "subject": "Động đất to vl, khiến cho em tinh thần bấn loạn, va chạm với cả thế giới này",
+            "author": "Kim Dung Tùy Tâm Sở dục cửa chuyển tinh thần bánh tính nhân sinh hữu tinh cân vũ trụ",
+            "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/102/square.jpg",
+            "isUp": false,
+            "isNew": false,
+            "isPostponed": true,
+            "isCompleted": false,
+            "isEnableAlarm": true,
+            "favoriteDateTime": "2020-02-11 23:43:48"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": false,
+    "resultCode": -404,
+    "resultMessage": "HTTP 404 error occurred."
+  },
+  "data": null
+}

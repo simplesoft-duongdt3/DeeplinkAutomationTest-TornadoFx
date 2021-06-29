@@ -1,0 +1,272 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "newsId": 1,
+      "subject": "CHÀO MỪNG THÀNH VIÊN MỚI ",
+      "content": "Đăng nhập ngay - Nhận coin liền tay, đọc truyện hay\nThời hạn: từ 15:00 ngày 17/04 đến 23:59 ngày 31/05/2020.\nnhận ngay 200 REWARD COIN - dùng để mua vé Thuê (chỉ nhận 1 lần)",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/1_image.jpg",
+      "linkUrl": null,
+      "publishedDateTime": "2020-04-21 18:07:31",
+      "updateDateTime": "2020-05-12 16:18:08"
+    },
+    {
+      "newsId": 23,
+      "subject": "🔥 Truyện mới ra mắt: TÌNH ĐẦU CỦA TÔI ",
+      "content": "Khi thanh niên FA làm quân sư tình yêu. Ai ngờ mũi tên của thần Cupid lại hướng ngược về mình\nTình yêu đến chạy cũng không thoát, truyện mới ra mắt cũng phải đọc ngay nào!",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/23_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d64\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-18 18:30:00",
+      "updateDateTime": "2020-05-18 17:56:09"
+    },
+    {
+      "newsId": 24,
+      "subject": "🔥 Truyện mới ra mắt: LIKE\u0026LOVE ",
+      "content": "Mùa thu năm đó, cậu - một nam sinh năm nhất cao trung được hẹn hò với cô gái mà cậu thương.\nMột bộ truyện tranh thanh xuân vườn trường mới vừa ra mắt. Mời bạn bấm đọc ngay.",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/24_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d65\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-18 19:00:00",
+      "updateDateTime": "2020-05-18 17:58:00"
+    },
+    {
+      "newsId": 25,
+      "subject": "🔥 Truyện mới ra mắt: CHASE THE DRAGON",
+      "content": "Hành trình đuổi bắt giữa cặp tình nhân Rồng và Người sói\nHãy cùng dõi theo điều gì đã khiến Người sói Daniel Winter phải chạy trốn khỏi người mình luôn khao khát?",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/25_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d66\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-18 19:30:00",
+      "updateDateTime": "2020-05-18 18:01:21"
+    },
+    {
+      "newsId": 26,
+      "subject": "Siêu phẩm đề cử: CÔNG NƯƠNG BẠC CÔNG NƯƠNG QUẠ",
+      "content": "Mời bạn nhận 3 vé truyện CÔNG NƯƠNG BẠC CÔNG NƯƠNG QUẠ. \nChưa hết, đọc 1 chương CÔNG NƯƠNG BẠC CÔNG NƯƠNG QUẠ, bạn được tặng thêm 100 Reward Coin",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/26_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d26\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-22 00:00:01",
+      "updateDateTime": "2020-05-21 10:32:57"
+    },
+    {
+      "newsId": 27,
+      "subject": "🎁 TRUYỆN MỚI ĐỌC NGAY NHẬN QUÀ LIỀN TAY 🎁",
+      "content": "Tặng 2 vé thuê cho mỗi truyện trong 3 bộ mới đặc sắc: Chase the dragon, Trò Đùa Kì Quặc, Chuyện Tình Lệch Lạc\nSử dụng 1 vé thuê cho mỗi truyện trên, bạn nhận thưởng thêm 200 Reward coin nhé. ",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/27_image.jpg",
+      "linkUrl": "comicovn://giftbox",
+      "publishedDateTime": "2020-05-22 00:00:01",
+      "updateDateTime": "2020-05-21 10:38:28"
+    },
+    {
+      "newsId": 28,
+      "subject": "🔥SẠC ĐIỆN 24H🔥",
+      "content": "💓 Thêm nhiều truyện cực hot cho chương trình SẠC ĐIỆN 24H\nĐọc ngay 1 chương Vé thuê miễn phí mỗi ngày với Vé Sạc điện nhé 💓",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/28_image.jpg",
+      "linkUrl": "http://www.facebook.com/111754770360184/posts/165074301694897/",
+      "publishedDateTime": "2020-05-25 19:00:00",
+      "updateDateTime": "2020-05-25 17:37:28"
+    },
+    {
+      "newsId": 29,
+      "subject": "🔥 Truyện mới ra mắt: CÔ GÁI BẤT TỬ VÀ GIAO ƯỚC VỚI BÁCH QUỶ",
+      "content": "Chuyện kì lạ gì sẽ xảy đến ở ngôi trường nhỏ thuộc thị trấn Nagumo, nơi vốn được Bách Quỷ bảo hộ này?\nMời bạn bấm đọc ngay: CÔ GÁI BẤT TỬ VÀ GIAO ƯỚC VỚI BÁCH QUỶ",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/29_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d69\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-25 19:00:00",
+      "updateDateTime": "2020-05-25 19:07:22"
+    },
+    {
+      "newsId": 30,
+      "subject": "🔥 Truyện mới ra mắt: KHOẢNG CÁCH KHÔNG TÊN",
+      "content": "Tựa như là bạn bè, là người quen, là người yêu... Nhưng dù thử đặt vào bất kỳ trường hợp nào thì vẫn có khoảng cách không tên?\nMời bạn bấm đọc ngay: KHOẢNG CÁCH KHÔNG TÊN",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/30_image.jpg",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d67\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-25 19:30:00",
+      "updateDateTime": "2020-05-25 18:59:15"
+    },
+    {
+      "newsId": 31,
+      "subject": "🎁 TRUYỆN MỚI ĐỌC NGAY NHẬN QUÀ LIỀN TAY 🎁",
+      "content": "Tặng 2 vé thuê cho mỗi truyện trong 2 bộ mới đặc sắc: LIKE \u0026 LOVE, TÌNH ĐẦU CỦA TÔI.\r\nNhận ngay trong Hộp quà.",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/31_image.png",
+      "linkUrl": "comicovn://giftbox",
+      "publishedDateTime": "2020-05-29 00:00:01",
+      "updateDateTime": "2020-05-28 14:43:29"
+    },
+    {
+      "newsId": 32,
+      "subject": "🔥SIÊU PHẨM ĐƯỢC ĐỀ CỬ🔥",
+      "content": "Mời bạn nhận 3 vé truyện NGỌT NGÀO ĐẾN VẬY. Vào Hộp quà!",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/32_image.png",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d13\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-05-29 00:03:00",
+      "updateDateTime": "2020-05-28 14:43:42"
+    },
+    {
+      "newsId": 33,
+      "subject": "【𝑬𝑽𝑬𝑵𝑻】NHẤN ⭐️ NHẬN QUÀ 💗💗",
+      "content": "Nhấn nút ⭐️ Theo dõi truyện\nNhận 2 vé thuê  truyện đó vào ngày 08/06",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/33_image.png",
+      "linkUrl": "http://www.facebook.com/111754770360184/posts/166237391578588/",
+      "publishedDateTime": "2020-05-29 20:00:00",
+      "updateDateTime": "2020-05-29 16:44:58"
+    },
+    {
+      "newsId": 34,
+      "subject": "Thay đổi Reward Coin \u003e POINT",
+      "content": "comico xin thông báo thay đổi Reward Coin sang POINT từ ngày 04/06/2020.\nSố Reward Coin sẽ được chuyển thành POINT và không ảnh hưởng gì đến việc sử dụng của người dùng.",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/34_image.png",
+      "linkUrl": "http://www.facebook.com/comicoVN/posts/167685378100456",
+      "publishedDateTime": "2020-06-04 11:01:17",
+      "updateDateTime": "2020-06-04 11:16:15"
+    },
+    {
+      "newsId": 35,
+      "subject": "🔥10h đêm nay - đọc ngay truyện mới🔥",
+      "content": "Đón đọc bộ 3 truyện mới: Nàng S chàng M, Khế ước ma thuật của chúng ta, Tam yêu bàn chuyện nhân sinh ra mắt lúc 10h đêm nay.",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/35_image.png",
+      "linkUrl": "comicovn://news",
+      "publishedDateTime": "2020-06-04 19:00:00",
+      "updateDateTime": "2020-06-04 17:55:26"
+    },
+    {
+      "newsId": 36,
+      "subject": "🔥SIÊU PHẨM BL 10H ĐÊM NAY🔥",
+      "content": "10h đêm nay comico giới thiệu siêu phẩm BL Hàn Quốc cực hot.\nRa mắt 7 chương miễn phí đầu tiên. Cùng đợi nhé!",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/36_image.png",
+      "linkUrl": "comicovn://news",
+      "publishedDateTime": "2020-06-05 21:00:00",
+      "updateDateTime": "2020-06-05 16:02:03"
+    },
+    {
+      "newsId": 37,
+      "subject": "⭐Báo danh nhận quà⭐",
+      "content": "Tham gia báo danh hàng ngày trên comico để có cơ hội nhận voucher quà tặng giá trị nhé ❤",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/37_image.png",
+      "linkUrl": "http://www.facebook.com/111754770360184/posts/168328291369498/",
+      "publishedDateTime": "2020-06-05 19:00:00",
+      "updateDateTime": "2020-06-05 16:58:46"
+    },
+    {
+      "newsId": 38,
+      "subject": "💞ĐỔI LỊCH ĐĂNG TRUYỆN💞",
+      "content": "Cô gái bất tử và giao ước với bách quỷ: Thứ 2, thứ 4\nCuộc phỏng vấn định mệnh: Thứ 3, Chủ nhật\nGiấc mơ đưa anh đến: Thứ 4, Chủ nhật\nChase the dragon: Thứ 5\nNữ sinh báo thù: Thứ 2\nTrò đùa kỳ quặc: Thứ 4",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/38_image.png",
+      "linkUrl": "comicovn://news",
+      "publishedDateTime": "2020-06-06 19:00:00",
+      "updateDateTime": "2020-06-05 16:20:02"
+    },
+    {
+      "newsId": 39,
+      "subject": "10h tối nay! 40 chương Tình nhân",
+      "content": "Tại sao Kang Merry lại thành tình nhân của Suho?\nÂn oán tình thù gì đã gắn kết chàng CEO cậu bé làng chài hồn nhiên?",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/39_image.png",
+      "linkUrl": "comicovn://titleDetail?titleId\u003d62\u0026type\u003dWEB_COMIC",
+      "publishedDateTime": "2020-06-07 19:00:00",
+      "updateDateTime": "2020-06-05 16:41:21"
+    },
+    {
+      "newsId": 40,
+      "subject": "🔥Truyện mới tuần này🔥",
+      "content": "BL: Ái Thần, Hai mệnh đề\nDrama: Hoán đổi tổn thương\nXem ngay cho nóng nào ~~~",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/40_image.png",
+      "linkUrl": "comicovn://content?contentId\u003d6",
+      "publishedDateTime": "2020-06-11 21:00:00",
+      "updateDateTime": "2020-06-11 11:09:13"
+    },
+    {
+      "newsId": 41,
+      "subject": "【GIỜ VÀNG ĐỌC TRUYỆN 19-22H 】",
+      "content": "Đọc truyện trong khung giờ 19h ~ 22h mỗi tối từ 13 ~ 15/06\n🦄 Nhận 1 Vé Thuê cho tất cả truyện ra hôm đó\n🦄 Nhận thêm 100 POINT khi dùng 1 Vé Thuê/ ngày\n🦄 Đọc đủ 3 ngày, 1 chương/ ngày có cơ hội nhận voucher 100,000 VND\nDanh sách nickname trúng giải sẽ được công bố trên fanpage của comico Việt Nam.",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/41_image.png",
+      "linkUrl": "http://facebook.com/111754770360184/posts/170372947831699/",
+      "publishedDateTime": "2020-06-13 00:00:00",
+      "updateDateTime": "2020-06-15 09:59:39"
+    },
+    {
+      "newsId": 42,
+      "subject": "❤KẾT QUẢ ĐIỂM DANH 10 NGÀY❤",
+      "content": "Cùng xem ngay kết quả điểm danh 10 ngày nhé.\nNếu trúng thưởng, bạn hãy liên hệ ngay với comico qua email hoặc facebook để nhận quà nhé ❤",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/42_image.png",
+      "linkUrl": "http://facebook.com/111754770360184/posts/171269054408755/",
+      "publishedDateTime": "2020-06-16 10:00:00",
+      "updateDateTime": "2020-06-16 08:13:03"
+    },
+    {
+      "newsId": 43,
+      "subject": "【GIỜ VÀNG ĐỌC TRUYỆN 19-22H】",
+      "content": "Đọc truyện trong khung giờ 19h ~ 22h mỗi tối từ 16 ~ 18/06\n🦄 Nhận 1 Vé Thuê cho tất cả truyện ra hôm đó\n🦄 Nhận thêm 100 POINT khi dùng 1 Vé Thuê/ ngày\n🦄 Đọc đủ 3 ngày, 1 chương/ ngày có cơ hội nhận voucher 100,000 VND",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/43_image.png",
+      "linkUrl": "http://www.facebook.com/comicoVN/posts/171459601056367",
+      "publishedDateTime": "2020-06-16 17:00:00",
+      "updateDateTime": "2020-06-16 16:09:35"
+    },
+    {
+      "newsId": 44,
+      "subject": "🔥GIỜ VÀNG ĐỌC TRUYỆN 19-21/06🔥",
+      "content": "Đọc truyện trong khung giờ 19h ~ 22h mỗi tối từ 19-21/06\n🦄 Nhận 1 Vé Thuê cho tất cả truyện ra hôm đó\n🦄 Nhận thêm 100 POINT khi dùng 1 Vé Thuê/ ngày\n🦄 Đọc đủ 3 ngày, 1 chương/ ngày có cơ hội nhận voucher 100,000 VND",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/44_image.png",
+      "linkUrl": "comicovn://webcomic?target\u003dranking",
+      "publishedDateTime": "2020-06-19 19:00:00",
+      "updateDateTime": "2020-06-19 13:55:29"
+    },
+    {
+      "newsId": 45,
+      "subject": "❤KẾT QUẢ GIỜ VÀNG 16-18/6❤",
+      "content": "Cùng xem ngay kết quả giờ vàng nhé.\nNếu trúng thưởng, bạn hãy liên hệ ngay với comico qua email hoặc facebook để nhận quà nhé ❤",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/45_image.png",
+      "linkUrl": "http://www.facebook.com/comicoVN/photos/a.119012616301066/172286704306990",
+      "publishedDateTime": "2020-06-19 15:00:00",
+      "updateDateTime": "2020-06-19 15:26:25"
+    },
+    {
+      "newsId": 46,
+      "subject": "❤KẾT QUẢ GIỜ VÀNG 19-21/6❤",
+      "content": "Cùng xem ngay kết quả giờ vàng nhé.\nNếu trúng thưởng, bạn hãy liên hệ ngay với comico qua email hoặc facebook để nhận quà nhé ❤",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/46_image.jpg",
+      "linkUrl": "http://www.facebook.com/comicoVN/photos/a.119012616301066/173080050894322",
+      "publishedDateTime": "2020-06-23 10:00:00",
+      "updateDateTime": "2020-06-23 09:38:59"
+    },
+    {
+      "newsId": 47,
+      "subject": "🔥GIỜ VÀNG ĐỌC TRUYỆN 26-28/06🔥",
+      "content": "Đọc truyện trong khung giờ 19h ~ 22h mỗi tối từ 26~28/06\n🦄 Nhận 3 Vé Thuê cho tất cả truyện ra hôm đó\n🦄 Nhận thêm 200 POINT khi dùng 1 Vé Thuê/ ngày\n🦄 Đọc đủ 3 ngày, 1 chương/ ngày có cơ hội nhận voucher 100,000 VND",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/47_image.png",
+      "linkUrl": "http://www.facebook.com/comicoVN/posts/174009867468007",
+      "publishedDateTime": "2020-06-26 00:00:00",
+      "updateDateTime": "2020-06-26 08:39:10"
+    },
+    {
+      "newsId": 48,
+      "subject": "❤KẾT QUẢ GIỜ VÀNG 22-25/6❤",
+      "content": "Cùng xem ngay kết quả giờ vàng nhé.\nNếu trúng thưởng, bạn hãy liên hệ ngay với comico qua email hoặc facebook để nhận quà nhé ❤",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/48_image.jpg",
+      "linkUrl": "http://www.facebook.com/111754770360184/posts/174230227445971/",
+      "publishedDateTime": "2020-06-26 12:00:00",
+      "updateDateTime": "2020-06-26 11:39:33"
+    },
+    {
+      "newsId": 49,
+      "subject": "[THÔNG BÁO] Dừng truyện \"Cô gái bất tử và giao ước với bách quỷ\" ",
+      "content": "comico Việt Nam xin thông báo về việc dừng phát hành truyện \"Cô gái bất tử và giao ước với bất quỷ\" tại Việt Nam vì lý do thay đổi chính sách về khu vực phát hành truyện.\n\nThời gian: từ 10:00 ngày 16/07/2020",
+      "imageUrl": null,
+      "linkUrl": "http://facebook.com/111754770360184/posts/179595500242777/",
+      "publishedDateTime": "2020-07-16 10:00:00",
+      "updateDateTime": "2020-07-22 09:59:24"
+    },
+    {
+      "newsId": 50,
+      "subject": "Kết quả [ TUẦN LỄ SIÊU VÉ MUA ] (30/08 - 06/09)",
+      "content": "💎 Danh sách Nickname trúng giải event [ TUẦN LỄ SIÊU VÉ MUA ] (30/08 - 06/09): http://bit.ly/3jSjPXl",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/news/50_image.png",
+      "linkUrl": "http://www.facebook.com/comicoVN/photos/a.119012616301066/194286835440310",
+      "publishedDateTime": "2020-09-07 15:00:00",
+      "updateDateTime": "2020-09-07 14:48:56"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "userInfo": {
+      "nickname": "G179027363423",
+      "gender": "OTHER",
+      "birth": null,
+      "avatarId": 1,
+      "isReceivePush": true
+    },
+    "pointNearlyExpiryDateTime": "2020-10-08 23:59:59",
+    "coinBalance": 800,
+    "pointBalance": 2345,
+    "pointNearlyExpiryBalance": 140
+  }
+}

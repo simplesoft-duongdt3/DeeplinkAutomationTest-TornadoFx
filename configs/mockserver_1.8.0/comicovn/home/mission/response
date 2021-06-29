@@ -1,0 +1,368 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "missionId": 302,
+      "type": "FOLLOW",
+      "subject": "Theo dõi 5 truyện để nhận 35 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "missionId": 301,
+      "type": "FOLLOW",
+      "subject": "Theo dõi 3 truyện để nhận 25 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "missionId": 300,
+      "type": "FOLLOW",
+      "subject": "Theo dõi 1 truyện để nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 299,
+      "type": "TICKET",
+      "subject": "Sử dụng 10 VÉ MUA để nhận 60 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "missionId": 298,
+      "type": "TICKET",
+      "subject": "Sử dụng 5 VÉ MUA để nhận 40 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "missionId": 297,
+      "type": "TICKET",
+      "subject": "Sử dụng 1 VÉ MUA để nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 296,
+      "type": "TICKET",
+      "subject": "Sử dụng 50 VÉ THUÊ để nhận 35 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "missionId": 295,
+      "type": "TICKET",
+      "subject": "Sử dụng 20 VÉ THUÊ để nhận 25 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "missionId": 294,
+      "type": "TICKET",
+      "subject": "Sử dụng 10 VÉ THUÊ để nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 292,
+      "type": "READ_COUNT",
+      "subject": "Đọc 20 TRUYỆN để nhận 70 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 70
+        }
+      ]
+    },
+    {
+      "missionId": 291,
+      "type": "READ_COUNT",
+      "subject": "Đọc 15 TRUYỆN để nhận 60 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "missionId": 290,
+      "type": "READ_COUNT",
+      "subject": "Đọc 10 TRUYỆN để nhận 50 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "missionId": 289,
+      "type": "READ_COUNT",
+      "subject": "Đọc 5 TRUYỆN để nhận 35 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "missionId": 288,
+      "type": "READ_COUNT",
+      "subject": "Đọc 3 TRUYỆN để nhận 25 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "missionId": 287,
+      "type": "READ_COUNT",
+      "subject": "Đọc 1 TRUYỆN để nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 286,
+      "type": "READ_COUNT",
+      "subject": "Đọc 180 CHƯƠNG nhận 110 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 110
+        }
+      ]
+    },
+    {
+      "missionId": 285,
+      "type": "READ_COUNT",
+      "subject": "Đọc 60 CHƯƠNG nhận 50 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "missionId": 284,
+      "type": "READ_COUNT",
+      "subject": "Đọc 30 CHƯƠNG nhận 35 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "missionId": 283,
+      "type": "READ_COUNT",
+      "subject": "Đọc 10 CHƯƠNG nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 282,
+      "type": "READ_COUNT",
+      "subject": "Đọc 5 CHƯƠNG nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "missionId": 281,
+      "type": "READ_COUNT",
+      "subject": "Đọc 1 CHƯƠNG nhận 20 POINT",
+      "openDateTime": "2020-09-27 00:00:00",
+      "closeDateTime": "2020-10-03 23:59:59",
+      "status": "IN_PROGRESS",
+      "productList": [
+        {
+          "mappedTitleId": -1,
+          "subject": null,
+          "type": "POINT",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/image-box/Point.png",
+          "amount": 20
+        }
+      ]
+    }
+  ]
+}

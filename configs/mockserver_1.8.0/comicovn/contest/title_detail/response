@@ -1,0 +1,28 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": {
+    "titleId": 245,
+    "subject": "Đã quá Pepsi chanh không đường eei !",
+    "longDescription": "Pepsi chanh không đường is da best",
+    "author": "dattest97",
+    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/245/square.png",
+    "coverImageUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/245/large.jpg",
+    "viewCount": 20,
+    "likeCount": 5,
+    "isFavoriteClicked": false,
+    "isCompleted": true,
+    "isPostponed": false,
+    "openReservedDateTime": "2021-06-09 15:22:36",
+    "genreNameList": [
+      "Lãng mạn ",
+      "Hành động",
+      "Hài hước"
+    ]
+  }
+}

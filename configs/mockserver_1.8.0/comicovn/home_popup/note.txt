@@ -1,0 +1,10 @@
+missing case:
+Attendance
+	1. 10 days
+		1.1 10 days ok
+		1.2 10 days missing some day
+		
+	2. 7 days
+		2.1  7 days ok
+		2.2  7 days missing some day
+

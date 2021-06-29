@@ -1,0 +1,87 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "chapterId": 7677,
+    "titleSubject": "Ngôi trường tội lỗi",
+    "chapterSubject": "Ch.1: Khởi đầu tuyệt vọng",
+    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/chapter/thumbnail/7677/thumbnail.jpg",
+    "viewType": "SCROLL",
+    "isLikeClicked": false,
+    "isFavoriteClicked": false,
+    "isCompleted": false,
+    "isPostponed": false,
+    "publishedDayList": [
+      "SAT"
+    ],
+    "contentListId": -1,
+    "prevChapter": null,
+    "nextChapter": {
+      "chapterId": 7678,
+      "isFree": true,
+      "ownedExpiryDateTime": null
+    },
+    "contentList": [
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "RENT_TICKET": [
+      {
+        "purchaseTicketProductId": 98,
+        "subject": "3 Vé Thuê",
+        "originalPrice": 1,
+        "price": 1,
+        "amount": 3,
+        "isAvailableCoin": true,
+        "isAvailablePoint": false
+      },
+      {
+        "purchaseTicketProductId": 111,
+        "subject": "1 Vé Thuê",
+        "originalPrice": 1,
+        "price": 1,
+        "amount": 1,
+        "isAvailableCoin": false,
+        "isAvailablePoint": true
+      },
+      {
+        "purchaseTicketProductId": 99,
+        "subject": "5 Vé Thuê",
+        "originalPrice": 2,
+        "price": 2,
+        "amount": 5,
+        "isAvailableCoin": true,
+        "isAvailablePoint": false
+      },
+      {
+        "purchaseTicketProductId": 100,
+        "subject": "10 Vé Thuê",
+        "originalPrice": 4,
+        "price": 4,
+        "amount": 10,
+        "isAvailableCoin": true,
+        "isAvailablePoint": false
+      }
+    ],
+    "COLLECTION_TICKET": [
+      {
+        "purchaseTicketProductId": 101,
+        "subject": "3 Vé Mua",
+        "originalPrice": 1,
+        "price": 1,
+        "amount": 3,
+        "isAvailableCoin": false,
+        "isAvailablePoint": true
+      },
+      {
+        "purchaseTicketProductId": 112,
+        "subject": "1 Vé Mua",
+        "originalPrice": 1,
+        "price": 1,
+        "amount": 1,
+        "isAvailableCoin": true,
+        "isAvailablePoint": false
+      },
+      {
+        "purchaseTicketProductId": 102,
+        "subject": "5 Vé Mua",
+        "originalPrice": 2,
+        "price": 2,
+        "amount": 5,
+        "isAvailableCoin": false,
+        "isAvailablePoint": true
+      },
+      {
+        "purchaseTicketProductId": 103,
+        "subject": "10 Vé Mua",
+        "originalPrice": 4,
+        "price": 4,
+        "amount": 10,
+        "isAvailableCoin": false,
+        "isAvailablePoint": true
+      }
+    ]
+  }
+}

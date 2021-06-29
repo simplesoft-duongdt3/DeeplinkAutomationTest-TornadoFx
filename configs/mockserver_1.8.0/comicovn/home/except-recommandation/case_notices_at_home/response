@@ -1,0 +1,73 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "mainBannerList": [],
+    "eventBannerList": [
+      {
+        "subject": "Daily collection 29/9",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/EVENT/HOME/326/ANDROID.png",
+        "linkUrl": "comicovn://event?target\u003d55"
+      },
+      {
+        "subject": "Daily update 29/9",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/EVENT/HOME/319/ANDROID.png",
+        "linkUrl": "comicovn://event?target\u003d52"
+      },
+      {
+        "subject": "Free chapter Oct",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/EVENT/HOME/329/ANDROID.png",
+        "linkUrl": "comicovn://event?target\u003d56"
+      },
+      {
+        "subject": "NRU Free coin 30/9",
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/EVENT/HOME/322/ANDROID.png",
+        "linkUrl": "comicovn://event?target\u003d54"
+      }
+    ],
+    "latestTitleList": {
+      "WEB_COMIC": [],
+      "WEB_NOVEL": []
+    },
+    "rankedTitleList": {
+      "WEB_COMIC": [
+        {
+          "titleId": 62,
+          "subject": "Tình nhân",
+          "author": "Brothers without tomorrow",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.jpg"
+        },
+        {
+          "titleId": 113,
+          "subject": "Tà y cuồng thê",
+          "author": "Tam Phúc Động Mạn",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/113/square.jpg"
+        },
+        {
+          "titleId": 22,
+          "subject": "Lady to queen",
+          "author": "Kim Sohyun, Muso",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/22/square.jpg"
+        },
+        {
+          "titleId": 70,
+          "subject": "Bí mật của Hoàng phi Isana",
+          "author": "Han Sera, TOM",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/70/square.jpg"
+        },
+        {
+          "titleId": 136,
+          "subject": "Blood Link",
+          "author": "Brothers without tomorrow",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/136/square.jpg"
+        }
+      ],
+      "WEB_NOVEL": []
+    }
+  }
+}

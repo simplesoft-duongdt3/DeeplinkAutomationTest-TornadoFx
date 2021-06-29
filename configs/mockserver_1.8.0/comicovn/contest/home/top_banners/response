@@ -1,0 +1,26 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "subject": "Đua thả thích 1/6",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/MAIN/CONTEST_HOME/397/ANDROID.png",
+      "linkUrl": "comicovn://event?target\u003d32"
+    },
+    {
+      "subject": "Ngày 1 chương - Tuần 1/6",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/MAIN/CONTEST_HOME/398/ANDROID.png",
+      "linkUrl": "comicovn://event?target\u003d32"
+    },
+    {
+      "subject": "banner test ",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/MAIN/CONTEST_HOME/403/ANDROID.png",
+      "linkUrl": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "noticeId": 45,
+            "subject": "Notice mới nhất",
+            "shortDescription": "Notice mới nhất",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/45.png",
+            "publishedDateTime": "2020-10-30 10:10:28"
+        },
+        {
+            "noticeId": 44,
+            "subject": "Check notice",
+            "shortDescription": "sdf",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/44.jpg",
+            "publishedDateTime": "2020-10-08 16:30:21"
+        },
+        {
+            "noticeId": 43,
+            "subject": "TẶNG X2 COINS ",
+            "shortDescription": "tặng coins",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/43.png",
+            "publishedDateTime": "2020-10-06 15:28:00"
+        },
+        {
+            "noticeId": 42,
+            "subject": "[Quan trọng] Đọc truyện có thưởng",
+            "shortDescription": "Chương trình áp dụng từ 06/10/2020 ~ 10/10/2020",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/42.jpg",
+            "publishedDateTime": "2020-10-06 15:26:07"
+        },
+        {
+            "noticeId": 41,
+            "subject": "✨Mở chương miễn phí cho các truyện đã hoàn thành✨",
+            "shortDescription": "Mở chương miễn phí truyện hoàn thành",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/41.png",
+            "publishedDateTime": "2020-10-06 10:16:00"
+        },
+        {
+            "noticeId": 40,
+            "subject": "Giờ vàng đọc truyện",
+            "shortDescription": "Khung giờ vàng đọc truyện",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/40.png",
+            "publishedDateTime": "2020-10-06 09:59:56"
+        },
+        {
+            "noticeId": 39,
+            "subject": "Độc giả mới, nhận quà mới",
+            "shortDescription": "Một cô gái bí ẩn xuất hiện!\nVà cô ấy biết rằng Kamiya Yuiko có thể nhìn thấy những sinh vật kì dị gọi là Ayakashi.",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/39.png",
+            "publishedDateTime": "2020-10-06 09:56:23"
+        },
+        {
+            "noticeId": 38,
+            "subject": "Chào mừng tháng mới #102020",
+            "shortDescription": "Chào mừng tháng mới, comico mời bạn đọc tham gia sự kiện này.",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/notice/38.jpg",
+            "publishedDateTime": "2020-10-06 09:42:42"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "subject": "Daily collection 29/9",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/banner/POPUP/HOME/327/ANDROID.png",
+      "linkUrl": "comicovn://event?target\u003d55"
+    }
+  ]
+}

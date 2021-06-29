@@ -1,0 +1,21 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "subject":"top banner",
+         "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/MAIN/HOME/353/ANDROID.jpg",
+         "linkUrl":null
+      },
+      {
+         "subject":"DEV-TEST-BANNER-GROUP-29",
+         "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/MAIN/HOME/51/ANDROID.jpg",
+         "linkUrl":null
+      }
+   ]
+}

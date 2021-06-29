@@ -1,0 +1,234 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "titleList": [
+      {
+        "titleId": 22,
+        "subject": "Lady to queen",
+        "shortDescription": "Ta sẽ không bao giờ yêu Đức vua.",
+        "author": "Kim Sohyun, Muso",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/22/square.jpg",
+        "likeCount": 24940,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 48,
+        "eventTag": "DISCOUNT"
+      },
+      {
+        "titleId": 52,
+        "subject": "Cuộc phỏng vấn định mệnh",
+        "shortDescription": "Nếu như người đàn ông tôi để ý lại là một tên tội phạm hết sức đẹp trai…",
+        "author": "Queensa, Bbyong",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/52/square.jpg",
+        "likeCount": 27903,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+         "eventTag": "FREE_CHARGE_DURATION"
+      },
+      {
+        "titleId": 13,
+        "subject": "Ngọt ngào đến vậy",
+        "shortDescription": "Câu chuyện tình yêu ngọt ngào giữa cậu Omega đáng yêu và anh chàng Alpha đầu gỗ!",
+        "author": "Joo Young, Ki Eon",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/13/square.png",
+        "likeCount": 10287,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": "FREE_CHAPTER_EXTENSION"
+      },
+      {
+        "titleId": 134,
+        "subject": "Hoa nở trong đêm",
+        "shortDescription": "Câu chuyện tình cảm học đường nhẹ nhàng pha chút bi thương giữa đàn em quậy phá trốn học cúp tiết và đàn chị ưu tú.",
+        "author": "Yumemitsuki",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/134/square.jpg",
+        "likeCount": 1185,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 114,
+        "subject": "Uống nhầm cường dược, đầu gấu biến hình",
+        "shortDescription": "Đàn em dễ ghét lỡ uống nhầm thuốc và trở nên ngọt ngào.",
+        "author": "Yamaguchi Eito",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/114/square.jpg",
+        "likeCount": 2685,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 72,
+        "subject": "Tam yêu bàn chuyện nhân sinh",
+        "shortDescription": "Miêu tinh thụ vs 3 miêu tinh công",
+        "author": "Koyuki Maya",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/72/square.jpg",
+        "likeCount": 1775,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 110,
+        "subject": "\"Chỗ ấy\" dễ thương của Tsukishiro ",
+        "shortDescription": "Lòng ngưỡng mộ đàn anh dần chuyển thành tình yêu.",
+        "author": "Rikuo",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/110/square.jpg",
+        "likeCount": 1777,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 84,
+        "subject": "Nói yêu anh đi",
+        "shortDescription": "Đóa hoa trên cơ thể ẩn chứa bí mật gì?",
+        "author": "Minehoshi Furu",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/84/square.jpg",
+        "likeCount": 1640,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 36,
+        "subject": "Vòng quay bất tận",
+        "shortDescription": "Yêu cầu tôi làm bia đỡ đạn… người đàn ông này rốt cuộc muốn gì đây?\n\n",
+        "author": "Bbyong",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/36/square.jpg",
+        "likeCount": 3158,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 17,
+        "subject": "Người yêu bé bỏng",
+        "shortDescription": "Cẩn thận với điều ước của bạn.",
+        "author": "Mie, Saori",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/17/square.jpg",
+        "likeCount": 280,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 111,
+        "subject": "Chìm trong làn nước",
+        "shortDescription": " ",
+        "author": "Ashigarumaru",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/111/square.jpg",
+        "likeCount": 1108,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 1,
+        "subject": "Chàng trai ngoại cảm",
+        "shortDescription": "Giao số phận mình vào tay một chàng trai có khả năng nhìn thấy ma quỷ có được không vậy?",
+        "author": "Oribalism",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/1/square.png",
+        "likeCount": 1860,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 104,
+        "subject": "Trai tơ nổi dậy",
+        "shortDescription": "Làm cách nào để đối mặt với những câu hỏi không \"trong sáng\" của nhóc đàn em vốn ngây thơ \"trong sáng\" đây?",
+        "author": "Sonosuke",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/104/square.jpg",
+        "likeCount": 967,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 88,
+        "subject": "Trái tim của Luce",
+        "shortDescription": "Ta sẽ làm những gì vì người mình yêu?",
+        "author": "Miki Migiri",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/88/square.jpg",
+        "likeCount": 825,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 67,
+        "subject": "Khoảng cách không tên",
+        "shortDescription": "Câu chuyện về nữ nhân viên văn phòng và chàng nam sinh trung học.",
+        "author": "Kishiwo",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/67/square.jpg",
+        "likeCount": 1044,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 46,
+        "subject": "Nước mắt hạnh phúc",
+        "shortDescription": "Một câu chuyện BL học đường nhẹ nhàng.",
+        "author": "Yamaguchi Eito",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/46/square.jpg",
+        "likeCount": 406,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 32,
+        "subject": "Chạm đến tim em",
+        "shortDescription": "Cậu nhóc ngày nào giờ đã thành chàng trai đứng trước mặt tôi.",
+        "author": "MIG",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/32/square.jpg",
+        "likeCount": 467,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 29,
+        "subject": "Vẫn luôn là cậu",
+        "shortDescription": "Cả cuộc đời mình, mỗi một khoảnh khắc, đều có cậu.",
+        "author": "Jeongha, Ha Taewan, Kim Juhee ",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/29/square.jpg",
+        "likeCount": 1441,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 21,
+        "subject": "Tử địa",
+        "shortDescription": "Tử địa - Nhật kí sinh tồn ở nơi không còn sự sống. \nMời bạn đến nơi cái chết đang đón chờ.",
+        "author": "Cognac",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/21/square.jpg",
+        "likeCount": 1043,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      },
+      {
+        "titleId": 10,
+        "subject": "Buổi trà chiều đáng yêu",
+        "shortDescription": "Trà đưa lối hai người yêu nhau.\n\n",
+        "author": "Kasupachi",
+        "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/10/square.png",
+        "likeCount": 289,
+        "freeChargeStatus": "FULL",
+        "freeChargeDuration": 24,
+        "eventTag": null
+      }
+    ],
+    "totalCount": 26
+  }
+}

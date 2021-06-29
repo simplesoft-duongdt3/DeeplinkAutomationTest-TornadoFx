@@ -1,0 +1,27 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "type": "lineBannerList",
+      "position": "LINE_TOP",
+      "lineBannerList": [
+        {
+          "subject": "banner test ",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/423/ANDROID.png",
+          "linkUrl": "comicovn://contestInfo?target\u003dguide"
+        },
+        {
+          "subject": "Dtest",
+          "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/CONTEST_HOME/424/ANDROID.png",
+          "linkUrl": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "eventId": 60,
+      "subject": "10.10 ĐỢI LÀ FREE",
+      "shortDescription": "SẠC ĐIỆN 10 TIẾNG - ĐỢI LÀ FREE",
+      "startDateTime": "2020-10-10 00:00:00",
+      "endDateTime": "2020-10-19 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/60.png",
+      "isHaveDetail": true,
+      "linkUrl": "comicovn://chapterDetail?titleId\u003d77\u0026chapterId\u003d3698\u0026type\u003dWEB_COMIC"
+    },
+    {
+      "eventId": 59,
+      "subject": "ĐIỂM DANH 10.10",
+      "shortDescription": "Chuỗi sự kiện 🔟🔟 sắp bắt đầu với sự kiện Điểm danh đặc biệt nha các bạn ơi 🥰",
+      "startDateTime": "2020-10-10 00:00:00",
+      "endDateTime": "2020-10-19 09:56:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/59.png",
+      "isHaveDetail": true,
+      "linkUrl": null
+    },
+    {
+      "eventId": 56,
+      "subject": "🌪LỐC CHƯƠNG MIỄN PHÍ🌪",
+      "shortDescription": "comico chơi lớn mở luôn vô vàn chương miễn phí cho 10 đầu truyện cực hot!",
+      "startDateTime": "2020-10-01 09:00:00",
+      "endDateTime": "2020-10-30 09:00:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/56.png",
+      "isHaveDetail": true,
+      "linkUrl": null
+    },
+    {
+      "eventId": 6,
+      "subject": "🔥NẠP COIN VỚI MOMO TẠI comico.vn🔥",
+      "shortDescription": "Xem ngay cách nạp coin bằng MOMO NÀO!",
+      "startDateTime": "2020-07-02 18:00:00",
+      "endDateTime": "2021-08-31 18:03:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/6.png",
+      "isHaveDetail": true,
+      "linkUrl": "http://www.comico.vn/profile/coin/add"
+    },
+    {
+      "eventId": 61,
+      "subject": "10.10 TẶNG 100% COIN \u0026 100% POINT",
+      "shortDescription": "Chỉ 1 ngày duy nhất, nạp để nhận 100% COIN \u0026 100% POINT nào!",
+      "startDateTime": "2020-10-10 00:00:00",
+      "endDateTime": "2020-10-10 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/61.png",
+      "isHaveDetail": false,
+      "linkUrl": "comicovn://purchase"
+    },
+    {
+      "eventId": 58,
+      "subject": "〖 ĐỘC GIẢ MỚI - NHẬN QUÀ MỚI 〗",
+      "shortDescription": "🎁 Tặng các bạn độc giả mới 25 coin mỗi ngày trong Hộp quà!",
+      "startDateTime": "2020-10-07 00:00:00",
+      "endDateTime": "2020-10-09 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/58.png",
+      "isHaveDetail": true,
+      "linkUrl": "comicovn://giftbox"
+    },
+    {
+      "eventId": 55,
+      "subject": "🌕TUẦN LỄ ĐỌC TRUYỆN MÙA TRUNG THU🌕",
+      "shortDescription": "Cơ hội nhận voucher 1,000,000 VND cực đã",
+      "startDateTime": "2020-09-29 21:00:00",
+      "endDateTime": "2020-10-08 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/55.png",
+      "isHaveDetail": true,
+      "linkUrl": "comicovn://content?contentId\u003d47"
+    },
+    {
+      "eventId": 54,
+      "subject": "〖 ĐỘC GIẢ MỚI - NHẬN QUÀ MỚI 〗",
+      "shortDescription": "🎁 Tặng các bạn độc giả mới 25 coin mỗi ngày trong Hộp quà!",
+      "startDateTime": "2020-09-30 00:00:00",
+      "endDateTime": "2020-10-06 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/54.png",
+      "isHaveDetail": true,
+      "linkUrl": "comicovn://giftbox"
+    },
+    {
+      "eventId": 52,
+      "subject": "🎇SIÊU CẬP NHẬT MÙA TRUNG THU🎇",
+      "shortDescription": "Trong 10 ngày liên tục, comico sẽ cập nhật thêm 1 chương mới mỗi ngày cho các truyện dưới đây,",
+      "startDateTime": "2020-09-29 21:00:00",
+      "endDateTime": "2020-10-08 23:59:00",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/event/52.png",
+      "isHaveDetail": true,
+      "linkUrl": "comicovn://content?contentId\u003d47"
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "position": "TOP",
+      "thumbnailType": "SQUARE",
+      "subject": "🎇SIÊU CẬP NHẬT MÙA TRUNG THU🎇",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://event?target\u003d52",
+      "displayOrder": 5,
+      "componentList": [
+        {
+          "subject": "Blood Link",
+          "description": "Brothers without tomorrow",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/136/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d136\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Kỹ nữ tái sinh",
+          "description": "YUJIN",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/68/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d68\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Hoàng tử bé của rồng con",
+          "description": "Han Soyoung / Dunarae",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/130/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d130\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Tà y cuồng thê",
+          "description": "Tam Phúc Động Mạn",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/113/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d113\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Quý cô báo thù",
+          "description": "Nam Yu Hyeon, Ttaelkkam",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/117/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d117\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Thuần tình nha đầu hỏa lạt lạt",
+          "description": "Tề Thành Côn, Bình Tử",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d116\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "TOP",
+      "thumbnailType": "SQUARE",
+      "subject": "🔥HOT NHẤT COMICO🔥",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://webcomic?target\u003dranking",
+      "displayOrder": 9,
+      "componentList": [
+        {
+          "subject": "Tình nhân",
+          "description": "Brothers without tomorrow",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/62/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d62\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Ôi! Hoàng tử",
+          "description": "Zoo Sun",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/102/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d102\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Lady to queen",
+          "description": "Kim Sohyun, Muso",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/22/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d22\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Nữ sinh ở cung Hoàng hậu",
+          "description": "Team Wandering Soul, Jin Ya Gi",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/5/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d5\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Bí mật của Hoàng phi Isana",
+          "description": "Han Sera, TOM",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/70/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d70\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Nữ sinh báo thù",
+          "description": "LakuSakura",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/27/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d27\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "TOP",
+      "thumbnailType": "SQUARE",
+      "subject": "👍 COMICO ĐỀ CỬ 👍",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d37",
+      "displayOrder": 10,
+      "componentList": [
+        {
+          "subject": "Thần hộ vệ nguy hiểm",
+          "description": "Suja, Han Seram",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/95/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d95\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chuyển sinh làm công chúa giả mạo",
+          "description": "Chanoa",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/127/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d127\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chase the Dragon",
+          "description": "Pyo Ryu, Hwa Cha",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/66/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d66\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Phượng khởi Hoa Tàng",
+          "description": "A Dư",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/94/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d94\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Cuộc chiến tình yêu của boy tâm cơ",
+          "description": "Mang Jae",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/133/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d133\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Cuộc phỏng vấn định mệnh",
+          "description": "Queensa, Bbyong",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/52/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d52\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "✅CẬP NHẬT HÔM NAY✅",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://webcomic?target\u003dthu",
+      "displayOrder": 3,
+      "componentList": [
+        {
+          "subject": "Khế ước ma thuật của chúng ta",
+          "description": "Shimashima",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/71/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d71\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Bựa cả đôi",
+          "description": "Jemin",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/56/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d56\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chú ku-te, chị ngầu lòi",
+          "description": "Nattsu Mame",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/47/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d47\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "🌪LỐC CHƯƠNG MIỄN PHÍ🌪",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d48",
+      "displayOrder": 9,
+      "componentList": [
+        {
+          "subject": " ",
+          "description": " ",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/126/component/595_thumbnail.png",
+          "linkUrl": "comicovn://event?target\u003d56"
+        },
+        {
+          "subject": " ",
+          "description": " ",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/126/component/596_thumbnail.png",
+          "linkUrl": "comicovn://event?target\u003d56"
+        },
+        {
+          "subject": " ",
+          "description": " ",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/126/component/597_thumbnail.png",
+          "linkUrl": "comicovn://event?target\u003d56"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "🙆‍♀TRUYỆN ĐÃ KẾT THÚC🙆‍♂",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://webcomic?target\u003dend",
+      "displayOrder": 11,
+      "componentList": [
+        {
+          "subject": "Trái tim của Luce",
+          "description": "Miki Migiri",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/88/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d88\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Ngọt ngào đến vậy",
+          "description": "Joo Young, Ki Eon",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/13/square.png",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d13\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Trai tơ nổi dậy",
+          "description": "Sonosuke",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/104/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d104\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "👬 BL CỰC HOT 👬",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d3",
+      "displayOrder": 14,
+      "componentList": [
+        {
+          "subject": "Hai mệnh đề",
+          "description": "Sakku Seika",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/74/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d74\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Gâu gâu Meo meo",
+          "description": "RIFFLE, erun",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/93/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d93\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Nhóc con nhà crush gọi tôi là mama!",
+          "description": "Ming",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/126/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d126\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "👩‍❤️‍👩GL CỰC ĐẸP👩‍❤️‍👩",
+      "linkText": "",
+      "linkUrl": "",
+      "displayOrder": 17,
+      "componentList": [
+        {
+          "subject": "Nàng Shimjeong",
+          "description": "Seri, Biwan",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/45/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d45\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Hoa nở trong đêm",
+          "description": "Yumemitsuki",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/134/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d134\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Đây không cần hoàng tử",
+          "description": "Harushion",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/28/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d28\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "🚩TRUYỆN HÀN NỔI TIẾNG🚩",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d5",
+      "displayOrder": 21,
+      "componentList": [
+        {
+          "subject": "Duyên mộc cầu ái",
+          "description": "Gi Ryang, Heo Sa Rin",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/8/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d8\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Tình đầu của tôi",
+          "description": "Bak Nodeok",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/64/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d64\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Ái thần",
+          "description": "Euja",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/76/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d76\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Giấc mơ đưa anh đến",
+          "description": "Byeol-e-byeol",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/30/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d30\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Thợ may của Nữ hoàng Cessia",
+          "description": "Sae Deul, Jae Gyeom",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/39/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d39\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Silent bird",
+          "description": "Brothers without tomorrow",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/118/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d118\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "🏃‍TRUYỆN DÀNH CHO NAM🏃‍",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d17",
+      "displayOrder": 24,
+      "componentList": [
+        {
+          "subject": "BOSS",
+          "description": "Han Jeong",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/6/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d6\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "ReLIFE",
+          "description": "Yayoi So",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/35/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d35\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Võ thần",
+          "description": "J.N.K / dawn",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/121/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d121\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "🌸TRUYỆN NHẬT HOT HIT🌸",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d7",
+      "displayOrder": 26,
+      "componentList": [
+        {
+          "subject": "Kế hoạch trả thù của nàng bướm đêm",
+          "description": "Hayama Izumi, Keiyu",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/38/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d38\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Nhà tù Namba",
+          "description": "Futamata Sho",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/91/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d91\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Bí mật của Usami!",
+          "description": "Usamaru",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/42/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d42\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chàng vệ sĩ của tôi",
+          "description": "Isumi Masaki",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/129/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d129\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chị em hờ",
+          "description": "Tonami Koiro",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/105/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d105\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Ai là nô lệ của cậu chứ~!",
+          "description": "Nakajima Mao",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/101/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d101\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "MIDDLE",
+      "thumbnailType": "SQUARE",
+      "subject": "😍NGÔN TÌNH TRUNG QUỐC😍",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d49",
+      "displayOrder": 28,
+      "componentList": [
+        {
+          "subject": "Nam thần nhà bên",
+          "description": "Miêu Tứ Nhi, Bình Bình Quân",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/100/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d100\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Vận mệnh bí ẩn",
+          "description": "Liên An",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/99/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d99\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Hãy cho tôi sắc đẹp",
+          "description": "Lâm Thuần Hoa, Bình Tử, Hạ Hy",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/131/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d131\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "✍️‍GỢI Ý TỪ BAN BIÊN TẬP✍️‍",
+      "linkText": "",
+      "linkUrl": "",
+      "displayOrder": 1,
+      "componentList": [
+        {
+          "subject": "Học viện trừ yêu",
+          "description": "Hwi Reul",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/57/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d57\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Tiệm hoa ước nguyện",
+          "description": "Shinotsuki Kyotaro",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/125/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d125\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Tiểu thư quái dị",
+          "description": "Poaro",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/115/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d115\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "🎃GIẬT GÂN SINH TỒN🎃",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d50",
+      "displayOrder": 4,
+      "componentList": [
+        {
+          "subject": "Family Stalker",
+          "description": "Sekiya Kohaku",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/132/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d132\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Tử địa",
+          "description": "Cognac",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/21/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d21\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Mùi vị con người",
+          "description": "Kim Sung Nyung",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/44/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d44\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "🍰ĐỌC TRUYỆN CŨNG NGON🍰",
+      "linkText": "",
+      "linkUrl": "",
+      "displayOrder": 6,
+      "componentList": [
+        {
+          "subject": "Đừng măm tui mà!",
+          "description": "Umibird",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/11/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d11\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Nỗi buồn dưới bàn ăn",
+          "description": "Ma Dae, Mae Bong",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/106/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d106\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Hoán đổi tổn thương",
+          "description": "Az",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/75/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d75\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "🍀XOA DỊU TÂM HỒN🍀 ",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d38",
+      "displayOrder": 8,
+      "componentList": [
+        {
+          "subject": "Thần Chết đoản mệnh",
+          "description": "Kuri Miya",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/18/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d18\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Gia đình phấn màu",
+          "description": "Sei",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/112/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d112\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Khoa tâm thần cũng có bình minh",
+          "description": "Lee Ra Ha",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/108/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d108\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "🤣CƯỜI QUÊN TRỜI ĐẤT🤣",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d39",
+      "displayOrder": 9,
+      "componentList": [
+        {
+          "subject": "Cacao 79%",
+          "description": "Aoi Umi",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/40/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d40\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Chưởng môn nhà em",
+          "description": "Thiện Thủy, Lưu Xán",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/87/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d87\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Bựa cả đôi",
+          "description": "Jemin",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/56/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d56\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "💫THẾ GIỚI KỲ ẢO💫",
+      "linkText": "Xem thêm",
+      "linkUrl": "comicovn://content?contentId\u003d4",
+      "displayOrder": 11,
+      "componentList": [
+        {
+          "subject": "Thanh kiếm của trời xanh",
+          "description": "Tamayura Shiyu",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/96/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d96\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "Alien Idol",
+          "description": "Ji Ae",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/82/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d82\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": "HU·NIMAL",
+          "description": "ilinx",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/33/square.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d33\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    },
+    {
+      "position": "BOTTOM",
+      "thumbnailType": "SQUARE",
+      "subject": "❓FAQ - COMICO GIẢI ĐÁP❗",
+      "linkText": "",
+      "linkUrl": "",
+      "displayOrder": 15,
+      "componentList": [
+        {
+          "subject": "FAQ - Bạn hỏi comico trả lời",
+          "description": "comico Vietnam",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/76/component/370_thumbnail.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d77\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": " ",
+          "description": " ",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/76/component/371_thumbnail.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d77\u0026type\u003dWEB_COMIC"
+        },
+        {
+          "subject": " ",
+          "description": " ",
+          "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/release/recommendation/76/component/372_thumbnail.jpg",
+          "linkUrl": "comicovn://titleDetail?titleId\u003d77\u0026type\u003dWEB_COMIC"
+        }
+      ]
+    }
+  ]
+}

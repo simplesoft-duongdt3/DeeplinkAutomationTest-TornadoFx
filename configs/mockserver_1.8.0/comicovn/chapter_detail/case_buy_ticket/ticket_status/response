@@ -1,0 +1,13 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": {
+    "rentTicketBalance": 1089,
+    "collectionTicketBalance": 123
+  }
+}

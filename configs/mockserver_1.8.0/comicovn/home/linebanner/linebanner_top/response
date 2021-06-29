@@ -1,0 +1,21 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "subject": "top banner",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/HOME/200/ANDROID.jpg",
+            "linkUrl": "comicovn://news?target=chargepass"
+        },
+        {
+            "subject": "Dev test - Banner Line Top 01",
+            "imageUrl": "http://comico-vn.gslb.toastoven.net/alpha/banner/LINE_TOP/HOME/182/ANDROID.jpg",
+            "linkUrl": "comicovn://content?contentId=25"
+        }
+    ]
+}

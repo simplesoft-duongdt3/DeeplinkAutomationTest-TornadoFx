@@ -1,0 +1,93 @@
+200
+500
+{
+    "header": {
+        "resultCode": 0,
+        "resultMessage": "SUCCESS",
+        "isSuccessful": true
+    },
+    "data": {
+        "totalCount": 9,
+        "titleList": [
+            {
+                "id": 242,
+                "subject": "Mùa hoạ mi năm ấy",
+                "longDescription": "Đây là mô tả",
+                "chapterCount": 20,
+                "viewCount": 325,
+                "likeCount": 2896,
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/311/square_20210616172610.png",
+                "status": "DRAFT",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "openReservedDateTime": "2021-06-07 10:28:05",
+                "registerDateTime": "2021-06-07 10:27:48",
+                "updateDateTime": "2021-06-07 10:28:05"
+            },
+            {
+                "id": 242,
+                "subject": "Truyện về chàng hoàng tử",
+                "longDescription": "Đây là mô tả",
+                "chapterCount": 16,
+                "viewCount": 256,
+                "likeCount": 1724,
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+                "status":  "ON_GOING",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "openReservedDateTime": "2021-06-07 10:28:05",
+                "registerDateTime": "2021-06-07 10:27:48",
+                "updateDateTime": "2021-06-07 10:28:05"
+            },
+            {
+                "id": 242,
+                "subject": "Người về từ lòng đất",
+                "longDescription": "Đây là mô tả",
+                "chapterCount": 21,
+                "viewCount": 300,
+                "likeCount": 2790,
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/190/square.png",
+                "status": "SUSPENDED",
+                "blockedReason": {
+                    "category": "Inappropriate/Harmful/18+",
+                    "detail": "Không đúng thuần phong mĩ tục nước nhà"
+                },
+                "openReservedDateTime": "2021-06-07 10:28:05",
+                "registerDateTime": "2021-06-07 10:27:48",
+                "updateDateTime": "2021-06-07 10:28:05"
+            },
+            {
+                "id": 241,
+                "subject": "Xin chào, xin chào thứ Hai",
+                "longDescription": "Đây là mô tả",
+                "chapterCount": 12,
+                "viewCount": 98,
+                "likeCount": 127,
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/246/square.png",
+                "status": "COMPLETED",
+                "blockedReason": null,
+                "openReservedDateTime": "2021-06-07 10:26:06",
+                "registerDateTime": "2021-06-07 10:24:35",
+                "updateDateTime": "2021-06-07 10:26:06"
+            },
+            {
+                "id": 241,
+                "subject": "Chạy theo bong bóng",
+                "longDescription": "Đây là mô tả",
+                "chapterCount": 123,
+                "viewCount": 123,
+                "likeCount": 123,
+                "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/217/square.jpg",
+                "status": "BLOCKED",
+                "blockedReason": null,
+                "openReservedDateTime": "2021-06-07 10:26:06",
+                "registerDateTime": "2021-06-07 10:24:35",
+                "updateDateTime": "2021-06-07 10:26:06"
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": 
+    {
+      "subject": "NRU Free coin 7/10",
+      "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg",
+      "linkUrl": "comicovn://event?target\u003d58"
+    }
+  
+}

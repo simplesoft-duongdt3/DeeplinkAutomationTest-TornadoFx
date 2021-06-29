@@ -1,0 +1,45 @@
+200
+500
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "data": [
+        {
+            "couponSubject": "Cơm khổ qua xào trứng",
+            "registeredDateTime": "2020-10-19 14:54:02",
+            "productList": [
+                {
+                    "mappedTitleId": -1,
+                    "subject": null,
+                    "type": "FREE_COIN",
+                    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110x110_point-1.jpg",
+                    "amount": 1
+                },
+                {
+                    "mappedTitleId": -1,
+                    "subject": null,
+                    "type": "POINT",
+                    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/image-box/110.png",
+                    "amount": 200
+                },
+                {
+                    "mappedTitleId": 131,
+                    "subject": "Phải lòng với cô đơn",
+                    "type": "COLLECTION_TICKET",
+                    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/131/square.jpg",
+                    "amount": 2
+                },
+                {
+                    "mappedTitleId": 144,
+                    "subject": "Nhà tù Namba",
+                    "type": "RENT_TICKET",
+                    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/144/square.jpg",
+                    "amount": 2
+                }
+            ]
+        }
+    ]
+}

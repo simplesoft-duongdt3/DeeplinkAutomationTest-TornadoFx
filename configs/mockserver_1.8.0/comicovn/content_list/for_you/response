@@ -1,0 +1,180 @@
+200
+500
+{
+  "header": {
+    "isSuccessful": true,
+    "resultCode": 0,
+    "resultMessage": "SUCCESS"
+  },
+  "data": [
+    {
+      "titleId": 145,
+      "subject": "Coming soon ",
+      "shortDescription": "Một câu chuyện vô cùng li kì và hấp dẫn",
+      "author": "Harushionb",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/145/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": true,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 12,
+      "eventTag": "DISCOUNT"
+    },
+    {
+      "titleId": 130,
+      "subject": "Tiểu thư đỏng đảnh",
+      "shortDescription": "MA LẠT THIÊN KIM ĐẨU ÁC THIẾU (TIỂU THƯ ĐỎNG ĐẢNH)",
+      "author": "Sakana",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/130/square.jpg",
+      "likeCount": 5,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 3,
+      "eventTag": "FREE_CHARGE_DURATION"
+    },
+    {
+      "titleId": 126,
+      "subject": "Đứa trẻ tinh nghịch",
+      "shortDescription": "Đây là giới thiệu ngắn Đứa trẻ tinh nghịch",
+      "author": "Chizo",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/126/square.jpg",
+      "likeCount": 3,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 8,
+      "eventTag": "FREE_CHAPTER_EXTENSION"
+    },
+    {
+      "titleId": 136,
+      "subject": "Big Sale",
+      "shortDescription": "aaaaa",
+      "author": "Rima",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/136/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": true,
+      "freeChargeStatus": "NONE",
+      "freeChargeDuration": 0,
+      "eventTag": null
+    },
+    {
+      "titleId": 153,
+      "subject": "Cuộc sống hai mặt của giáo sư",
+      "shortDescription": "Cuộc sống về đêm của vị giáo sư thân thiện, tốt bụng sẽ ra sao?",
+      "author": "Umibird",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/153/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 1,
+      "eventTag": null
+    },
+    {
+      "titleId": 151,
+      "subject": "Dev test - Dark Mode 2",
+      "shortDescription": "Dev test - Dark Mode 2",
+      "author": "Huy Tran",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/151/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "NONE",
+      "freeChargeDuration": 0,
+      "eventTag": null
+    },
+    {
+      "titleId": 113,
+      "subject": "HỌC VIỆN CAO THỦ",
+      "shortDescription": "truyện tranh hay",
+      "author": "HangNguyen",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/113/square.jpg",
+      "likeCount": 3,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "NONE",
+      "freeChargeDuration": 0,
+      "eventTag": null
+    },
+    {
+      "titleId": 124,
+      "subject": "Ác ma đừng hôn tôi",
+      "shortDescription": "Câu chuyện về cặp trai gái ghét nhau nhưng lại đến với nhau.",
+      "author": "Ando Sawano",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/124/square.jpg",
+      "likeCount": 1,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 1,
+      "eventTag": null
+    },
+    {
+      "titleId": 114,
+      "subject": "Amina và cây đèn thần test long title name test tên title dài cực dài chút xíu nhen bà con iu vấu ơi.",
+      "shortDescription": "Truyện kể về Amina, phù thủy cuối cùng ở thành phố Pass, người đột nhiên xoay quanh việc loại bỏ tất cả các phù thủy đến chết.",
+      "author": "Chizo",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/114/square.jpg",
+      "likeCount": 7,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "NONE",
+      "freeChargeDuration": 0,
+      "eventTag": null
+    },
+    {
+      "titleId": 155,
+      "subject": "Tiểu thư",
+      "shortDescription": "Đây là 1 câu chuyện vô cùng tình cảm và lãng mạn.",
+      "author": "Chang, Renzo",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/155/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": true,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 1,
+      "eventTag": null
+    },
+    {
+      "titleId": 116,
+      "subject": "Sự trả thù ngọt ngào",
+      "shortDescription": "Sự trả thù của một cô gái...",
+      "author": "Moyashi125",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/116/square.jpg",
+      "likeCount": 3,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 1,
+      "eventTag": null
+    },
+    {
+      "titleId": 137,
+      "subject": "sadasd",
+      "shortDescription": "âs",
+      "author": "Rima",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/137/square.jpg",
+      "likeCount": 0,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": true,
+      "freeChargeStatus": "FULL",
+      "freeChargeDuration": 6,
+      "eventTag": null
+    },
+    {
+      "titleId": 118,
+      "subject": "Cuốn sách tình yêu của bác sĩ",
+      "shortDescription": "Đã đến lúc làm nữ bác sĩ thế kỷ 21!",
+      "author": "Gi Ryang, Heo Sa Rin",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/118/square.jpg",
+      "likeCount": 1,
+      "isFavoriteClicked": false,
+      "isFavoriteReward": false,
+      "freeChargeStatus": "NONE",
+      "freeChargeDuration": 0,
+      "eventTag": null
+    }
+  ]
+}

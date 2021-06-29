@@ -1,0 +1,26 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"eventBannerList",
+         "eventBannerList":[
+            {
+               "subject":"ALL - FP: IGNORE x",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/361/ANDROID.png",
+               "linkUrl":"comicovn://mission"
+            },
+            {
+               "subject":"ALL - FP: ENABLE",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/banner/EVENT/HOME/362/ANDROID.jpg",
+               "linkUrl":"comicovn://mission"
+            }
+         ]
+      }
+   ]
+}

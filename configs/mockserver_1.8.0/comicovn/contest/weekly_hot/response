@@ -1,0 +1,91 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": [
+    {
+      "titleId": 327,
+      "subject": "Grow up",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/327/square_20210621133626.png",
+      "likeCount": 10,
+      "viewCount": 21
+    },
+    {
+      "titleId": 264,
+      "subject": "The Avengers",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/264/square_20210611084743.jpg",
+      "likeCount": 9,
+      "viewCount": 58
+    },
+    {
+      "titleId": 295,
+      "subject": "Bủh Bủh Dảk Dảk x3,14",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/295/square_20210615101904.jpg",
+      "likeCount": 7,
+      "viewCount": 21
+    },
+    {
+      "titleId": 334,
+      "subject": "Chú chó loắt choắt - part 2",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/334/square_20210623094609.jpg",
+      "likeCount": 6,
+      "viewCount": 18
+    },
+    {
+      "titleId": 248,
+      "subject": "Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng 1 Truyện cây xương rồng  Truyện cây xương rồng 11",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/248/square.png",
+      "likeCount": 5,
+      "viewCount": 5
+    },
+    {
+      "titleId": 302,
+      "subject": "test chương ",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/302/square_20210616100154.png",
+      "likeCount": 3,
+      "viewCount": 21
+    },
+    {
+      "titleId": 333,
+      "subject": "Chú chó loắt choắt phần 1",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/333/square_20210623093518.jpg",
+      "likeCount": 3,
+      "viewCount": 10
+    },
+    {
+      "titleId": 273,
+      "subject": "test123",
+      "author": "G1137489914",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/273/square_20210611112919.png",
+      "likeCount": 3,
+      "viewCount": 9
+    },
+    {
+      "titleId": 287,
+      "subject": "The Boys",
+      "author": "dattest97",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/287/square_20210614104343.jpg",
+      "likeCount": 2,
+      "viewCount": 63
+    },
+    {
+      "titleId": 191,
+      "subject": "191",
+      "author": "4331Nexx",
+      "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/191/square.jpg",
+      "likeCount": 2,
+      "viewCount": 21
+    }
+  ]
+}

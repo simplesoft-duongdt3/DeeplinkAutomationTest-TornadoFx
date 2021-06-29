@@ -1,0 +1,32 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "type":"noticeList",
+         "noticeList":[
+            {
+               "noticeId":52,
+               "subject":"Test Notice Trí",
+               "shortDescription":"Test Notice Trí 2\nhdjshshd\njsjdhsdjsjdsj\njsjshdjs\njdjsdjs\nhsjs\nHome \nConte\njsjfhdsf\njhjjsjs\njsjsdhs\njsjdhsj\njsajdh\njdhsaghdsa\nhdsgdgsa\njgdgas\ndgssdgs\n",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/notice/52.jpg",
+               "linkUrl":null,
+               "publishedDateTime":"2021-01-19 09:19:56"
+            },
+            {
+               "noticeId":51,
+               "subject":"Con khủng Long cần giấy chùi toilet",
+               "shortDescription":"Test Notice Trí",
+               "imageUrl":"http://comico-vn.gslb.toastoven.net/alpha/notice/51.png",
+               "linkUrl":null,
+               "publishedDateTime":"2021-01-19 08:45:29"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,84 @@
+200
+500
+{
+  "header": {
+    "resultCode": 0,
+    "resultMessage": "SUCCESS",
+    "isSuccessful": true
+  },
+  "data": {
+    "chapterId": 729,
+    "titleSubject": "Đã quá Pepsi chanh không đường eei !",
+    "author": "dattest97",
+    "authorAvatarId": 20,
+    "chapterSubject": "Ch. 1",
+    "description": "",
+    "thumbnailUrl": "http://comico-vn.gslb.toastoven.net/alpha/chapter/thumbnail/729/thumbnail.png",
+    "viewType": "SCROLL",
+    "isLikeClicked": false,
+    "isFavoriteClicked": false,
+    "isCompleted": true,
+    "isPostponed": false,
+    "prevChapter": null,
+    "nextChapter": {
+      "chapterId": 730
+    },
+    "contentList": [
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      },
+      {
+        "width": 275,
+        "height": 275,
+        "imageUrl": "http://comico-vn.gslb.toastoven.net/release/title/thumbnail/116/square.jpg?xxx"
+      }
+    ]
+  }
+}

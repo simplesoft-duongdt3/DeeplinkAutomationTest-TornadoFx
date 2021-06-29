@@ -1,0 +1,92 @@
+200
+500
+{
+   "header":{
+      "isSuccessful":true,
+      "resultCode":0,
+      "resultMessage":"SUCCESS"
+   },
+   "data":[
+      {
+         "titleId":101,
+         "subject":"Tuổi học trò",
+         "shortDescription":"Tuổi học trò - nơi gửi gắm kí ức và cảm xúc chân thật nhất",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+         "likeCount":6,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":107,
+         "subject":"Những người bạn",
+         "shortDescription":"Bạn là người ta cảm thấy thoải mái khi ở cùng, ta sẵn lòng trung thành, đem lại cho ta lời chúc phúc và ta cảm thấy biết ơn vì có họ trong đời.",
+         "author":"Đổng Phi",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+         "likeCount":3,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":106,
+         "subject":"Hai chị em",
+         "shortDescription":"Tuổi thơ có em gái ở bên là đẹp nhất đối với tác giả Paper Fly (đến từ Hàn Quốc).",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+         "likeCount":10,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":108,
+         "subject":"Tuổi học trò",
+         "shortDescription":"Tuổi học trò - nơi gửi gắm kí ức và cảm xúc chân thật nhất",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+         "likeCount":6,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":109,
+         "subject":"Những người bạn",
+         "shortDescription":"Bạn là người ta cảm thấy thoải mái khi ở cùng, ta sẵn lòng trung thành, đem lại cho ta lời chúc phúc và ta cảm thấy biết ơn vì có họ trong đời.",
+         "author":"Đổng Phi",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+         "likeCount":3,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":110,
+         "subject":"Hai chị em",
+         "shortDescription":"Tuổi thơ có em gái ở bên là đẹp nhất đối với tác giả Paper Fly (đến từ Hàn Quốc).",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+         "likeCount":10,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":111,
+         "subject":"Tuổi học trò",
+         "shortDescription":"Tuổi học trò - nơi gửi gắm kí ức và cảm xúc chân thật nhất",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/101/square.jpg",
+         "likeCount":6,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":112,
+         "subject":"Những người bạn",
+         "shortDescription":"Bạn là người ta cảm thấy thoải mái khi ở cùng, ta sẵn lòng trung thành, đem lại cho ta lời chúc phúc và ta cảm thấy biết ơn vì có họ trong đời.",
+         "author":"Đổng Phi",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/107/square.jpg",
+         "likeCount":3,
+         "freeChargeDuration":1
+      },
+      {
+         "titleId":113,
+         "subject":"Hai chị em",
+         "shortDescription":"Tuổi thơ có em gái ở bên là đẹp nhất đối với tác giả Paper Fly (đến từ Hàn Quốc).",
+         "author":"HangNguyen",
+         "thumbnailUrl":"http://comico-vn.gslb.toastoven.net/alpha/title/thumbnail/106/square.jpg",
+         "likeCount":10,
+         "freeChargeDuration":1
+      }
+   ]
+}
