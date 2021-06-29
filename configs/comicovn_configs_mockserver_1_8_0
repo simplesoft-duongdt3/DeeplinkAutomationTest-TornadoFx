@@ -2936,10 +2936,10 @@
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/chapter_detail/case_recomendation/comments/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/chapter_detail/case_recomendation/comments/response"
 		},
-		{
-			"requestConfig": "configs/mockserver_1.8.0/comicovn/content_list/success/request",
-			"responseConfig": "configs/mockserver_1.8.0/comicovn/content_list/success/response"
-		},
+        {
+  			"requestConfig": "configs/mockserver_1.8.0/comicovn/title_comic/title_related/request",
+  			"responseConfig": "configs/mockserver_1.8.0/comicovn/title_comic/title_related/response"
+  		},
 		{
 			"requestConfig": "configs/mockserver_1.8.0/comicovn/purchase_bundle_of_chapters/purchase_chapters_bundle_events/request",
 			"responseConfig": "configs/mockserver_1.8.0/comicovn/purchase_bundle_of_chapters/purchase_chapters_bundle_events/response"
